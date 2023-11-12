@@ -8,7 +8,7 @@ import {
   FlexRowWrapJcBetween,
   FlexRowJcBetweenAiEnd,
   FlexColumn,
-} from "../Abstract/Mixins";
+} from "Styles/Abstract/Mixins";
 
 interface Props {
   // Flex rows

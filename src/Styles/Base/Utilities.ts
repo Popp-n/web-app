@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { FlexRowAiCenter } from "styles/Abstract/Mixins";
+import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 
 export const Utilities = css`
   /* Margins */
@@ -172,7 +172,7 @@ export const Utilities = css`
   /* Paddings */
 
   .pr-7 {
-    padding-right: .7rem;
+    padding-right: 0.7rem;
   }
 
   /* End of Paddings */
