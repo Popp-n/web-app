@@ -15,10 +15,12 @@ export const Variables = css`
     --color-1: #ff008e;
     --color-2: #667085;
     --color-3: #344054;
+    --color-4: #686d77;
 
     /* Shadows */
     --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    --shadow-2: 0px 15px 30px 0px rgba(223, 105, 81, 0.3);
+    --shadow-2: 0px 1.5rem 3rem 0px rgba(223, 105, 81, 0.3);
+    --shadow-3: 0px 0.5rem 2rem 0px rgba(223, 105, 81, 0.3);
 
     /* Gradients */
     --gradient-1: linear-gradient(
@@ -29,7 +31,7 @@ export const Variables = css`
 
     /* Layout variables */
     --max-row-width: 133rem;
-    --max-row-width-hero: 126rem;
+    --max-row-width-hero: 120rem;
     --center-extended-side-padding: 11remm;
   }
 `;

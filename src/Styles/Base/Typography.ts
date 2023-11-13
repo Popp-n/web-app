@@ -70,10 +70,16 @@ export const Typography = css`
     }
     &-3 {
       font-size: 1.5rem;
-      font-family: var(--font-1);
       font-weight: 500;
       line-height: 155%;
+      font-family: var(--font-1);
       color: var(--color-3);
+    }
+    &-4 {
+      font-size: 1.7rem;
+      font-weight: 500;
+      font-family: var(--font-1);
+      color: var(--color-4);
     }
   }
 `;
