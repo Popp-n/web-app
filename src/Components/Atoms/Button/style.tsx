@@ -30,6 +30,14 @@ export const ButtonStyle = styled(Button)`
       border-radius: 0.8rem;
     }
 
+    &-1 {
+      border-radius: 4.3rem;
+      border: 1px solid var(--color-1);
+      background-color: var(--color-white);
+      box-shadow: var(--shadow-1);
+      padding: 1.6rem 2.8rem;
+    }
+
     /* Colors */
 
     /* Size */

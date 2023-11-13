@@ -12,3 +12,7 @@ export const Center = styled.section`
 export const CenterExtended = styled(Center)`
   max-width: var(--max-row-width-extended);
 `;
+
+export const CenterHero = styled(Center)`
+  max-width: var(--max-row-width-hero);
+`;

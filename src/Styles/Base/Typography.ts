@@ -2,7 +2,7 @@ import { css } from "styled-components";
 
 export const Typography = css`
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-primary);
     font-size: 1.6rem;
     line-height: 1.7rem;
     font-weight: 500;
@@ -11,6 +11,16 @@ export const Typography = css`
   /* Headings */
   .h {
     &-1 {
+      font-size: 5.9487rem;
+      font-weight: 600;
+      line-height: 100%;
+      color: var(--color-primary);
+    }
+    &-2 {
+      font-size: 3.9658rem;
+      font-weight: 400;
+      line-height: 110%;
+      color: var(--color-primary);
     }
   }
 
@@ -57,6 +67,13 @@ export const Typography = css`
       transition: 0.4s;
       text-transform: capitalize;
       color: var(--color-2);
+    }
+    &-3 {
+      font-size: 1.5rem;
+      font-family: var(--font-1);
+      font-weight: 500;
+      line-height: 155%;
+      color: var(--color-3);
     }
   }
 `;
