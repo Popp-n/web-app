@@ -22,6 +22,16 @@ export const Typography = css`
       line-height: 110%;
       color: var(--color-primary);
     }
+    &-3 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 154.915%;
+      letter-spacing: 0.288rem;
+      color: var(--color-primary);
+      &--2 {
+        color: var(--color-1);
+      }
+    }
   }
 
   /* Body || Paragraphs */

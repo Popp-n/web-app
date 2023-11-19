@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Section, Letters } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
+import Typography from "Components/Atoms/Typography";
 
 // Type defination
 interface Props {}
@@ -37,6 +38,16 @@ const Home: React.FC<Props> = () => {
               </div>
             </div>
           </Letters>
+          <Typography as="h5" className="h-3 text-center mt-20">
+            <>
+              <span className="h-3--2">P</span>latform for{" "}
+              <span className="h-3--2">O</span>
+              ptimized <span className="h-3--2">P</span>
+              artnerships and <span className="h-3--2">P</span>erformance in{" "}
+              <span className="h-3--2">N</span>
+              etworking
+            </>
+          </Typography>
         </Container>
       </Section>
     </>

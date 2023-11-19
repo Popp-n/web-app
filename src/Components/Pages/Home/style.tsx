@@ -1,4 +1,4 @@
-import { FlexRow, FlexRowJcCenter } from "Styles/Abstract/Mixins";
+import { FlexColumnJcCenterAiCenter } from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
 import styled from "styled-components";
 
@@ -13,13 +13,14 @@ export const Container = styled(Center)``;
 
 export const Letters = styled.div`
   /* padding-block: 15rem; */
-  ${FlexRowJcCenter}
+  ${FlexColumnJcCenterAiCenter}
 
   .letters-imgs-container {
     position: relative;
-    width: 1068.651px;
+    width: 989px;
     height: 304.844px;
     flex-shrink: 0;
+    /* background-color: green; */
   }
 
   .letters-img-container {
