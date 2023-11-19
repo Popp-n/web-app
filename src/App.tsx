@@ -1,11 +1,9 @@
-import { TopNav } from "Components/Molecules/TopNav";
-import { Hero } from "Components/Molecules/Hero";
+import { Home } from "Components/Pages/Home";
 
 function App() {
   return (
     <>
-      <TopNav />
-      <Hero />
+      <Home />
     </>
   );
 }
