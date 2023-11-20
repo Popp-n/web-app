@@ -86,8 +86,8 @@ export const AboutContainer = styled(Container)`
   gap: 8rem;
 
   .left {
-    flex-basis: 545px;
-    height: 508px;
+    flex-basis: 54.5rem;
+    height: 50.8rem;
     background-color: blue;
   }
   .right {
