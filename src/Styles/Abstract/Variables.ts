@@ -23,11 +23,8 @@ export const Variables = css`
     --shadow-3: 0px 0.5rem 2rem 0px rgba(223, 105, 81, 0.3);
 
     /* Gradients */
-    --gradient-1: linear-gradient(
-      180deg,
-      #fff 43.72%,
-      rgba(255, 255, 255, 0) 66.23%
-    );
+    --gradient-1: linear-gradient(0deg, #f5effb 0%, #f5effb 100%), #fff;
+    --gradient-2: linear-gradient(0deg, #ff008e 0%, #ff008e 100%), #fff;
 
     /* Layout variables */
     --max-row-width: 121.6rem;

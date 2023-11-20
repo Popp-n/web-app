@@ -1,11 +1,20 @@
-import { FlexColumnJcCenterAiCenter } from "Styles/Abstract/Mixins";
+import {
+  FlexColumnJcCenterAiCenter,
+  FlexRowAiCenter,
+  FlexRowJcCenterAiCenter,
+} from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Section = styled.section`
   &.section-poppn {
-    background: linear-gradient(0deg, #f5effb 0%, #f5effb 100%), #fff;
+    background: var(--gradient-1);
     padding-block: 15rem;
+  }
+
+  &.section-about-poppn {
+    background: var(--gradient-2);
+    padding-block: 6rem;
   }
 `;
 
@@ -69,5 +78,23 @@ export const Letters = styled.div`
     top: 48.54px;
     left: 784.56px;
     z-index: 1;
+  }
+`;
+
+export const AboutContainer = styled(Container)`
+  ${FlexRowJcCenterAiCenter}
+  gap: 8rem;
+
+  .left {
+    flex-basis: 545px;
+    height: 508px;
+    background-color: blue;
+  }
+  .right {
+    img {
+      width: 98.846px;
+      height: 38.2px;
+      vertical-align: middle;
+    }
   }
 `;

@@ -37,6 +37,11 @@ export const Typography = css`
   /* Body || Paragraphs */
   .p {
     &-1 {
+      font-size: 2.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--color-white);
     }
   }
 

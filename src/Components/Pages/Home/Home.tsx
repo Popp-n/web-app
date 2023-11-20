@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Section, Letters } from "./style";
+import { Container, Section, Letters, AboutContainer } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
 import Typography from "Components/Atoms/Typography";
@@ -49,6 +49,25 @@ const Home: React.FC<Props> = () => {
             </>
           </Typography>
         </Container>
+      </Section>
+
+      <Section className="section-about-poppn">
+        <AboutContainer>
+          <div className="left"></div>
+          <div className="right">
+            <Typography as="p" className="p-1 max-width-550">
+              <>
+                <img src="/assets/images/poppn-small-logo.png" alt="" /> is a
+                social media collaboration platform that connects brands with
+                creators for social media campaigns. It is a marketplace where
+                brands can find and hire creators to create content, run
+                contests, and collaborate on other projects. Creators can earn
+                money by participating in challenges, creating branded content,
+                and running contests.
+              </>
+            </Typography>
+          </div>
+        </AboutContainer>
       </Section>
     </>
   );
