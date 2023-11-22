@@ -7,6 +7,7 @@ export const Wrapper = styled.header`
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 81.3rem 61.3rem;
+  padding-bottom: 5rem;
 `;
 
 export const Container = styled(CenterHero)`
