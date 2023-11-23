@@ -13,7 +13,8 @@ export const Section = styled.section`
 
   &.section-about-poppn {
     background: var(--gradient-2);
-    padding-block: 6rem;
+    padding-top: 9rem;
+    padding-bottom: 6rem;
   }
 `;
 
@@ -86,8 +87,9 @@ export const AboutContainer = styled(Container)`
 
   .left {
     flex-basis: 54.5rem;
-    height: 50.8rem;
-    background-color: blue;
+    height: 55.8rem;
+    /* background-color: blue; */
+    position: relative;
   }
   .right {
     img {
@@ -95,5 +97,48 @@ export const AboutContainer = styled(Container)`
       height: 38.2px;
       vertical-align: middle;
     }
+  }
+`;
+
+export const LeftImageContainer = styled.div`
+  position: absolute;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &.blue-1 {
+    width: 391px;
+    height: 391px;
+    right: 14px;
+    z-index: 1;
+  }
+  &.blue-2 {
+    width: 309px;
+    height: 309px;
+    top: 143px;
+    z-index: 1;
+    opacity: 0;
+  }
+  &.red-1 {
+    width: 309px;
+    height: 309px;
+    top: 143px;
+    z-index: 2;
+  }
+  &.red-2 {
+    width: 391px;
+    height: 391px;
+    right: 14px;
+    z-index: 2;
+    opacity: 0;
+  }
+  &.shadow-1 {
+    bottom: 0;
+  }
+  &.shadow-2 {
+    right: 0;
+    bottom: 56px;
   }
 `;

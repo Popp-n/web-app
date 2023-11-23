@@ -1,5 +1,11 @@
 import React from "react";
-import { Container, Section, Letters, AboutContainer } from "./style";
+import {
+  Container,
+  Section,
+  Letters,
+  AboutContainer,
+  LeftImageContainer,
+} from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
 import Typography from "Components/Atoms/Typography";
@@ -53,7 +59,26 @@ const Home: React.FC<Props> = () => {
 
       <Section className="section-about-poppn">
         <AboutContainer>
-          <div className="left"></div>
+          <div className="left">
+            <LeftImageContainer className="blue-1">
+              <img src="/assets/images/poppn-blue-1.png" alt="" />
+            </LeftImageContainer>
+            <LeftImageContainer className="blue-2">
+              <img src="/assets/images/poppn-blue-2.png" alt="" />
+            </LeftImageContainer>
+            <LeftImageContainer className="red-1">
+              <img src="/assets/images/poppn-red-1.png" alt="" />
+            </LeftImageContainer>
+            <LeftImageContainer className="red-2">
+              <img src="/assets/images/poppn-red-2.png" alt="" />
+            </LeftImageContainer>
+            <LeftImageContainer className="shadow-1">
+              <img src="/assets/images/poppn-shadow-1.png" alt="" />
+            </LeftImageContainer>
+            <LeftImageContainer className="shadow-2">
+              <img src="/assets/images/poppn-shadow-2.png" alt="" />
+            </LeftImageContainer>
+          </div>
           <div className="right">
             <Typography as="p" className="p-1 max-width-550">
               <>
