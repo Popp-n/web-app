@@ -1,5 +1,7 @@
 import {
   FlexColumnJcCenterAiCenter,
+  FlexRow,
+  FlexRowJcBetweenAiEnd,
   FlexRowJcCenterAiCenter,
 } from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
@@ -154,11 +156,23 @@ export const AtPoppnContainer = styled(Container)`
   background-size: cover;
   background-position: top right;
   padding: 8rem;
-  padding-bottom: 40rem;
+  padding-bottom: 20rem;
 
   .logo {
     width: 8.8846rem;
     height: 3.82rem;
     vertical-align: middle;
+  }
+
+  .down-section {
+    ${FlexRowJcBetweenAiEnd}
+    gap: 6rem;
+
+    &__left {
+    }
+    &__content {
+      ${FlexRow}
+      gap: 1rem;
+    }
   }
 `;

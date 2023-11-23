@@ -114,6 +114,43 @@ const Home: React.FC<Props> = () => {
             converge to craft compelling narratives, eye-catching content, and
             engaging campaigns that captivate audiences like never before.
           </Typography>
+
+          <div className="down-section mt-80">
+            <div className="down-section__left">
+              <div className="down-section__content">
+                <Typography as="p" className="h-5 flex-shrink-0">
+                  ✨
+                </Typography>
+                <div>
+                  <Typography as="p" className="h-5">
+                    Vibrant Collaborative Hub:
+                  </Typography>
+                  <Typography as="p" className="p-3 max-width-480 mt-10">
+                    Popp'n is your one-stop hub for unlocking the potential of
+                    collaborative genius. Our interconnected speech bubbles
+                    symbolize the conversations, ideas, and partnerships that
+                    flourish here, forming a circular dance of innovation.
+                  </Typography>
+                </div>
+              </div>
+              <div className="down-section__content mt-80">
+                <Typography as="p" className="h-5 flex-shrink-0">
+                  💡
+                </Typography>
+                <div>
+                  <Typography as="p" className="h-5">
+                    Inspiration Meets Strategy:
+                  </Typography>
+                  <Typography as="p" className="p-3 max-width-480 mt-10">
+                    Collaborate seamlessly with creators to infuse fresh
+                    perspectives into your campaigns. Our platform bridges
+                    inspiration and strategy, delivering content that resonates
+                    deeply with your audience.
+                  </Typography>
+                </div>
+              </div>
+            </div>
+          </div>
         </AtPoppnContainer>
       </Section>
     </>
