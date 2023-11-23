@@ -5,6 +5,7 @@ import {
   Letters,
   AboutContainer,
   LeftImageContainer,
+  AtPoppnContainer,
 } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
@@ -93,6 +94,27 @@ const Home: React.FC<Props> = () => {
             </Typography>
           </div>
         </AboutContainer>
+      </Section>
+
+      <Section className="section-at-poppn">
+        <AtPoppnContainer>
+          <Typography as="h3" className="h-4">
+            <>
+              At{" "}
+              <img
+                src="/assets/images/poppn-small-logo.png"
+                alt=""
+                className="logo"
+              />
+            </>
+          </Typography>
+          <Typography as="p" className="p-2 mt-10 max-width-878">
+            We're redefining the landscape of authentic creator marketing. Our
+            platform serves as a dynamic marketplace where brands and creators
+            converge to craft compelling narratives, eye-catching content, and
+            engaging campaigns that captivate audiences like never before.
+          </Typography>
+        </AtPoppnContainer>
       </Section>
     </>
   );

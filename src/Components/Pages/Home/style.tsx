@@ -16,6 +16,10 @@ export const Section = styled.section`
     padding-top: 9rem;
     padding-bottom: 6rem;
   }
+
+  &.section-at-poppn {
+    padding-block: 8rem;
+  }
 `;
 
 export const Container = styled(Center)``;
@@ -93,8 +97,8 @@ export const AboutContainer = styled(Container)`
   }
   .right {
     img {
-      width: 98.846px;
-      height: 38.2px;
+      width: 9.8846rem;
+      height: 3.82rem;
       vertical-align: middle;
     }
   }
@@ -140,5 +144,21 @@ export const LeftImageContainer = styled.div`
   &.shadow-2 {
     right: 0;
     bottom: 56px;
+  }
+`;
+
+export const AtPoppnContainer = styled(Container)`
+  border-radius: 2.9366rem;
+  background-image: url("/assets/images/at-poppn-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+  padding: 6rem;
+  padding-bottom: 40rem;
+
+  .logo {
+    width: 8.8846rem;
+    height: 3.82rem;
+    vertical-align: middle;
   }
 `;
