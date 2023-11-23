@@ -153,7 +153,7 @@ export const AtPoppnContainer = styled(Container)`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
-  padding: 6rem;
+  padding: 8rem;
   padding-bottom: 40rem;
 
   .logo {

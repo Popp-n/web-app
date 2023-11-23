@@ -108,7 +108,7 @@ const Home: React.FC<Props> = () => {
               />
             </>
           </Typography>
-          <Typography as="p" className="p-2 mt-10 max-width-878">
+          <Typography as="p" className="p-2 mt-10 max-width-750">
             We're redefining the landscape of authentic creator marketing. Our
             platform serves as a dynamic marketplace where brands and creators
             converge to craft compelling narratives, eye-catching content, and
