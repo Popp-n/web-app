@@ -141,3 +141,9 @@ export const GridCenter = css`
   display: grid;
   place-items: center;
 `;
+
+export const ImageDefault = css`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;

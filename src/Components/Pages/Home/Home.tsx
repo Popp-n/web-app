@@ -133,7 +133,7 @@ const Home: React.FC<Props> = () => {
                   </Typography>
                 </div>
               </div>
-              <div className="down-section__content mt-80">
+              <div className="down-section__content mt-70">
                 <Typography as="p" className="h-5 flex-shrink-0">
                   💡
                 </Typography>
@@ -149,6 +149,12 @@ const Home: React.FC<Props> = () => {
                   </Typography>
                 </div>
               </div>
+            </div>
+            <div className="down-section__right">
+              <div className="down-section__right-image-container">
+                <img src="assets/images/at-poppn-img-1.png" alt="" />
+              </div>
+              <div className="down-section__right-image-2-container"></div>
             </div>
           </div>
         </AtPoppnContainer>

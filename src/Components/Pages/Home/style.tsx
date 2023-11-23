@@ -3,6 +3,7 @@ import {
   FlexRow,
   FlexRowJcBetweenAiEnd,
   FlexRowJcCenterAiCenter,
+  ImageDefault,
 } from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
 import styled from "styled-components";
@@ -173,6 +174,34 @@ export const AtPoppnContainer = styled(Container)`
     &__content {
       ${FlexRow}
       gap: 1rem;
+    }
+    &__right {
+      ${FlexRowJcBetweenAiEnd}
+      gap: 3rem;
+      &-image {
+      }
+    }
+    &__right-image-container {
+      width: 28.9392rem;
+      height: 21.197rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      img {
+        ${ImageDefault}
+      }
+    }
+
+    &__right-image-2-container {
+      width: 193.179px;
+      height: 378.841px;
+      border-radius: 17px;
+      border: 4px solid #fff;
+      background: #f0f0f0;
+
+      img {
+        ${ImageDefault}
+      }
     }
   }
 `;
