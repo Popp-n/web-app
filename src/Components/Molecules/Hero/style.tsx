@@ -62,6 +62,7 @@ export const HeroImageContainer = styled.div`
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -92,6 +93,7 @@ export const HeroImageContainer = styled.div`
     z-index: 5;
 
     box-shadow: 0px 4.28916px 49.3253px 0px rgba(201, 63, 61, 0.1);
+    border-radius: 40.262px 41.586px 0 41.586px;
   }
   .image-5 {
     width: 83.173px;
@@ -100,6 +102,7 @@ export const HeroImageContainer = styled.div`
     bottom: 9rem;
 
     box-shadow: 0px 4.28916px 49.3253px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 40.262px 0px 41.586px 41.586px;
   }
   .image-6 {
     width: 77.565px;
@@ -108,6 +111,7 @@ export const HeroImageContainer = styled.div`
     bottom: 0.7rem;
 
     box-shadow: 0px 4px 46px 0px rgba(29, 161, 242, 0.1);
+    border-radius: 37.548px 0px 38.783px 38.783px;
   }
   .image-7 {
     width: 77.565px;
@@ -116,5 +120,6 @@ export const HeroImageContainer = styled.div`
     z-index: 7;
 
     box-shadow: 0px 4px 46px 0px rgba(29, 161, 242, 0.1);
+    border-radius: 37.548px 0px 38.783px 38.783px;
   }
 `;
