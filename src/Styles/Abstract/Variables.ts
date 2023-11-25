@@ -29,6 +29,7 @@ export const Variables = css`
 
     /* Layout variables */
     --max-row-width: 121.6rem;
+    --max-row-width-sm: 95rem;
     --max-row-width-hero: 109.717rem;
     --center-extended-side-padding: 11remm;
   }

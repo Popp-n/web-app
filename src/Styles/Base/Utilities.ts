@@ -240,6 +240,9 @@ export const Utilities = css`
     justify-content: flex-end;
     align-self: flex-end;
   }
+  .flex-align-start {
+    align-self: flex-start;
+  }
   .flex-align-end {
     align-self: flex-end;
   }
@@ -327,6 +330,12 @@ export const Utilities = css`
   }
   .max-width-430 {
     max-width: 43rem;
+  }
+  .max-width-280 {
+    max-width: 20rem;
+  }
+  .max-width-260 {
+    max-width: 26rem;
   }
   .max-width-220px {
     max-width: 22rem;

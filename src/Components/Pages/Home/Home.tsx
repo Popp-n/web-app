@@ -6,6 +6,7 @@ import {
   AboutContainer,
   LeftImageContainer,
   AtPoppnContainer,
+  PromotingSectionContainer,
 } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
@@ -178,6 +179,38 @@ const Home: React.FC<Props> = () => {
             <TwitterBig />
           </div>
         </AtPoppnContainer>
+      </Section>
+
+      <Section className="">
+        <PromotingSectionContainer>
+          <div className="left-container">
+            <Typography as="h4" className="h-6 max-width-280">
+              Promoting your Brand
+            </Typography>
+            <Typography as="p" className="p-4">
+              Redefining Marketing
+            </Typography>
+          </div>
+          <div className="image-container">
+            <img src="/assets/images/promote-your-brand.png" alt="" />
+          </div>
+          <div className="right-container">
+            <Typography as="h4" className="h-6 max-width-260">
+              Elevating Creators Collaboration
+            </Typography>
+            <Typography as="p" className="p-4">
+              The New Standard
+            </Typography>
+          </div>
+          {/* <div></div>
+          <div></div> */}
+        </PromotingSectionContainer>
+        {/* 
+        <img
+          src="/assets/images/promote-your-brand.png"
+          alt=""
+          style={{ width: "", height: "600px" }}
+        /> */}
       </Section>
     </>
   );

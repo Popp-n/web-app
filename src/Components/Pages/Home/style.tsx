@@ -1,4 +1,5 @@
 import {
+  FlexColumn,
   FlexColumnAiCenter,
   FlexColumnJcCenterAiCenter,
   FlexRow,
@@ -7,7 +8,7 @@ import {
   FlexRowJcEndAiCenter,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
-import { Center } from "Styles/layouts/Center";
+import { Center, CenterSm } from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Section = styled.section`
@@ -241,5 +242,34 @@ export const AtPoppnContainer = styled(Container)`
     ${FlexRowJcEndAiCenter}
     padding-right: 2rem;
     gap: -3rem;
+  }
+`;
+
+export const PromotingSectionContainer = styled(CenterSm)`
+  position: relative;
+
+  /* background-color: grey; */
+  height: 60rem;
+
+  .image-container {
+    position: absolute;
+    left: 17.4rem;
+    top: 0;
+    height: 550px;
+
+    img {
+      ${ImageDefault}
+    }
+  }
+
+  .left-container {
+    position: absolute;
+    bottom: 8.4rem;
+  }
+
+  .right-container {
+    position: absolute;
+    right: 0;
+    top: 11rem;
   }
 `;
