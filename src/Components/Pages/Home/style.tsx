@@ -4,6 +4,7 @@ import {
   FlexRow,
   FlexRowJcBetweenAiEnd,
   FlexRowJcCenterAiCenter,
+  FlexRowJcEndAiCenter,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
@@ -234,5 +235,11 @@ export const AtPoppnContainer = styled(Container)`
         margin-bottom: none;
       }
     }
+  }
+
+  .socials {
+    ${FlexRowJcEndAiCenter}
+    gap: -3rem;
+    padding-right: 2rem;
   }
 `;

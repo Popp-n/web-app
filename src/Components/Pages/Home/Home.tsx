@@ -10,6 +10,12 @@ import {
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
 import Typography from "Components/Atoms/Typography";
+import {
+  FacebookBig,
+  TiktokBig,
+  TwitterBig,
+  YoutubeBig,
+} from "Components/Atoms/SvgIcons";
 
 // Type defination
 interface Props {}
@@ -163,6 +169,13 @@ const Home: React.FC<Props> = () => {
                 <img src="assets/images/phone-6.png" alt="" className="img-6" />
               </div>
             </div>
+          </div>
+
+          <div className="socials mt-20">
+            <FacebookBig style={{ marginRight: "-2.1rem" }} />
+            <TiktokBig style={{ marginRight: "-2.2rem" }} />
+            <YoutubeBig style={{ marginRight: "-2rem" }} />
+            <TwitterBig />
           </div>
         </AtPoppnContainer>
       </Section>
