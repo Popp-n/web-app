@@ -239,7 +239,7 @@ export const AtPoppnContainer = styled(Container)`
 
   .socials {
     ${FlexRowJcEndAiCenter}
-    gap: -3rem;
     padding-right: 2rem;
+    gap: -3rem;
   }
 `;
