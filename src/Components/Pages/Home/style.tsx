@@ -1,4 +1,5 @@
 import {
+  FlexColumnAiCenter,
   FlexColumnJcCenterAiCenter,
   FlexRow,
   FlexRowJcBetweenAiEnd,
@@ -157,7 +158,6 @@ export const AtPoppnContainer = styled(Container)`
   background-size: cover;
   background-position: top right;
   padding: 8rem;
-  padding-bottom: 20rem;
 
   .logo {
     width: 8.8846rem;
@@ -198,9 +198,40 @@ export const AtPoppnContainer = styled(Container)`
       border-radius: 17px;
       border: 4px solid #fff;
       background: #f0f0f0;
+      padding-top: 2.1rem;
+      padding-bottom: 3.7rem;
+
+      ${FlexColumnAiCenter}
 
       img {
-        ${ImageDefault}
+        margin-bottom: 1.5rem;
+      }
+
+      .img-1 {
+        width: 73.992px;
+        height: 73.992px;
+        margin-bottom: 2.5rem;
+      }
+      .img-2 {
+        width: 151.092px;
+        height: 34.617px;
+      }
+      .img-3 {
+        width: 151.092px;
+        height: 31.336px;
+      }
+      .img-4 {
+        width: 151.092px;
+        height: 31.336px;
+      }
+      .img-5 {
+        width: 151.092px;
+        height: 31.336px;
+      }
+      .img-6 {
+        width: 151.092px;
+        height: 31.336px;
+        margin-bottom: none;
       }
     }
   }

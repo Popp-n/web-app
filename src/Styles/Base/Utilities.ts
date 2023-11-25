@@ -58,6 +58,9 @@ export const Utilities = css`
   .mt-50 {
     margin-top: 5rem;
   }
+  .mt-45 {
+    margin-top: 4.5rem;
+  }
   .mt-42 {
     margin-top: 4.2rem;
   }

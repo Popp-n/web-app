@@ -115,7 +115,7 @@ const Home: React.FC<Props> = () => {
             engaging campaigns that captivate audiences like never before.
           </Typography>
 
-          <div className="down-section mt-80">
+          <div className="down-section mt-45">
             <div className="down-section__left">
               <div className="down-section__content">
                 <Typography as="p" className="h-5 flex-shrink-0">
@@ -154,7 +154,14 @@ const Home: React.FC<Props> = () => {
               <div className="down-section__right-image-container">
                 <img src="assets/images/at-poppn-img-1.png" alt="" />
               </div>
-              <div className="down-section__right-image-2-container"></div>
+              <div className="down-section__right-image-2-container">
+                <img src="assets/images/phone-1.png" alt="" className="img-1" />
+                <img src="assets/images/phone-2.png" alt="" className="img-2" />
+                <img src="assets/images/phone-3.png" alt="" className="img-3" />
+                <img src="assets/images/phone-4.png" alt="" className="img-4" />
+                <img src="assets/images/phone-5.png" alt="" className="img-5" />
+                <img src="assets/images/phone-6.png" alt="" className="img-6" />
+              </div>
             </div>
           </div>
         </AtPoppnContainer>

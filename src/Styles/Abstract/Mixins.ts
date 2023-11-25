@@ -124,6 +124,16 @@ export const FlexColumnJcCenterAiCenter = css`
   justify-content: center;
   align-items: center;
 `;
+export const FlexColumnJcCenter = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+export const FlexColumnAiCenter = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 // ===>End of Flex columns
 
 // End of Flex Displays
