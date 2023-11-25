@@ -1,5 +1,4 @@
 import {
-  FlexColumn,
   FlexColumnAiCenter,
   FlexColumnJcCenterAiCenter,
   FlexRow,
