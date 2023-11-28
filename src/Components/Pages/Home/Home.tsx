@@ -20,9 +20,13 @@ import Typography from "Components/Atoms/Typography";
 import {
   ArrowRightIcon,
   FacebookBig,
+  InstagramFooterIcon,
   TiktokBig,
+  TiktokFooterIcon,
   TwitterBig,
+  TwitterFooterIcon,
   YoutubeBig,
+  YoutubeFooterIcon,
 } from "Components/Atoms/SvgIcons";
 import { Button } from "Components/Atoms/Button";
 
@@ -302,7 +306,20 @@ const Home: React.FC<Props> = () => {
               Learn More <ArrowRightIcon />
             </Button>
           </FooterTop>
-          <FooterBottom></FooterBottom>
+          <FooterBottom className="mt-65">
+            <div></div>
+            <div className="right">
+              <div className="footer-icons">
+                <TiktokFooterIcon />
+                <InstagramFooterIcon />
+                <YoutubeFooterIcon />
+                <TwitterFooterIcon />
+              </div>
+              <Typography as="p" className="p-7 mt-10">
+                Copyright © 2023 popp’n All rights reserved.
+              </Typography>
+            </div>
+          </FooterBottom>
         </FooterContainer>
       </Footer>
     </>

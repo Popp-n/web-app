@@ -5,3 +5,8 @@ export { ReactComponent as YoutubeBig } from "./svgs/youtube-big.svg";
 export { ReactComponent as TiktokBig } from "./svgs/tiktok-big.svg";
 export { ReactComponent as FacebookBig } from "./svgs/facebook-big.svg";
 export { ReactComponent as ArrowRightIcon } from "./svgs/arrow-right-icon.svg";
+
+export { ReactComponent as TiktokFooterIcon } from "./svgs/tiktok-footer-icon.svg";
+export { ReactComponent as InstagramFooterIcon } from "./svgs/instagram-footer-icon.svg";
+export { ReactComponent as YoutubeFooterIcon } from "./svgs/youtube-footer-icon.svg";
+export { ReactComponent as TwitterFooterIcon } from "./svgs/twitter-footer-icon.svg";

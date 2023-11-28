@@ -344,4 +344,16 @@ export const FooterTop = styled.div`
     vertical-align: middle;
   }
 `;
-export const FooterBottom = styled.div``;
+export const FooterBottom = styled.div`
+  ${FlexRowJcBetweenAiCenter}
+  gap: 1rem;
+
+  .left {
+  }
+  .right {
+  }
+  .footer-icons {
+    ${FlexRowJcEndAiCenter}
+    gap: 2.4rem;
+  }
+`;
