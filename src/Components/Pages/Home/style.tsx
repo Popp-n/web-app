@@ -30,6 +30,10 @@ export const Section = styled.section`
   &.section-brand-audience {
     padding-block: 7rem;
   }
+
+  &.section-rewarding {
+    padding-block: 5rem;
+  }
 `;
 
 export const Container = styled(Center)``;
@@ -257,7 +261,7 @@ export const PromotingSectionContainer = styled(CenterSm)`
     position: absolute;
     left: 17.4rem;
     top: 0;
-    height: 550px;
+    height: 55rem;
 
     img {
       ${ImageDefault}
@@ -286,9 +290,7 @@ export const BrandAudContainer = styled(Container)`
 
   .right-image-container {
     position: relative;
-    /* background-color: red; */
-    /* width: 485px; */
-    height: 589px;
+    height: 58.9rem;
 
     .img {
       ${ImageDefault}
@@ -296,9 +298,23 @@ export const BrandAudContainer = styled(Container)`
 
     .shadow {
       position: absolute;
-      width: 354px;
-      height: 367px;
+      width: 35.4rem;
+      height: 36.7rem;
       right: 0;
+    }
+  }
+`;
+
+export const RewardingSectionContainer = styled(Container)`
+  ${FlexRowJcBetweenAiCenter}
+  gap: 7rem;
+
+  .image-container {
+    width: 55.9rem;
+    height: 53.42rem;
+
+    img {
+      ${ImageDefault}
     }
   }
 `;

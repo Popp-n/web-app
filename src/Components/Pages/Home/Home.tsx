@@ -8,6 +8,7 @@ import {
   AtPoppnContainer,
   PromotingSectionContainer,
   BrandAudContainer,
+  RewardingSectionContainer,
 } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
@@ -67,7 +68,6 @@ const Home: React.FC<Props> = () => {
           </Typography>
         </Container>
       </Section>
-
       <Section className="section-about-poppn">
         <AboutContainer>
           <div className="left">
@@ -105,7 +105,6 @@ const Home: React.FC<Props> = () => {
           </div>
         </AboutContainer>
       </Section>
-
       <Section className="section-at-poppn">
         <AtPoppnContainer>
           <Typography as="h3" className="h-4">
@@ -183,7 +182,6 @@ const Home: React.FC<Props> = () => {
           </div>
         </AtPoppnContainer>
       </Section>
-
       <Section className="">
         <PromotingSectionContainer>
           <div className="left-container">
@@ -209,12 +207,11 @@ const Home: React.FC<Props> = () => {
           <div></div> */}
         </PromotingSectionContainer>
       </Section>
-
       <Section className="section-brand-audience">
         <BrandAudContainer>
           <div>
             <Typography as="h5" className="h-7" text="Brand Audience" />
-            <Typography as="h5" className="p-5 max-width-520 mt-25 mb-50">
+            <Typography as="h5" className="p-5 max-width-480 mt-20 mb-50">
               From viral challenges to interactive contests, Popp'n's curated
               challenges push boundaries and drive engagement, giving your brand
               a competitive edge.
@@ -230,9 +227,37 @@ const Home: React.FC<Props> = () => {
               alt=""
               className="shadow"
             /> */}
-            <img src="/assets/images/build-audience.png" alt="" className="img" />
+            <img
+              src="/assets/images/build-audience.png"
+              alt=""
+              className="img"
+            />
           </div>
         </BrandAudContainer>
+      </Section>
+
+      <Section className="section-rewarding">
+        <RewardingSectionContainer>
+          <div className="image-container">
+            <img src="/assets/images/rewarding-collaboration.png" alt="" />
+          </div>
+          <div>
+            <Typography
+              as="h5"
+              className="h-7"
+              text="Rewarding Collaboration"
+            />
+            <Typography as="h5" className="p-5 max-width-480 mt-20 mb-50">
+              Creators can earn money through branded content, contests, and
+              challenges, fostering a mutually beneficial partnership that
+              values talent and creativity.
+            </Typography>
+
+            <Button className="btn btn-3">
+              Learn More <ArrowRightIcon />
+            </Button>
+          </div>
+        </RewardingSectionContainer>
       </Section>
     </>
   );

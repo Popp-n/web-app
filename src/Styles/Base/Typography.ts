@@ -51,7 +51,7 @@ export const Typography = css`
       color: var(--color-primary);
     }
     &-7 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       font-weight: 600;
       line-height: 123.705%;
       color: var(--color-primary);
@@ -86,7 +86,7 @@ export const Typography = css`
       color: var(--color-primary);
     }
     &-5 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 400;
       line-height: 150%;
       color: var(--color-7);
