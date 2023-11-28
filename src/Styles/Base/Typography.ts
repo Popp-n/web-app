@@ -1,4 +1,3 @@
-import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 import { css } from "styled-components";
 
 export const Typography = css`
