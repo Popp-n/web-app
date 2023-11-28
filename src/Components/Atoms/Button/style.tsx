@@ -44,6 +44,19 @@ export const ButtonStyle = styled(Button)`
       gap: 2.1rem;
     }
 
+    &-3 {
+      border-radius: 40.5rem;
+      border: .2rem solid var(--color-black);
+      background-color: var(--color-8);
+      padding: 1.5rem 2.5rem;
+      ${FlexRowAiCenter}
+      gap: 2rem;
+
+      color: var(--color-white);
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+
     /* Colors */
 
     /* Size */

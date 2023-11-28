@@ -1,3 +1,4 @@
+import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 import { css } from "styled-components";
 
 export const Typography = css`
@@ -50,6 +51,12 @@ export const Typography = css`
       line-height: 106.868%;
       color: var(--color-primary);
     }
+    &-7 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      line-height: 123.705%;
+      color: var(--color-primary);
+    }
   }
 
   /* Body || Paragraphs */
@@ -78,6 +85,12 @@ export const Typography = css`
       font-weight: 400;
       line-height: 3.8585rem;
       color: var(--color-primary);
+    }
+    &-5 {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 150%;
+      color: var(--color-7);
     }
   }
 

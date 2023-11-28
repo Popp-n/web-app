@@ -2,6 +2,8 @@ import {
   FlexColumnAiCenter,
   FlexColumnJcCenterAiCenter,
   FlexRow,
+  FlexRowAiCenter,
+  FlexRowJcBetweenAiCenter,
   FlexRowJcBetweenAiEnd,
   FlexRowJcCenterAiCenter,
   FlexRowJcEndAiCenter,
@@ -24,6 +26,10 @@ export const Section = styled.section`
 
   &.section-at-poppn {
     padding-block: 8rem;
+  }
+
+  &.section-brand-audience {
+    padding-block: 7rem;
   }
 `;
 
@@ -246,9 +252,7 @@ export const AtPoppnContainer = styled(Container)`
 
 export const PromotingSectionContainer = styled(CenterSm)`
   position: relative;
-
-  /* background-color: grey; */
-  height: 60rem;
+  height: 58rem;
 
   .image-container {
     position: absolute;
@@ -270,5 +274,32 @@ export const PromotingSectionContainer = styled(CenterSm)`
     position: absolute;
     right: 0;
     top: 11rem;
+  }
+`;
+
+export const BrandAudContainer = styled(Container)`
+  border-radius: 2.56rem;
+  background: var(--color-6);
+  padding-inline: 8rem;
+  padding-right: 0;
+  ${FlexRowJcBetweenAiCenter}
+  gap: 5rem;
+
+  .right-image-container {
+    position: relative;
+    /* background-color: red; */
+    /* width: 485px; */
+    height: 589px;
+
+    .img {
+      ${ImageDefault}
+    }
+
+    .shadow {
+      position: absolute;
+      width: 354px;
+      height: 367px;
+      right: 0;
+    }
   }
 `;

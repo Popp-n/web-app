@@ -7,16 +7,19 @@ import {
   LeftImageContainer,
   AtPoppnContainer,
   PromotingSectionContainer,
+  BrandAudContainer,
 } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
 import Typography from "Components/Atoms/Typography";
 import {
+  ArrowRightIcon,
   FacebookBig,
   TiktokBig,
   TwitterBig,
   YoutubeBig,
 } from "Components/Atoms/SvgIcons";
+import { Button } from "Components/Atoms/Button";
 
 // Type defination
 interface Props {}
@@ -205,12 +208,31 @@ const Home: React.FC<Props> = () => {
           {/* <div></div>
           <div></div> */}
         </PromotingSectionContainer>
-        {/* 
-        <img
-          src="/assets/images/promote-your-brand.png"
-          alt=""
-          style={{ width: "", height: "600px" }}
-        /> */}
+      </Section>
+
+      <Section className="section-brand-audience">
+        <BrandAudContainer>
+          <div>
+            <Typography as="h5" className="h-7" text="Brand Audience" />
+            <Typography as="h5" className="p-5 max-width-520 mt-25 mb-50">
+              From viral challenges to interactive contests, Popp'n's curated
+              challenges push boundaries and drive engagement, giving your brand
+              a competitive edge.
+            </Typography>
+
+            <Button className="btn btn-3">
+              Learn More <ArrowRightIcon />
+            </Button>
+          </div>
+          <div className="right-image-container">
+            {/* <img
+              src="/assets/images/brand-audience-shadow.png"
+              alt=""
+              className="shadow"
+            /> */}
+            <img src="/assets/images/build-audience.png" alt="" className="img" />
+          </div>
+        </BrandAudContainer>
       </Section>
     </>
   );
