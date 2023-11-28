@@ -131,6 +131,15 @@ export const Typography = css`
         color: var(--color-1);
       }
     }
+
+    &-2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--color-primary);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
 
   /* Buttom texts */

@@ -21,6 +21,7 @@ import {
   ArrowRightIcon,
   FacebookBig,
   InstagramFooterIcon,
+  Logo,
   TiktokBig,
   TiktokFooterIcon,
   TwitterBig,
@@ -29,6 +30,7 @@ import {
   YoutubeFooterIcon,
 } from "Components/Atoms/SvgIcons";
 import { Button } from "Components/Atoms/Button";
+import { Link } from "react-router-dom";
 
 // Type defination
 interface Props {}
@@ -307,7 +309,17 @@ const Home: React.FC<Props> = () => {
             </Button>
           </FooterTop>
           <FooterBottom className="mt-65">
-            <div></div>
+            <div>
+              <Logo />
+              <div className="footer-links mt-5">
+                <Link to="/" className="l-2">
+                  PRIVACY POLICY
+                </Link>
+                <Link to="/" className="l-2">
+                  TERMS OF USE
+                </Link>
+              </div>
+            </div>
             <div className="right">
               <div className="footer-icons">
                 <TiktokFooterIcon />

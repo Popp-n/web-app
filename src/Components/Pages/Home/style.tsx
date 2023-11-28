@@ -2,6 +2,7 @@ import {
   FlexColumnAiCenter,
   FlexColumnJcCenterAiCenter,
   FlexRow,
+  FlexRowAiCenter,
   FlexRowJcBetweenAiCenter,
   FlexRowJcBetweenAiEnd,
   FlexRowJcCenterAiCenter,
@@ -351,6 +352,10 @@ export const FooterBottom = styled.div`
   .left {
   }
   .right {
+  }
+  .footer-links {
+    ${FlexRowAiCenter}
+    gap: 3.2rem
   }
   .footer-icons {
     ${FlexRowJcEndAiCenter}
