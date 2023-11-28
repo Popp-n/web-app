@@ -46,7 +46,7 @@ export const ButtonStyle = styled(Button)`
 
     &-3 {
       border-radius: 40.5rem;
-      border: .2rem solid var(--color-black);
+      border: 0.2rem solid var(--color-black);
       background-color: var(--color-8);
       padding: 1.5rem 2.5rem;
       ${FlexRowAiCenter}
@@ -55,6 +55,11 @@ export const ButtonStyle = styled(Button)`
       color: var(--color-white);
       font-size: 1.7rem;
       font-weight: 400;
+
+      &--color-1 {
+        border: none;
+        background-color: var(--color-1);
+      }
     }
 
     /* Colors */

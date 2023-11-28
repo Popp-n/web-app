@@ -318,3 +318,30 @@ export const RewardingSectionContainer = styled(Container)`
     }
   }
 `;
+
+export const Footer = styled.footer`
+  background-color: var(--color-9);
+  padding-block: 3.5rem;
+`;
+
+export const FooterContainer = styled(Container)``;
+
+export const FooterTop = styled.div`
+  ${FlexColumnJcCenterAiCenter}
+
+  .image-container {
+    width: 402.457px;
+    height: 270px;
+
+    img {
+      ${ImageDefault}
+    }
+  }
+
+  .image-text {
+    width: 9.8846rem;
+    height: 3.82rem;
+    vertical-align: middle;
+  }
+`;
+export const FooterBottom = styled.div``;
