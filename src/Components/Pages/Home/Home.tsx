@@ -286,7 +286,7 @@ const Home: React.FC<Props> = () => {
                   className="image-text"
                 /> */}
                 <img
-                  src="/assets/images/poppn-small-logo.png"
+                  src="/assets/images/poppn-logo-animation.gif"
                   alt=""
                   className="image-text"
                 />{" "}

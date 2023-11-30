@@ -340,9 +340,10 @@ export const FooterTop = styled.div`
   }
 
   .image-text {
-    width: 9.8846rem;
-    height: 3.82rem;
+    width: 12.1rem;
+    height: 4.654rem;
     vertical-align: middle;
+    border-radius: 1rem;
   }
 `;
 export const FooterBottom = styled.div`
