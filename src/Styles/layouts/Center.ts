@@ -17,6 +17,10 @@ export const CenterSm = styled(Center)`
   max-width: var(--max-row-width-sm);
 `;
 
+export const CenterTesti = styled(Center)`
+  max-width: var(--max-row-width-testi);
+`;
+
 export const CenterHero = styled(Center)`
   max-width: var(--max-row-width-hero);
 `;

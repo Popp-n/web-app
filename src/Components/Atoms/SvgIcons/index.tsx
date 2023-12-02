@@ -10,3 +10,5 @@ export { ReactComponent as TiktokFooterIcon } from "./svgs/tiktok-footer-icon.sv
 export { ReactComponent as InstagramFooterIcon } from "./svgs/instagram-footer-icon.svg";
 export { ReactComponent as YoutubeFooterIcon } from "./svgs/youtube-footer-icon.svg";
 export { ReactComponent as TwitterFooterIcon } from "./svgs/twitter-footer-icon.svg";
+export { ReactComponent as TestiCaretDownIcon } from "./svgs/testi-caret-down.svg";
+export { ReactComponent as TestiCaretUpIcon } from "./svgs/testi-caret-up.svg";

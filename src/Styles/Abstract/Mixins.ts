@@ -129,6 +129,11 @@ export const FlexColumnJcCenter = css`
   flex-direction: column;
   justify-content: center;
 `;
+export const FlexColumnJcBetween = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 export const FlexColumnAiCenter = css`
   display: flex;
   flex-direction: column;

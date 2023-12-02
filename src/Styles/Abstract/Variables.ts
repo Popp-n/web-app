@@ -22,11 +22,22 @@ export const Variables = css`
     --color-8: #0f0f14;
     --color-9: rgba(255, 0, 142, 0.1);
     --color-10: #1e1e1e;
+    --color-11: #14183e;
+    --color-12: #5e6282;
+    --color-13: #f6f6f6;
+    --color-14: #e5e5e5;
+    --color-15: #39425d;
 
     /* Shadows */
     --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     --shadow-2: 0px 1.5rem 3rem 0px rgba(223, 105, 81, 0.3);
     --shadow-3: 0px 0.5rem 2rem 0px rgba(223, 105, 81, 0.3);
+    --shadow-4: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0),
+      0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+      0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+      0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+      0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+      0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 
     /* Gradients */
     --gradient-1: linear-gradient(0deg, #f5effb 0%, #f5effb 100%), #fff;
@@ -36,6 +47,7 @@ export const Variables = css`
     --max-row-width: 121.6rem;
     --max-row-width-sm: 95rem;
     --max-row-width-hero: 109.717rem;
+    --max-row-width-testi: 102.717rem;
     --center-extended-side-padding: 11remm;
   }
 `;
