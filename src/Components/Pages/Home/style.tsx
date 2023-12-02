@@ -326,23 +326,24 @@ export const RewardingSectionContainer = styled(Container)`
   }
 `;
 
+// Testimonial section
 export const TestimonialContainer = styled(CenterTesti)`
   ${FlexRowAiCenter}
   gap: 10rem;
 
   .left {
     ${FlexColumnJcBetween}
-    gap: 6.2rem;
+    gap: 5.2rem;
   }
 
   .left__togglers {
     ${FlexRowAiCenter}
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .left__toggler {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: var(--color-14);
 
@@ -378,7 +379,6 @@ export const TestiCard = styled.div`
   background-color: var(--color-white);
   padding: 2.8rem;
   width: max-content;
-  /* height: 24rem; */
   box-shadow: var(--shadow-4);
 
   &.active {
@@ -387,7 +387,6 @@ export const TestiCard = styled.div`
   }
   &.inactive {
     transform: translateX(4rem);
-
     border: 2px solid var(--color-13);
     background-color: transparent;
     box-shadow: var(--shadow-4);
@@ -426,6 +425,7 @@ export const TestimonialToggle = styled.div`
   background-color: var(--color-white);
 `;
 
+// Footer
 export const Footer = styled.footer`
   background-color: var(--color-9);
   padding-block: 3.5rem;
