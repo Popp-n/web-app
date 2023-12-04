@@ -48,7 +48,9 @@ const Home: React.FC<Props> = () => {
   return (
     <>
       <TopNav />
+
       <Hero />
+
       <Section className="section-poppn">
         <Container>
           <Letters>
@@ -85,6 +87,7 @@ const Home: React.FC<Props> = () => {
           </Typography>
         </Container>
       </Section>
+
       <Section className="section-about-poppn">
         <AboutContainer>
           <div className="left">
@@ -122,6 +125,7 @@ const Home: React.FC<Props> = () => {
           </div>
         </AboutContainer>
       </Section>
+
       <Section className="section-at-poppn">
         <AtPoppnContainer>
           <Typography as="h3" className="h-4">
@@ -199,6 +203,7 @@ const Home: React.FC<Props> = () => {
           </div>
         </AtPoppnContainer>
       </Section>
+
       <Section className="">
         <PromotingSectionContainer>
           <div className="left-container">
@@ -224,6 +229,7 @@ const Home: React.FC<Props> = () => {
           <div></div> */}
         </PromotingSectionContainer>
       </Section>
+      
       <Section className="section-brand-audience">
         <BrandAudContainer>
           <div>
