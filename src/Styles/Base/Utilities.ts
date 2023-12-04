@@ -134,6 +134,9 @@ export const Utilities = css`
       margin-bottom: 2rem;
     }
   }
+  .mb-45 {
+    margin-bottom: 4.5rem;
+  }
   .mb-40 {
     margin-bottom: 4rem;
   }
