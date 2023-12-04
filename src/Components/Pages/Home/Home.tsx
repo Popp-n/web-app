@@ -8,16 +8,6 @@ import {
   AtPoppnContainer,
   PromotingSectionContainer,
   BrandAudContainer,
-  RewardingSectionContainer,
-  Footer,
-  FooterContainer,
-  FooterTop,
-  FooterBottom,
-  TestimonialContainer,
-  TestimonialToggle,
-  TestiCard,
-  Person,
-  TestiCards,
 } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
@@ -25,19 +15,14 @@ import Typography from "Components/Atoms/Typography";
 import {
   ArrowRightIcon,
   FacebookBig,
-  InstagramFooterIcon,
-  Logo,
-  TestiCaretDownIcon,
-  TestiCaretUpIcon,
   TiktokBig,
-  TiktokFooterIcon,
   TwitterBig,
-  TwitterFooterIcon,
   YoutubeBig,
-  YoutubeFooterIcon,
 } from "Components/Atoms/SvgIcons";
 import { Button } from "Components/Atoms/Button";
-import { Link } from "react-router-dom";
+import { Footer } from "Components/Organisms/Footer";
+import { TestiSection } from "Components/Organisms/TestiSection";
+import { CollaboSection } from "Components/Organisms/CollaboSection";
 
 // Type defination
 interface Props {}
@@ -229,7 +214,7 @@ const Home: React.FC<Props> = () => {
           <div></div> */}
         </PromotingSectionContainer>
       </Section>
-      
+
       <Section className="section-brand-audience">
         <BrandAudContainer>
           <div>
@@ -259,165 +244,9 @@ const Home: React.FC<Props> = () => {
         </BrandAudContainer>
       </Section>
 
-      <Section className="section-rewarding">
-        <RewardingSectionContainer>
-          <div className="image-container">
-            <img src="/assets/images/rewarding-collaboration.png" alt="" />
-          </div>
-          <div>
-            <Typography
-              as="h5"
-              className="h-7"
-              text="Rewarding Collaboration"
-            />
-            <Typography as="h5" className="p-5 max-width-480 mt-20 mb-50">
-              Creators can earn money through branded content, contests, and
-              challenges, fostering a mutually beneficial partnership that
-              values talent and creativity.
-            </Typography>
-
-            <Button className="btn btn-3">
-              Learn More <ArrowRightIcon />
-            </Button>
-          </div>
-        </RewardingSectionContainer>
-      </Section>
-
-      <Section className="section-testi">
-        <TestimonialContainer>
-          <div className="flex-shrink-0 left">
-            <Typography as="h3" className="h-9 max-width-344">
-              <>
-                What <span className="h-9--color-1">Creators</span> &{" "}
-                <span className="h-9--color-primary">Brand</span> say about Us.
-              </>
-            </Typography>
-
-            <div className="left__togglers">
-              <div className="left__toggler active"></div>
-              <div className="left__toggler"></div>
-              <div className="left__toggler"></div>
-            </div>
-          </div>
-          <div className="test-container">
-            <img
-              src="/assets/images/testi-right-bg.png"
-              alt=""
-              className="shadow-bg "
-            />
-
-            <TestiCards>
-              <TestiCard className="active">
-                <Person>
-                  <img src="/assets/images/testi.png" alt="" className="" />
-                </Person>
-                <Typography as="p" className="p-8 max-width-410">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore...
-                </Typography>
-                <div>
-                  <Typography as="h6" className="h-10">
-                    Mike Adegoke
-                  </Typography>
-                  <Typography as="p" className="p-9 mt-5">
-                    CEo, Beatz Company
-                  </Typography>
-                </div>
-              </TestiCard>
-              <TestiCard className="inactive">
-                <Person>
-                  <img src="/assets/images/testi.png" alt="" className="" />
-                </Person>
-                <Typography as="p" className="p-8 max-width-410">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore...
-                </Typography>
-                <div>
-                  <Typography as="h6" className="h-10">
-                    Chris J. Basit
-                  </Typography>
-                  <Typography as="p" className="p-9 mt-5">
-                    CEO of ABC Company
-                  </Typography>
-                </div>
-              </TestiCard>
-              <TestimonialToggle>
-                <Button>
-                  <TestiCaretUpIcon height={9} width={11} />
-                </Button>
-                <Button>
-                  <TestiCaretDownIcon height={9} width={11} />
-                </Button>
-              </TestimonialToggle>
-            </TestiCards>
-          </div>
-        </TestimonialContainer>
-      </Section>
-
-      <Footer>
-        <FooterContainer>
-          <FooterTop>
-            <div className="image-container">
-              <img src="/assets/images/footer-image.png" alt="" />
-            </div>
-
-            <Typography as="h5" className="mt-60 h-8">
-              <>
-                Join the{" "}
-                {/* <img
-                  src="/assets/images/poppn-gif.gif"
-                  alt=""
-                  className="image-text"
-                /> */}
-                <img
-                  src="/assets/images/poppn-logo-animation.gif"
-                  alt=""
-                  className="image-text"
-                />{" "}
-                Movement
-              </>
-            </Typography>
-
-            <Typography
-              as="p"
-              className="text-center p-6 max-width-663 mt-20 mb-40"
-            >
-              Ready to be part of the future of creator marketing? Join Popp'n
-              today and experience the power of genuine collaboration. Amplify
-              your brand, connect with creators, and shape narratives that truly
-              pop! 🎉
-            </Typography>
-
-            <Button className="btn btn-3 btn-3--color-1">
-              Learn More <ArrowRightIcon />
-            </Button>
-          </FooterTop>
-          <FooterBottom className="mt-65">
-            <div>
-              <Logo />
-              <div className="footer-links mt-5">
-                <Link to="/" className="l-2">
-                  PRIVACY POLICY
-                </Link>
-                <Link to="/" className="l-2">
-                  TERMS OF USE
-                </Link>
-              </div>
-            </div>
-            <div className="right">
-              <div className="footer-icons">
-                <TiktokFooterIcon />
-                <InstagramFooterIcon />
-                <YoutubeFooterIcon />
-                <TwitterFooterIcon />
-              </div>
-              <Typography as="p" className="p-7 mt-10">
-                Copyright © 2023 popp’n All rights reserved.
-              </Typography>
-            </div>
-          </FooterBottom>
-        </FooterContainer>
-      </Footer>
+      <CollaboSection />
+      <TestiSection />
+      <Footer />
     </>
   );
 };

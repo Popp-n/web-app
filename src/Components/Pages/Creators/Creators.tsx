@@ -1,11 +1,14 @@
 import React from "react";
 
-import { Container, Header, HeroContainer } from "./style";
+import { Header, HeroContainer } from "./style";
 
 import { TopNav } from "Components/Molecules/TopNav";
 import Typography from "Components/Atoms/Typography";
 import { Button } from "Components/Atoms/Button";
 import { ArrowRightIcon } from "Components/Atoms/SvgIcons";
+import { Footer } from "Components/Organisms/Footer";
+import { TestiSection } from "Components/Organisms/TestiSection";
+import { CollaboSection } from "Components/Organisms/CollaboSection";
 
 // Type defination
 interface Props {}
@@ -31,6 +34,10 @@ const Creators: React.FC<Props> = () => {
           </Button>
         </HeroContainer>
       </Header>
+
+      <CollaboSection />
+      <TestiSection />
+      <Footer />
     </>
   );
 };

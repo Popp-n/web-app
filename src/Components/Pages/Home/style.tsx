@@ -1,16 +1,14 @@
 import {
   FlexColumnAiCenter,
-  FlexColumnJcBetween,
   FlexColumnJcCenterAiCenter,
   FlexRow,
-  FlexRowAiCenter,
   FlexRowJcBetweenAiCenter,
   FlexRowJcBetweenAiEnd,
   FlexRowJcCenterAiCenter,
   FlexRowJcEndAiCenter,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
-import { Center, CenterSm, CenterTesti } from "Styles/layouts/Center";
+import { Center, CenterSm} from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Section = styled.section`
@@ -33,14 +31,6 @@ export const Section = styled.section`
     padding-block: 7rem;
   }
 
-  &.section-rewarding {
-    padding-block: 5rem;
-  }
-
-  &.section-testi {
-    padding-top: 20rem;
-    padding-bottom: 16rem;
-  }
 `;
 
 export const Container = styled(Center)``;
@@ -312,160 +302,7 @@ export const BrandAudContainer = styled(Container)`
   }
 `;
 
-export const RewardingSectionContainer = styled(Container)`
-  ${FlexRowJcBetweenAiCenter}
-  gap: 7rem;
 
-  .image-container {
-    width: 55.9rem;
-    height: 53.42rem;
 
-    img {
-      ${ImageDefault}
-    }
-  }
-`;
 
-// Testimonial section
-export const TestimonialContainer = styled(CenterTesti)`
-  ${FlexRowAiCenter}
-  gap: 10rem;
 
-  .left {
-    ${FlexColumnJcBetween}
-    gap: 5.2rem;
-  }
-
-  .left__togglers {
-    ${FlexRowAiCenter}
-    gap: 1.5rem;
-  }
-
-  .left__toggler {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: var(--color-14);
-
-    &.active {
-      background-color: var(--color-15);
-    }
-  }
-
-  .test-container {
-    position: relative;
-    flex-grow: 1;
-
-    .shadow-bg {
-      position: absolute;
-      width: 643px;
-      height: 700px;
-      top: -300px;
-      right: -135px;
-    }
-  }
-`;
-
-export const TestiCards = styled.div`
-  position: relative;
-  height: 25rem;
-`;
-
-export const TestiCard = styled.div`
-  position: absolute;
-  ${FlexColumnJcBetween}
-  gap: 4.5rem;
-  border-radius: 1rem;
-  background-color: var(--color-white);
-  padding: 2.8rem;
-  width: max-content;
-  box-shadow: var(--shadow-4);
-
-  &.active {
-    transform: translateY(-7.7rem);
-    z-index: 1;
-  }
-  &.inactive {
-    transform: translateX(4rem);
-    border: 2px solid var(--color-13);
-    background-color: transparent;
-    box-shadow: var(--shadow-4);
-  }
-`;
-
-export const Person = styled.div`
-  --width: 6.8rem;
-  --height: 6.8rem;
-
-  position: absolute;
-  top: calc(-1 * var(--width) / 2);
-  left: calc(-1 * var(--height) / 2);
-  width: var(--width);
-  height: var(--height);
-  background-color: #00800048;
-  z-index: 1;
-  border-radius: 50%;
-  overflow: hidden;
-
-  img {
-    ${ImageDefault}
-    border-radius: 50%;
-  }
-`;
-
-export const TestimonialToggle = styled.div`
-  position: absolute;
-  right: 0;
-  top: 5rem;
-  ${FlexColumnJcBetween}
-  gap: 1rem;
-  height: 9.2rem;
-  padding: 1rem 0.8rem;
-  border-radius: 1.9rem;
-  background-color: var(--color-white);
-`;
-
-// Footer
-export const Footer = styled.footer`
-  background-color: var(--color-9);
-  padding-block: 3.5rem;
-`;
-
-export const FooterContainer = styled(Container)``;
-
-export const FooterTop = styled.div`
-  ${FlexColumnJcCenterAiCenter}
-
-  .image-container {
-    width: 402.457px;
-    height: 270px;
-
-    img {
-      ${ImageDefault}
-    }
-  }
-
-  .image-text {
-    width: 12.1rem;
-    height: 4.654rem;
-    vertical-align: middle;
-    border-radius: 1rem;
-  }
-`;
-export const FooterBottom = styled.div`
-  ${FlexRowJcBetweenAiCenter}
-  gap: 1rem;
-
-  .left {
-  }
-  .right {
-  }
-  .footer-links {
-    ${FlexRowAiCenter}
-    gap: 3.2rem
-  }
-  .footer-icons {
-    ${FlexRowJcEndAiCenter}
-    gap: 2.4rem;
-  }
-`;
