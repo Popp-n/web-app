@@ -1,5 +1,5 @@
 import React from "react";
-import { RewardingSectionContainer, Wrapper } from "./style";
+import { Container, Wrapper } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { Button } from "Components/Atoms/Button";
 import { ArrowRightIcon } from "Components/Atoms/SvgIcons";
@@ -12,7 +12,7 @@ const CollaboSection: React.FC<Props> = () => {
   // Data to display
   return (
     <Wrapper className="section-rewarding">
-      <RewardingSectionContainer>
+      <Container>
         <div className="image-container">
           <img src="/assets/images/rewarding-collaboration.png" alt="" />
         </div>
@@ -28,7 +28,7 @@ const CollaboSection: React.FC<Props> = () => {
             Learn More <ArrowRightIcon />
           </Button>
         </div>
-      </RewardingSectionContainer>
+      </Container>
     </Wrapper>
   );
 };

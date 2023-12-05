@@ -1,8 +1,15 @@
 import React from "react";
-import { FooterBottom, FooterContainer, FooterTop, Wrapper } from "./style";
+import { FooterBottom, Container, FooterTop, Wrapper } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { Button } from "Components/Atoms/Button";
-import { ArrowRightIcon, InstagramFooterIcon, Logo, TiktokFooterIcon, TwitterFooterIcon, YoutubeFooterIcon } from "Components/Atoms/SvgIcons";
+import {
+  ArrowRightIcon,
+  InstagramFooterIcon,
+  Logo,
+  TiktokFooterIcon,
+  TwitterFooterIcon,
+  YoutubeFooterIcon,
+} from "Components/Atoms/SvgIcons";
 import { Link } from "react-router-dom";
 
 // Type defination
@@ -13,7 +20,7 @@ const Footer: React.FC<Props> = () => {
   // Data to display
   return (
     <Wrapper>
-      <FooterContainer>
+      <Container>
         <FooterTop>
           <div className="image-container">
             <img src="/assets/images/footer-image.png" alt="" />
@@ -74,7 +81,7 @@ const Footer: React.FC<Props> = () => {
             </Typography>
           </div>
         </FooterBottom>
-      </FooterContainer>
+      </Container>
     </Wrapper>
   );
 };

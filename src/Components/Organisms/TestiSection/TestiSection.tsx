@@ -1,19 +1,28 @@
-import React from 'react';
-import { Person, TestiCard, TestiCards, TestimonialContainer, TestimonialToggle, Wrapper } from './style'
-import Typography from 'Components/Atoms/Typography';
-import { Button } from 'Components/Atoms/Button';
-import { TestiCaretDownIcon, TestiCaretUpIcon } from 'Components/Atoms/SvgIcons';
+import React from "react";
+import {
+  Person,
+  TestiCard,
+  TestiCards,
+  Conatiner,
+  TestimonialToggle,
+  Wrapper,
+} from "./style";
+import Typography from "Components/Atoms/Typography";
+import { Button } from "Components/Atoms/Button";
+import {
+  TestiCaretDownIcon,
+  TestiCaretUpIcon,
+} from "Components/Atoms/SvgIcons";
 
 // Type defination
 interface Props {}
 
 // Component
-const TestiSection:React.FC<Props> = () => {
-
-// Data to display
+const TestiSection: React.FC<Props> = () => {
+  // Data to display
   return (
     <Wrapper>
-      <TestimonialContainer>
+      <Conatiner>
         <div className="flex-shrink-0 left">
           <Typography as="h3" className="h-9 max-width-344">
             <>
@@ -80,9 +89,9 @@ const TestiSection:React.FC<Props> = () => {
             </TestimonialToggle>
           </TestiCards>
         </div>
-      </TestimonialContainer>
+      </Conatiner>
     </Wrapper>
   );
-}
+};
 
 export default TestiSection;

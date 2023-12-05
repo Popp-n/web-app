@@ -1,13 +1,19 @@
-import { Container } from 'Components/Pages/Creators/style';
-import { FlexColumnJcCenterAiCenter, FlexRowAiCenter, FlexRowJcBetweenAiCenter, FlexRowJcEndAiCenter, ImageDefault } from 'Styles/Abstract/Mixins';
-import styled from 'styled-components';
+import {
+  FlexColumnJcCenterAiCenter,
+  FlexRowAiCenter,
+  FlexRowJcBetweenAiCenter,
+  FlexRowJcEndAiCenter,
+  ImageDefault,
+} from "Styles/Abstract/Mixins";
+import { Center } from "Styles/layouts/Center";
+import styled from "styled-components";
 
 export const Wrapper = styled.footer`
   background-color: var(--color-9);
   padding-block: 3.5rem;
 `;
 
-export const FooterContainer = styled(Container)``;
+export const Container = styled(Center)``;
 
 export const FooterTop = styled.div`
   ${FlexColumnJcCenterAiCenter}

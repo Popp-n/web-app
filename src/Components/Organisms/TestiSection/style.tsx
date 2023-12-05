@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
   padding-bottom: 16rem;
 `;
 
-export const TestimonialContainer = styled(CenterTesti)`
+export const Conatiner = styled(CenterTesti)`
   ${FlexRowAiCenter}
   gap: 10rem;
 

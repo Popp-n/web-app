@@ -9,6 +9,7 @@ import { ArrowRightIcon } from "Components/Atoms/SvgIcons";
 import { Footer } from "Components/Organisms/Footer";
 import { TestiSection } from "Components/Organisms/TestiSection";
 import { CollaboSection } from "Components/Organisms/CollaboSection";
+import { SectionWithList } from "Components/Organisms/SectionWithList";
 
 // Type defination
 interface Props {}
@@ -35,6 +36,7 @@ const Creators: React.FC<Props> = () => {
         </HeroContainer>
       </Header>
 
+      <SectionWithList listIndex={0} />
       <CollaboSection />
       <TestiSection />
       <Footer />

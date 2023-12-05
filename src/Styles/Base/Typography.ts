@@ -89,6 +89,13 @@ export const Typography = css`
       font-weight: 600;
       line-height: 99.181%;
     }
+    &-12 {
+      color: var(--color-5);
+      font-family: Poppins;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 103.087%;
+    }
   }
 
   /* Body || Paragraphs */
@@ -155,6 +162,13 @@ export const Typography = css`
       font-weight: 400;
       line-height: 150%;
       mix-blend-mode: multiply;
+    }
+    &-11 {
+      color: var(--color-12);
+      font-family: Poppins;
+      font-size: 1.32rem;
+      font-weight: 400;
+      line-height: 156.604%;
     }
   }
 

@@ -334,6 +334,9 @@ export const Utilities = css`
   .max-width-510 {
     max-width: 51rem;
   }
+  .max-width-481 {
+    max-width: 48.1rem;
+  }
   .max-width-480 {
     max-width: 48rem;
   }
