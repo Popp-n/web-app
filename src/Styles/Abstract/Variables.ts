@@ -48,7 +48,7 @@ export const Variables = css`
     --max-row-width-sm: 95rem;
     --max-row-width-hero: 109.717rem;
     --max-row-width-testi: 102.717rem;
-    --max-row-width-playground: 82.717rem;
+    --max-row-width-playground: 85.717rem;
     --center-extended-side-padding: 11remm;
   }
 `;

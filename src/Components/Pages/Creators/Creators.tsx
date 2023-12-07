@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, HeroContainer } from "./style";
+import { Header, HeroContainer, Section, SuccessStoryContainer } from "./style";
 
 import { TopNav } from "Components/Molecules/TopNav";
 import Typography from "Components/Atoms/Typography";
@@ -35,6 +35,24 @@ const Creators: React.FC<Props> = () => {
           </Button>
         </HeroContainer>
       </Header>
+
+      <Section className="section__craft">
+        <SuccessStoryContainer>
+          <Typography as="h4" className="h-13">
+            Craft Your Success Story
+          </Typography>
+          <Typography as="p" className="p-12 max-width-590 text-center mb-40 mt-30">
+            Dive into a diverse ecosystem of brands eager to collaborate and
+            bring your creative vision to life.
+          </Typography>
+          <Button className="btn btn-3">
+            Join Now <ArrowRightIcon />
+          </Button>
+          <div className="img-container mt-55">
+            <img src="/assets/images/craft-img.png" alt="" />
+          </div>
+        </SuccessStoryContainer>
+      </Section>
 
       <SectionWithList listIndex={0} />
       <CollaboSection />
