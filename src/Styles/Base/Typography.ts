@@ -110,6 +110,30 @@ export const Typography = css`
       font-weight: 400;
       line-height: 99.181%;
     }
+    &-15 {
+      color: var(--color-primary);
+      font-family: Itim;
+      font-size: 4.5rem;
+      font-weight: 400;
+      line-height: 99.181%;
+    }
+    &-16 {
+      font-family: Poppins;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 88%; /* 42.24px */
+      text-transform: uppercase;
+
+      background: radial-gradient(
+        2270.79% 150.3% at 100% 69.88%,
+        #b0b0b0 0%,
+        #fafafa 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   /* Body || Paragraphs */

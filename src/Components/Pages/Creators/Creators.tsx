@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  ChallengeContainer,
   DiscoverContainer,
   DiscoverImageContainer,
   Header,
@@ -42,6 +43,28 @@ const Creators: React.FC<Props> = () => {
           </Button>
         </HeroContainer>
       </Header>
+
+      <Section className="section__challenge">
+        <ChallengeContainer>
+          <Typography as="h5" className="h-15 text-right pr-30">
+            CREATE A CHALLENGE
+          </Typography>
+          <div className="image-container-1">
+            <img src="/assets/images/challenge-1.png" alt="" />
+          </div>
+          <div className="image-container-2">
+            <img src="/assets/images/challenge-2.png" alt="" />
+          </div>
+          <div className="trending-container">
+            <div>
+              <Typography as="h3" className="h-16">
+                TRENDING
+              </Typography>
+            </div>
+            <div></div>
+          </div>
+        </ChallengeContainer>
+      </Section>
 
       <Section className="section__discover">
         <DiscoverContainer>

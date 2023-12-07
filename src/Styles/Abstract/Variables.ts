@@ -42,7 +42,7 @@ export const Variables = css`
     /* Gradients */
     --gradient-1: linear-gradient(0deg, #f5effb 0%, #f5effb 100%), #fff;
     --gradient-2: linear-gradient(0deg, #ff008e 0%, #ff008e 100%), #fff;
-    --gradient-3: linear-gradient(0deg, #612897 0%, #612897 100%), #FFF;
+    --gradient-3: linear-gradient(0deg, #612897 0%, #612897 100%), #fff;
 
     /* Layout variables */
     --max-row-width: 121.6rem;
@@ -50,6 +50,7 @@ export const Variables = css`
     --max-row-width-hero: 109.717rem;
     --max-row-width-testi: 102.717rem;
     --max-row-width-playground: 85.717rem;
+    --max-row-width-challenge: 103.717rem;
     --center-extended-side-padding: 11remm;
   }
 `;

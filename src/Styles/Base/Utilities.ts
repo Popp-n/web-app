@@ -183,6 +183,9 @@ export const Utilities = css`
 
   /* Paddings */
 
+  .pr-30 {
+    padding-right: 3rem;
+  }
   .pr-7 {
     padding-right: 0.7rem;
   }
@@ -198,6 +201,9 @@ export const Utilities = css`
   }
   .text-center {
     text-align: center;
+  }
+  .text-right {
+    text-align: right;
   }
   .text-uppercase {
     text-transform: uppercase;

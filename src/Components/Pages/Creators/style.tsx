@@ -1,9 +1,10 @@
 import {
   FlexColumnAiCenter,
+  FlexRowAiCenter,
   FlexRowJcCenterAiCenter,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
-import { Center, CenterHero } from "Styles/layouts/Center";
+import { Center, CenterChallenge, CenterHero } from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Header = styled.section`
@@ -23,6 +24,11 @@ export const Section = styled.section`
       background: var(--gradient-3);
       padding-top: 9rem;
       padding-bottom: 6rem;
+    }
+    &__challenge {
+      background: var(--gradient-1);
+      padding-top: 6rem;
+      padding-bottom: 9rem;
     }
   }
 `;
@@ -97,5 +103,39 @@ export const DiscoverImageContainer = styled.div`
   &.shadow-2 {
     right: 0;
     bottom: 56px;
+  }
+`;
+
+export const ChallengeContainer = styled(CenterChallenge)`
+  position: relative;
+  height: 91.7rem;
+
+  .image-container-1 {
+    position: absolute;
+    width: 42.1961rem;
+    height: 34.106rem;
+    top: -1rem;
+
+    img {
+      ${ImageDefault}
+    }
+  }
+  .image-container-2 {
+    position: absolute;
+    width: 42.1961rem;
+    height: 34.106rem;
+    top: 8rem;
+    right: 0;
+
+    img {
+      ${ImageDefault}
+    }
+  }
+  .trending-container {
+    position: absolute;
+    bottom: 0;
+
+    ${FlexRowAiCenter}
+    gap: 1rem;
   }
 `;
