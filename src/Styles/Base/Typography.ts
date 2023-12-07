@@ -103,6 +103,13 @@ export const Typography = css`
       font-weight: 600;
       line-height: 103.087%;
     }
+    &-14 {
+      color: var(--color-white);
+      font-family: Itim;
+      font-size: 5.9487rem;
+      font-weight: 400;
+      line-height: 99.181%;
+    }
   }
 
   /* Body || Paragraphs */
@@ -183,6 +190,13 @@ export const Typography = css`
       font-size: 2rem;
       font-weight: 200;
       line-height: 3.7585rem;
+    }
+    &-13 {
+      color: var(--color-white);
+      font-family: Poppins;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: normal;
     }
   }
 

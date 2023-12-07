@@ -1,6 +1,13 @@
 import React from "react";
 
-import { Header, HeroContainer, Section, SuccessStoryContainer } from "./style";
+import {
+  DiscoverContainer,
+  DiscoverImageContainer,
+  Header,
+  HeroContainer,
+  Section,
+  SuccessStoryContainer,
+} from "./style";
 
 import { TopNav } from "Components/Molecules/TopNav";
 import Typography from "Components/Atoms/Typography";
@@ -36,12 +43,45 @@ const Creators: React.FC<Props> = () => {
         </HeroContainer>
       </Header>
 
+      <Section className="section__discover">
+        <DiscoverContainer>
+          <div className="left">
+            <DiscoverImageContainer className="discover-1">
+              <img src="/assets/images/poppn-discover-2.png" alt="" />
+            </DiscoverImageContainer>
+            <DiscoverImageContainer className="discover-2">
+              <img src="/assets/images/poppn-discover-1.png" alt="" />
+            </DiscoverImageContainer>
+            <DiscoverImageContainer className="shadow-1">
+              <img src="/assets/images/poppn-shadow-1.png" alt="" />
+            </DiscoverImageContainer>
+            <DiscoverImageContainer className="shadow-2">
+              <img src="/assets/images/poppn-shadow-2.png" alt="" />
+            </DiscoverImageContainer>
+          </div>
+          <div className="right">
+            <Typography as="h3" className="h-14">
+              Discover Your Canvas
+            </Typography>
+            <Typography as="p" className="p-13 mt-20 max-width-550">
+              At Popp'n, we celebrate creators of all kinds. Whether you're a
+              trend-setting influencer, a visionary artist, a wordsmith with a
+              way with words, or any unique combination of talents, this is
+              where your creativity finds its stage.
+            </Typography>
+          </div>
+        </DiscoverContainer>
+      </Section>
+
       <Section className="section__craft">
         <SuccessStoryContainer>
           <Typography as="h4" className="h-13">
             Craft Your Success Story
           </Typography>
-          <Typography as="p" className="p-12 max-width-590 text-center mb-40 mt-30">
+          <Typography
+            as="p"
+            className="p-12 max-width-590 text-center mb-40 mt-30"
+          >
             Dive into a diverse ecosystem of brands eager to collaborate and
             bring your creative vision to life.
           </Typography>
