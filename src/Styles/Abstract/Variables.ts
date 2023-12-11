@@ -27,6 +27,7 @@ export const Variables = css`
     --color-13: #f6f6f6;
     --color-14: #e5e5e5;
     --color-15: #39425d;
+    --color-16: #d9d9d9;
 
     /* Shadows */
     --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
@@ -50,7 +51,7 @@ export const Variables = css`
     --max-row-width-hero: 109.717rem;
     --max-row-width-testi: 102.717rem;
     --max-row-width-playground: 85.717rem;
-    --max-row-width-challenge: 103.717rem;
+    --max-row-width-challenge: 116.696rem;
     --center-extended-side-padding: 11remm;
   }
 `;

@@ -28,7 +28,7 @@ export const Section = styled.section`
     &__challenge {
       background: var(--gradient-1);
       padding-top: 6rem;
-      padding-bottom: 9rem;
+      /* padding-bottom: 9rem; */
     }
   }
 `;
@@ -108,12 +108,12 @@ export const DiscoverImageContainer = styled.div`
 
 export const ChallengeContainer = styled(CenterChallenge)`
   position: relative;
-  height: 91.7rem;
+  height: 88.7rem;
 
   .image-container-1 {
     position: absolute;
-    width: 42.1961rem;
-    height: 34.106rem;
+    max-width: 42.1961rem;
+    max-height: 34.106rem;
     top: -1rem;
 
     img {
@@ -122,8 +122,8 @@ export const ChallengeContainer = styled(CenterChallenge)`
   }
   .image-container-2 {
     position: absolute;
-    width: 42.1961rem;
-    height: 34.106rem;
+    max-width: 42.1961rem;
+    max-height: 34.106rem;
     top: 8rem;
     right: 0;
 
@@ -133,9 +133,19 @@ export const ChallengeContainer = styled(CenterChallenge)`
   }
   .trending-container {
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 40.6rem;
+    left: 7rem;
 
     ${FlexRowAiCenter}
     gap: 1rem;
+  }
+  .trending-image-container {
+    max-width: 371px;
+    max-height: 406px;
+
+    img {
+      ${ImageDefault}
+    }
   }
 `;

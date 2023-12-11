@@ -73,6 +73,9 @@ export const Utilities = css`
   .mt-40 {
     margin-top: 4rem;
   }
+  .mt-37 {
+    margin-top: 3.7rem;
+  }
   .mt-35 {
     margin-top: 3.5rem;
   }
@@ -368,13 +371,17 @@ export const Utilities = css`
     max-width: 34.4rem;
   }
   .max-width-280 {
-    max-width: 20rem;
+    max-width: 28rem;
   }
   .max-width-260 {
     max-width: 26rem;
   }
-  .max-width-220px {
+  .max-width-220px,
+  .max-width-220 {
     max-width: 22rem;
+  }
+  .max-width-195 {
+    max-width: 19.5rem;
   }
   .max-width-120 {
     max-width: 12rem;

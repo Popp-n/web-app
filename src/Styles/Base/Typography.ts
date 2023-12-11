@@ -222,6 +222,13 @@ export const Typography = css`
       font-weight: 500;
       line-height: normal;
     }
+    &-14 {
+      color: var(--color-16);
+      font-size: 0.9764rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+    }
   }
 
   /* Link */

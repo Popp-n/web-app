@@ -60,8 +60,14 @@ const Creators: React.FC<Props> = () => {
               <Typography as="h3" className="h-16">
                 TRENDING
               </Typography>
+              <Typography as="p" className="p-14 max-width-195 mt-37">
+                Discover a new world of fashion with elegant, thoughtful
+                combinations of beautiful design and quality materials.
+              </Typography>
             </div>
-            <div></div>
+            <div className="trending-image-container">
+              <img src="/assets/images/challenge-3.png" alt="" />
+            </div>
           </div>
         </ChallengeContainer>
       </Section>
