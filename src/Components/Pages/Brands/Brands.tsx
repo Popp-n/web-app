@@ -1,6 +1,13 @@
 import React from "react";
 import { TopNav } from "Components/Molecules/TopNav";
-import { Header, HeroContainer, Section, SuccessStoryContainer } from "./style";
+import {
+  CollaborationContainer,
+  Container,
+  Header,
+  HeroContainer,
+  Section,
+  SuccessStoryContainer,
+} from "./style";
 import Typography from "Components/Atoms/Typography";
 import { ArrowRightIcon } from "Components/Atoms/SvgIcons";
 import { Button } from "Components/Atoms/Button";
@@ -36,6 +43,32 @@ const Brands: React.FC<Props> = () => {
           </Button>
         </HeroContainer>
       </Header>
+
+      <Section className="section__collaboration">
+        <CollaborationContainer>
+          <div>
+            <div className="img-1-2-holder">
+              <div className="img-1">
+                <img src="/assets/images/collabo-img-1.png" alt="" />
+              </div>
+              <div className="img-2">
+                <img src="/assets/images/collabo-img-2.png" alt="" />
+              </div>
+            </div>
+            <Typography as="h4" className="h-17 max-width-627">
+              Unlock the Power of Collaboration
+            </Typography>
+            <Typography as="p" className="p-15 max-width-520">
+              At Popp'n, we understand the significance of authentic connections
+            </Typography>
+          </div>
+          <div className="img-3-container">
+            <div className="img-3">
+              <img src="/assets/images/collabo-img-3.png" alt="" />
+            </div>
+          </div>
+        </CollaborationContainer>
+      </Section>
 
       <SimpleSection />
       <Section className="section__craft">
