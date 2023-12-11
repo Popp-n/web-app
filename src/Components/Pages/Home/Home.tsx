@@ -23,6 +23,7 @@ import { Button } from "Components/Atoms/Button";
 import { Footer } from "Components/Organisms/Footer";
 import { TestiSection } from "Components/Organisms/TestiSection";
 import { CollaboSection } from "Components/Organisms/CollaboSection";
+import { BramdAudienceSection } from "Components/Organisms/BramdAudienceSection";
 
 // Type defination
 interface Props {}
@@ -215,34 +216,7 @@ const Home: React.FC<Props> = () => {
         </PromotingSectionContainer>
       </Section>
 
-      <Section className="section-brand-audience">
-        <BrandAudContainer>
-          <div>
-            <Typography as="h5" className="h-7" text="Brand Audience" />
-            <Typography as="h5" className="p-5 max-width-480 mt-20 mb-50">
-              From viral challenges to interactive contests, Popp'n's curated
-              challenges push boundaries and drive engagement, giving your brand
-              a competitive edge.
-            </Typography>
-
-            <Button className="btn btn-3">
-              Learn More <ArrowRightIcon />
-            </Button>
-          </div>
-          <div className="right-image-container">
-            {/* <img
-              src="/assets/images/brand-audience-shadow.png"
-              alt=""
-              className="shadow"
-            /> */}
-            <img
-              src="/assets/images/build-audience.png"
-              alt=""
-              className="img"
-            />
-          </div>
-        </BrandAudContainer>
-      </Section>
+      <BramdAudienceSection />
 
       <CollaboSection />
       <TestiSection />
