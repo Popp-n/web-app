@@ -7,19 +7,16 @@ import {
   LeftImageContainer,
   AtPoppnContainer,
   PromotingSectionContainer,
-  BrandAudContainer,
 } from "./style";
 import { TopNav } from "Components/Molecules/TopNav";
 import { Hero } from "Components/Molecules/Hero";
 import Typography from "Components/Atoms/Typography";
 import {
-  ArrowRightIcon,
   FacebookBig,
   TiktokBig,
   TwitterBig,
   YoutubeBig,
 } from "Components/Atoms/SvgIcons";
-import { Button } from "Components/Atoms/Button";
 import { Footer } from "Components/Organisms/Footer";
 import { TestiSection } from "Components/Organisms/TestiSection";
 import { CollaboSection } from "Components/Organisms/CollaboSection";

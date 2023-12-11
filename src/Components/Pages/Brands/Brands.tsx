@@ -2,7 +2,6 @@ import React from "react";
 import { TopNav } from "Components/Molecules/TopNav";
 import {
   CollaborationContainer,
-  Container,
   Header,
   HeroContainer,
   Section,

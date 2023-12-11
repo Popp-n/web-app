@@ -1,6 +1,7 @@
 import { Brands } from "Components/Pages/Brands";
 import { Creators } from "Components/Pages/Creators";
 import { Home } from "Components/Pages/Home";
+import { Login } from "Components/Pages/Login";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -19,6 +20,7 @@ const Router = createBrowserRouter(
 
       <Route path="creators" element={<Creators />} />
       <Route path="brands" element={<Brands />} />
+      <Route path="login" element={<Login />} />
     </>
   )
 );
