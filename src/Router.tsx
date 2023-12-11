@@ -1,3 +1,4 @@
+import { Brands } from "Components/Pages/Brands";
 import { Creators } from "Components/Pages/Creators";
 import { Home } from "Components/Pages/Home";
 import {
@@ -17,6 +18,7 @@ const Router = createBrowserRouter(
       />
 
       <Route path="creators" element={<Creators />} />
+      <Route path="brands" element={<Brands />} />
     </>
   )
 );

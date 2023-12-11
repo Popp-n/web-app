@@ -87,7 +87,7 @@ export const Typography = css`
       font-family: Poppins;
       font-size: 5.9487rem;
       font-weight: 600;
-      line-height: 99.181%;
+      line-height: 120.181%;
     }
     &-12 {
       color: var(--color-5);
