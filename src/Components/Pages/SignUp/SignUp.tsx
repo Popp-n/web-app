@@ -1,5 +1,4 @@
 import React from "react";
-import { Wrapper } from "./style";
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 
 // Type defination

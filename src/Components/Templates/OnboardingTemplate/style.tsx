@@ -9,3 +9,7 @@ export const Wrapper = styled.main`
 `;
 
 export const Container = styled(Center)``;
+
+export const Nav = styled.nav`
+  padding-block: 4rem;
+`;

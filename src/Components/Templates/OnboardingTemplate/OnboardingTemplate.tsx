@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Wrapper } from "./style";
+import { Container, Nav, Wrapper } from "./style";
+import { Logo } from "Components/Atoms/SvgIcons";
 
 // Type defination
 interface Props {}
@@ -9,7 +10,11 @@ const OnboardingTemplate: React.FC<Props> = () => {
   // Data to display
   return (
     <Wrapper>
-      <Container></Container>
+      <Nav>
+        <Container>
+          <Logo />
+        </Container>
+      </Nav>
     </Wrapper>
   );
 };
