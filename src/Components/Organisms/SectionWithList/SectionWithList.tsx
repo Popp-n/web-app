@@ -73,7 +73,11 @@ const SectionWithList: React.FC<Props> = ({ listIndex }) => {
         </Left>
         <Right>
           <div className="gif-container">
-            <img src="/assets/images/poppn-list-section.gif" alt="" />
+            {listIndex === 0 ? (
+              <img src="/assets/images/poppn-list-section.gif" alt="" />
+            ) : (
+              <img src="/assets/images/poppn-list-section-2.gif" alt="" />
+            )}
           </div>
           <div className="socials">
             <img src="/assets/images/list-section-socials.png" alt="" />
