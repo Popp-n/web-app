@@ -196,3 +196,6 @@ export const RangeStyle = styled.div`
     background: var(--color-white);
   }
 `;
+
+// Select
+export const SelecteWrapper = styled.div``;
