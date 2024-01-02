@@ -29,6 +29,7 @@ export const Variables = css`
     --color-15: #39425d;
     --color-16: #d9d9d9;
     --color-17: #e6d6f4;
+    --color-18: #cdaeea;
 
     /* Shadows */
     --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
@@ -40,6 +41,7 @@ export const Variables = css`
       0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
       0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
       0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    --shadow-5: 0px 4px 61px 0px rgba(77, 71, 195, 0.2);
 
     /* Gradients */
     --gradient-1: linear-gradient(0deg, #f5effb 0%, #f5effb 100%), #fff;
@@ -54,7 +56,7 @@ export const Variables = css`
     --max-row-width-testi: 102.717rem;
     --max-row-width-playground: 85.717rem;
     --max-row-width-challenge: 116.696rem;
-    --max-row-width-onboard: 108.6rem;
+    --max-row-width-onboard: 105.6rem;
     --center-extended-side-padding: 11remm;
   }
 `;

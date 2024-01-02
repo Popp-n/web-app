@@ -2,7 +2,9 @@ import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 import styled from "styled-components";
 
 const Button = styled.button`
-  all: unset;
+  /* all: unset; */
+  border: none;
+  outline: none;
   cursor: pointer;
   font-family: inherit;
   transition: 0.4s;
@@ -62,15 +64,25 @@ export const ButtonStyle = styled(Button)`
       }
     }
 
+    &-4 {
+      border-radius: 3.2rem;
+      background-color: var(--color-primary);
+      box-shadow: var(--shadow-5);
+      text-align: center;
+      width: 100%;
+    }
+
     /* Colors */
 
     /* Size */
     &-full {
-      width: 100%;
       padding: 2rem 4rem;
+      width: 100%;
     }
 
     &-md {
+      width: 100%;
+      padding: 1.7rem 3rem;
     }
 
     &-sm {

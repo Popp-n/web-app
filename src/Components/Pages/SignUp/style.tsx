@@ -8,4 +8,6 @@ export const Left = styled.div`
     border-radius: 1rem;
   }
 `;
-export const Right = styled.div``;
+export const Right = styled.div`
+  flex-basis: 37rem;
+`;

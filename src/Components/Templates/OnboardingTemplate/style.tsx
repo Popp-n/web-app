@@ -1,5 +1,5 @@
-import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
-import { CenterOnboard } from "Styles/layouts/Center";
+import { FlexRowJcBetweenAiCenter } from "Styles/Abstract/Mixins";
+import { Center, CenterOnboard } from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
@@ -9,8 +9,12 @@ export const Wrapper = styled.main`
   overflow: hidden auto;
 `;
 
-export const Container = styled(CenterOnboard)`
-  ${FlexRowAiCenter}
+export const Container = styled(Center)`
+  ${FlexRowJcBetweenAiCenter}
+`;
+
+export const BodyContainer = styled(CenterOnboard)`
+  ${FlexRowJcBetweenAiCenter}
 `;
 
 export const Nav = styled.nav`
@@ -22,5 +26,6 @@ export const Body = styled.nav`
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 76rem;
-  padding-block: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 `;

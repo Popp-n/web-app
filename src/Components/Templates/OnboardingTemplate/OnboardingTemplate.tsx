@@ -1,5 +1,5 @@
 import React from "react";
-import { Body, Container, Nav, Wrapper } from "./style";
+import { Body, BodyContainer, Container, Nav, Wrapper } from "./style";
 import { Logo } from "Components/Atoms/SvgIcons";
 import { OnboardingTemplateProps } from "./types";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const OnboardingTemplate: React.FC<OnboardingTemplateProps> = ({
       </Nav>
 
       <Body>
-        <Container>{children}</Container>
+        <BodyContainer>{children}</BodyContainer>
       </Body>
     </Wrapper>
   );
