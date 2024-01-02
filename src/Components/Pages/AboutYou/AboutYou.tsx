@@ -2,7 +2,7 @@ import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 import React from "react";
 import { Left, Right } from "./style";
 import Typography from "Components/Atoms/Typography";
-import { Input } from "Components/Molecules/Input";
+import { Input, Range } from "Components/Molecules/Input";
 import { Button } from "Components/Atoms/Button";
 
 // Type defination
@@ -33,6 +33,7 @@ const AboutYou: React.FC<Props> = () => {
           </Typography>
         </Left>
         <Right>
+          <Range className="mb-20" />
           <Input placeholder="Birthday (DD/MM/YYYY)" />
           <Input placeholder="User Name" />
           <Input placeholder="Country" />

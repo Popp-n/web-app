@@ -16,12 +16,12 @@ const Input: React.FC<InputProps> = (props) => {
   // Data to display
   return (
     <Wrapper
-      {...otherProps}
       className={`${className} ${noMargin ? "no-margin" : ""} ${
         type === "password" ? "is-password" : ""
       }`}
     >
       <input
+        {...otherProps}
         type={type}
         className="input-ele"
         placeholder={placeholder || ""}
