@@ -54,6 +54,7 @@ export const Variables = css`
     --max-row-width-testi: 102.717rem;
     --max-row-width-playground: 85.717rem;
     --max-row-width-challenge: 116.696rem;
+    --max-row-width-onboard: 108.6rem;
     --center-extended-side-padding: 11remm;
   }
 `;

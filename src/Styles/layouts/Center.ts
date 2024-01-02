@@ -27,6 +27,9 @@ export const CenterPlayground = styled(Center)`
 export const CenterChallenge = styled(Center)`
   max-width: var(--max-row-width-challenge);
 `;
+export const CenterOnboard = styled(Center)`
+  max-width: var(--max-row-width-onboard);
+`;
 
 export const CenterHero = styled(Center)`
   max-width: var(--max-row-width-hero);

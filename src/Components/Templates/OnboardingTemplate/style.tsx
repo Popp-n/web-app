@@ -1,4 +1,5 @@
-import { Center } from "Styles/layouts/Center";
+import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
+import { CenterOnboard } from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
@@ -8,7 +9,9 @@ export const Wrapper = styled.main`
   overflow: hidden auto;
 `;
 
-export const Container = styled(Center)``;
+export const Container = styled(CenterOnboard)`
+  ${FlexRowAiCenter}
+`;
 
 export const Nav = styled.nav`
   padding-block: 4rem;

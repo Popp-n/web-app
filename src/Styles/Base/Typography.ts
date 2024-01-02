@@ -141,6 +141,20 @@ export const Typography = css`
       font-weight: 600;
       line-height: 122.917%;
     }
+    &-18 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 5.3697rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &-19 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 
   /* Body || Paragraphs */
@@ -241,6 +255,27 @@ export const Typography = css`
       font-size: 2rem;
       font-weight: 400;
       line-height: 150%;
+    }
+    &-16 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 1.7183rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-17 {
+      color: var(--color-primary);
+      font-family: Poppins;
+      font-size: 21.479px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: url("/assets/images/images/down-slash.svg");
+      }
     }
   }
 

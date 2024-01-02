@@ -19,7 +19,9 @@ const OnboardingTemplate: React.FC<OnboardingTemplateProps> = ({
         </Container>
       </Nav>
 
-      <Body>{children}</Body>
+      <Body>
+        <Container>{children}</Container>
+      </Body>
     </Wrapper>
   );
 };
