@@ -22,5 +22,5 @@ export const Body = styled.nav`
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 76rem;
-  padding-block: 30rem;
+  padding-block: 20rem;
 `;

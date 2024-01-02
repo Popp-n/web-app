@@ -266,7 +266,7 @@ export const Typography = css`
     &-17 {
       color: var(--color-primary);
       font-family: Poppins;
-      font-size: 21.479px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -274,7 +274,9 @@ export const Typography = css`
 
       &::after {
         position: absolute;
-        content: url("/assets/images/images/down-slash.svg");
+        content: url("/assets/images/down-slash.svg");
+        left: 1rem;
+        top: 70%;
       }
     }
   }
