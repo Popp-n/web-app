@@ -13,3 +13,11 @@ export const Container = styled(Center)``;
 export const Nav = styled.nav`
   padding-block: 4rem;
 `;
+
+export const Body = styled.nav`
+  background-image: url("/assets/images/circles-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 76rem;
+  padding-block: 30rem;
+`;

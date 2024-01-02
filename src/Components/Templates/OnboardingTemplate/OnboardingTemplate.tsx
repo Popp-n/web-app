@@ -1,20 +1,25 @@
 import React from "react";
-import { Container, Nav, Wrapper } from "./style";
+import { Body, Container, Nav, Wrapper } from "./style";
 import { Logo } from "Components/Atoms/SvgIcons";
-
-// Type defination
-interface Props {}
+import { OnboardingTemplateProps } from "./types";
+import { Link } from "react-router-dom";
 
 // Component
-const OnboardingTemplate: React.FC<Props> = () => {
+const OnboardingTemplate: React.FC<OnboardingTemplateProps> = ({
+  children,
+}) => {
   // Data to display
   return (
     <Wrapper>
       <Nav>
         <Container>
-          <Logo />
+          <Link to="/">
+            <Logo />
+          </Link>
         </Container>
       </Nav>
+
+      <Body>{children}</Body>
     </Wrapper>
   );
 };

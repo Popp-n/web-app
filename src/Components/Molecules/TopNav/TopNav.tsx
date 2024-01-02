@@ -5,7 +5,7 @@ import { Container, Wrapper, TopNavLinks, TopNavCtas } from "./style";
 import { LogoLink } from "Components/Atoms/LogoLink";
 import { AppLink } from "Components/Atoms/AppLink";
 import { Button } from "Components/Atoms/Button";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // Type defination
 interface Props {}
@@ -43,8 +43,12 @@ const TopNav: React.FC<Props> = () => {
           />
         </TopNavLinks>
         <TopNavCtas>
-          <Button className="btn-naked b-2" value="Login" />
-          <Button className="btn-primary b-1" value="Sign up" />
+          <Link to="/sign-up" className="l">
+            <Button className="btn-naked b-2" value="Login" />
+          </Link>
+          <Link to="/sign-up" className="l">
+            <Button className="btn-primary b-1" value="Sign up" />
+          </Link>
         </TopNavCtas>
       </Container>
     </Wrapper>
