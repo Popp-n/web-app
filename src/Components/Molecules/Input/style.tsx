@@ -193,6 +193,6 @@ export const RangeStyle = styled.div`
 
   /* Active track styles */
   input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: #cdaeea;
+    background: var(--color-white);
   }
 `;
