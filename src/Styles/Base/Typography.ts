@@ -354,5 +354,11 @@ export const Typography = css`
       font-size: 1.4rem;
       font-weight: 500;
     }
+    &-6 {
+      color: var(--color-primary);
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
   }
 `;

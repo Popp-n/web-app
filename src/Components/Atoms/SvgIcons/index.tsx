@@ -15,3 +15,4 @@ export { ReactComponent as TestiCaretUpIcon } from "./svgs/testi-caret-up.svg";
 export { ReactComponent as EyeIcon } from "./svgs/eye-icon.svg";
 export { ReactComponent as ArrowLeftIcon } from "./svgs/arrow-left-icon.svg";
 export { ReactComponent as CaretIcon } from "./svgs/caret-icon.svg";
+export { ReactComponent as ModalCloseIcon } from "./svgs/modal-close-icon.svg";

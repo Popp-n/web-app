@@ -70,23 +70,32 @@ export const ButtonStyle = styled(Button)`
       background-color: var(--color-primary);
       box-shadow: var(--shadow-5);
       text-align: center;
-      width: 100%;
+    }
+    &-5 {
+      text-align: center;
+      border-radius: 3.2rem;
+      border: 2px solid var(--color-1);
+      background-color: var(--color-white);
+      box-shadow: 0 0.4rem 6.1rem 0 rgba(77, 71, 195, 0.2);
     }
 
     /* Colors */
 
     /* Size */
+    &-full-size {
+      width: 100%;
+    }
     &-full {
       padding: 2rem 4rem;
       width: 100%;
     }
 
     &-md {
-      width: 100%;
       padding: 1.7rem 3rem;
     }
 
     &-sm {
+      padding: 1rem 3rem;
     }
   }
 `;

@@ -1,5 +1,5 @@
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
-import React from "react";
+import React, { useState } from "react";
 import { Left, Right, Tags, TagsCta } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { Input, Range, Select } from "Components/Molecules/Input";
@@ -7,6 +7,8 @@ import { Button } from "Components/Atoms/Button";
 import { ArrowLeftIcon } from "Components/Atoms/SvgIcons";
 import { Link } from "react-router-dom";
 import { Tag } from "Components/Atoms/Tag";
+import { AnimatePresence } from "framer-motion";
+import { Modal } from "Components/Organisms/Modals";
 
 // Type defination
 interface Props {}
@@ -27,6 +29,9 @@ const allTag = [
 
 // Component
 const Register: React.FC<Props> = () => {
+  // States
+  const [show, setShow] = useState(false);
+
   // Data to display
   return (
     <OnboardingTemplate>
@@ -62,10 +67,14 @@ const Register: React.FC<Props> = () => {
           </Tags>
 
           <TagsCta className="mt-60">
-            <Button className="btn-4 b-5 btn-md">Next</Button>
-            <Button className="btn-4 b-5 btn-md ">Next</Button>
+            <Button className="btn-5 b-6 btn-sm">Skip</Button>
+            <Button className="btn-4 b-5 btn-sm" onClick={() => setShow(true)}>
+              Next
+            </Button>
           </TagsCta>
         </Right>
+
+        <AnimatePresence>{show && <Modal />}</AnimatePresence>
       </>
     </OnboardingTemplate>
   );
