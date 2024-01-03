@@ -17,5 +17,10 @@ export const Right = styled.div`
 
 export const Tags = styled.div`
   ${FlexRowWrap}
-  gap: 1.5rem;
+  gap: 1.2rem;
+`;
+
+export const TagsCta = styled.div`
+  ${FlexRowWrap}
+  gap: 1.2rem;
 `;

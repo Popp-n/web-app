@@ -1,6 +1,6 @@
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 import React from "react";
-import { Left, Right, Tags } from "./style";
+import { Left, Right, Tags, TagsCta } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { Input, Range, Select } from "Components/Molecules/Input";
 import { Button } from "Components/Atoms/Button";
@@ -61,7 +61,10 @@ const Register: React.FC<Props> = () => {
             ))}
           </Tags>
 
-          <Button className="btn-full btn-4 b-5 btn-md mt-40 ff">Next</Button>
+          <TagsCta className="mt-60">
+            <Button className="btn-4 b-5 btn-md">Next</Button>
+            <Button className="btn-4 b-5 btn-md ">Next</Button>
+          </TagsCta>
         </Right>
       </>
     </OnboardingTemplate>
