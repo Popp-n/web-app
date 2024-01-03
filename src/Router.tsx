@@ -2,6 +2,7 @@ import { AboutYou } from "Components/Pages/AboutYou";
 import { Brands } from "Components/Pages/Brands";
 import { Creators } from "Components/Pages/Creators";
 import { Home } from "Components/Pages/Home";
+import { Register } from "Components/Pages/Register";
 import { SignUp } from "Components/Pages/SignUp";
 import {
   createBrowserRouter,
@@ -23,6 +24,7 @@ const Router = createBrowserRouter(
       <Route path="brands" element={<Brands />} />
       <Route path="sign-up" element={<SignUp />} />
       <Route path="about-you" element={<AboutYou />} />
+      <Route path="register" element={<Register />} />
     </>
   )
 );
