@@ -43,7 +43,7 @@ const TopNav: React.FC<Props> = () => {
           />
         </TopNavLinks>
         <TopNavCtas>
-          <Link to="/sign-up" className="l">
+          <Link to="#" className="l">
             <Button className="btn-naked b-2" value="Login" />
           </Link>
           <Link to="/sign-up" className="l">

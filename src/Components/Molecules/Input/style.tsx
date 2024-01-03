@@ -3,6 +3,7 @@ import {
   FlexRowJcBetweenAiCenter,
   GridCenter,
 } from "Styles/Abstract/Mixins";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -198,4 +199,52 @@ export const RangeStyle = styled.div`
 `;
 
 // Select
-export const SelecteWrapper = styled.div``;
+export const SelectInputWrapper = styled.div`
+  position: relative;
+`;
+
+export const SelecteWrapper = styled.div`
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background-color: var(--color-white);
+  ${FlexRowJcBetweenAiCenter}
+  margin-bottom: 2rem;
+  width: 100%;
+  padding-right: 2rem;
+  cursor: pointer;
+
+  &.no-margin {
+    margin-bottom: 0;
+  }
+
+  .input-ele {
+    flex-grow: 1;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    border: none;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .placeholder {
+    color: var(--color-18);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-inline: 2rem;
+    padding-block: 1.8rem;
+  }
+`;
+
+export const Dropdown = styled(motion.div)`
+  position: absolute;
+  left: 0;
+  top: 110%;
+  width: 100%;
+  border-radius: 1.2rem;
+  background-color: var(--color-white);
+  padding: 2rem;
+  z-index: 3;
+  box-shadow: var(--shadow-4);
+`;
