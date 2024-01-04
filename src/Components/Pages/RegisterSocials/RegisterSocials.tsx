@@ -12,24 +12,24 @@ import { Modal } from "Components/Organisms/Modals";
 // Type defination
 interface Props {}
 
-const allTag = [
-  "animal",
-  "animation & fan culture",
-  "art & photography",
-  "celebrity account",
-  "comedy",
-  "current events",
-  "daily life",
-  "dance",
-  "family",
-  "fashion & beauty",
-  "fitness",
-];
+// const allTag = [
+//   "animal",
+//   "animation & fan culture",
+//   "art & photography",
+//   "celebrity account",
+//   "comedy",
+//   "current events",
+//   "daily life",
+//   "dance",
+//   "family",
+//   "fashion & beauty",
+//   "fitness",
+// ];
 
 // Component
 const RegisterSocials: React.FC<Props> = () => {
   // States
-  const [show, setShow] = useState(false);
+  const [show] = useState(false);
 
   // Data to display
   return (
