@@ -33,7 +33,7 @@ const SignUp: React.FC<Props> = () => {
           />
           <Typography as="p" className="p-16 mt-5">
             <>
-              You can <span className="p-17">Login here ! </span>
+              You can <span className="p-17">Login here! </span>
             </>
           </Typography>
         </Left>
