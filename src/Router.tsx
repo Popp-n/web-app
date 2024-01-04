@@ -3,6 +3,7 @@ import { Brands } from "Components/Pages/Brands";
 import { Creators } from "Components/Pages/Creators";
 import { Home } from "Components/Pages/Home";
 import { Register } from "Components/Pages/Register";
+import { RegisterSocials } from "Components/Pages/RegisterSocials";
 import { SignUp } from "Components/Pages/SignUp";
 import {
   createBrowserRouter,
@@ -25,6 +26,7 @@ const Router = createBrowserRouter(
       <Route path="sign-up" element={<SignUp />} />
       <Route path="about-you" element={<AboutYou />} />
       <Route path="register" element={<Register />} />
+      <Route path="register-socials" element={<RegisterSocials />} />
     </>
   )
 );

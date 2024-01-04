@@ -162,6 +162,13 @@ export const Typography = css`
       font-weight: 500;
       line-height: normal;
     }
+    &-21 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 
   /* Body || Paragraphs */
@@ -285,6 +292,14 @@ export const Typography = css`
         left: 1rem;
         top: 70%;
       }
+    }
+    &-18 {
+      color: var(--color-19);
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
   }
 

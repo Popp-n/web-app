@@ -1,12 +1,11 @@
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 import React, { useState } from "react";
-import { Left, Right, Tags, TagsCta } from "./style";
+import { Left, Right, Social, Socials } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { Range } from "Components/Molecules/Input";
 import { Button } from "Components/Atoms/Button";
 import { ArrowLeftIcon } from "Components/Atoms/SvgIcons";
 import { Link } from "react-router-dom";
-import { Tag } from "Components/Atoms/Tag";
 import { AnimatePresence } from "framer-motion";
 import { Modal } from "Components/Organisms/Modals";
 
@@ -28,7 +27,7 @@ const allTag = [
 ];
 
 // Component
-const Register: React.FC<Props> = () => {
+const RegisterSocials: React.FC<Props> = () => {
   // States
   const [show, setShow] = useState(false);
 
@@ -42,15 +41,14 @@ const Register: React.FC<Props> = () => {
           </Link>
           <Typography
             as="h3"
-            className="h-18 max-width-450"
-            text="Select your area of interest"
+            className="h-18 max-width-500"
+            text="Verify your socials"
           />
 
-          <Typography
-            as="p"
-            className="p-16 mt-20"
-            text="If you already have an account"
-          />
+          <Typography as="p" className="p-16 mt-20 max-width-380">
+            Verification could take up to 5-10 minutes Feel free to leave this
+            page and check back later.
+          </Typography>
           <Typography as="p" className="p-16 mt-5">
             <>
               You can <span className="p-17">Login here ! </span>
@@ -60,18 +58,33 @@ const Register: React.FC<Props> = () => {
         <Right>
           <Range className="mb-20" />
 
-          <Tags>
-            {allTag.map((t, i) => (
-              <Tag key={i} label={t} />
-            ))}
-          </Tags>
+          <Typography as="h5" className="h-21">
+            Select each socials to verify
+          </Typography>
 
-          <TagsCta className="mt-60">
-            <Button className="btn-5 b-6 btn-sm">Skip</Button>
-            <Button className="btn-4 b-5 btn-sm" onClick={() => setShow(true)}>
-              Next
-            </Button>
-          </TagsCta>
+          <Socials>
+            <Social>
+              <img src="/assets/images/tiktok-icon.png" alt="" />
+            </Social>
+            <Social>
+              <img src="/assets/images/instagram-icon.png" alt="" />
+            </Social>
+            <Social>
+              <img src="/assets/images/youtube-icon.png" alt="" />
+            </Social>
+            <Social>
+              <img src="/assets/images/twitter-icon.png" alt="" />
+            </Social>
+          </Socials>
+
+          <Typography as="h5" className="h-21">
+            Select your primary handle
+          </Typography>
+          <Typography as="p" className="p-18 max-width-350">
+            You have to verify atleast one social network to select
+          </Typography>
+
+          <Button className="btn-full btn-4 b-5 btn-md mt-100 ff">Next</Button>
         </Right>
 
         <AnimatePresence>{show && <Modal />}</AnimatePresence>
@@ -80,4 +93,4 @@ const Register: React.FC<Props> = () => {
   );
 };
 
-export default Register;
+export default RegisterSocials;
