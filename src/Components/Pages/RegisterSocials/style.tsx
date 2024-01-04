@@ -1,4 +1,9 @@
-import { FlexRow, FlexRowWrap, ImageDefault } from "Styles/Abstract/Mixins";
+import {
+  FlexRow,
+  FlexRowAiCenter,
+  FlexRowWrap,
+  ImageDefault,
+} from "Styles/Abstract/Mixins";
 import styled from "styled-components";
 
 export const Left = styled.div`
@@ -32,4 +37,9 @@ export const Social = styled.button`
   img {
     ${ImageDefault}
   }
+`;
+
+export const SocialOptions = styled.div`
+  ${FlexRowAiCenter}
+  gap: 2rem;
 `;

@@ -7,3 +7,7 @@ export interface InputProps extends AllHTMLAttributes<HTMLInputElement> {
 export interface SelectProps extends AllHTMLAttributes<HTMLInputElement> {
   noMargin?: boolean;
 }
+export interface RadioProps extends AllHTMLAttributes<HTMLInputElement> {
+  label?: string;
+  name?: string;
+}

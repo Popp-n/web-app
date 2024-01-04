@@ -91,6 +91,51 @@ export const CheckBoxWrapper = styled.div`
   }
 `;
 
+export const RadioWrapper = styled.div`
+  margin-top: 2.6rem;
+
+  .element {
+    display: none;
+  }
+
+  label {
+    ${FlexRowAiStart}
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* line-height: 150%; */
+    color: var(--color-22);
+    cursor: pointer;
+
+    position: relative;
+    padding-left: 2.6rem;
+
+    &::before {
+      ${GridCenter}
+      /* margin-top: 0.4rem; */
+      position: absolute;
+      content: "";
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      left: 0;
+      transition: 0.4s;
+
+      font-size: 1rem;
+      line-height: 0;
+
+      color: var(--color-white);
+
+      border: 0.2rem solid var(--color-1);
+    }
+  }
+
+  .element:checked + label::before {
+    background-color: var(--color-1);
+    content: "✔";
+  }
+`;
+
 export const RangeStyle = styled.div`
   width: 100%;
 

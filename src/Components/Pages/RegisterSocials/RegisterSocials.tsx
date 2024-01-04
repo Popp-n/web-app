@@ -1,8 +1,8 @@
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 import React, { useState } from "react";
-import { Left, Right, Social, Socials } from "./style";
+import { Left, Right, Social, SocialOptions, Socials } from "./style";
 import Typography from "Components/Atoms/Typography";
-import { Range } from "Components/Molecules/Input";
+import { Radio, Range } from "Components/Molecules/Input";
 import { Button } from "Components/Atoms/Button";
 import { ArrowLeftIcon } from "Components/Atoms/SvgIcons";
 import { Link } from "react-router-dom";
@@ -81,8 +81,16 @@ const RegisterSocials: React.FC<Props> = () => {
             Select your primary handle
           </Typography>
           <Typography as="p" className="p-18 max-width-350">
-            You have to verify atleast one social network to select
+            You have to verify atleast one social network to select a primary
+            handle
           </Typography>
+
+          <SocialOptions>
+            <Radio label="TikTok" name="social" />
+            <Radio label="Instagram" name="social" />
+            <Radio label="Youtube" name="social" />
+            <Radio label="Twitter" name="social" />
+          </SocialOptions>
 
           <Button className="btn-full btn-4 b-5 btn-md mt-100 ff">Next</Button>
         </Right>
