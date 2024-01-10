@@ -46,7 +46,7 @@ const Login: React.FC<Props> = () => {
           <Flex $gap="1rem" $flexRowJcBetweenAiCenter>
             <CheckBox label="Keep me logged in" />
 
-            <Link to="/forget-passowrd" className="l l-3">
+            <Link to="/forget-password" className="l l-3">
               Forgot Password?
             </Link>
           </Flex>

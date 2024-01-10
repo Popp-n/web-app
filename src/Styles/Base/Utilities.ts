@@ -176,6 +176,9 @@ export const Utilities = css`
   .ml-40 {
     margin-left: 4rem;
   }
+  .ml-30 {
+    margin-left: 3rem;
+  }
   .ml-10 {
     margin-left: 1rem;
   }

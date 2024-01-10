@@ -78,6 +78,20 @@ export const ButtonStyle = styled(Button)`
       background-color: var(--color-white);
       box-shadow: 0 0.4rem 6.1rem 0 rgba(77, 71, 195, 0.2);
     }
+    &-6 {
+      color: #612897;
+      font-size: 1.4rem;
+      font-weight: 500;
+
+      border-radius: 32px;
+      border: 1px solid #929eae;
+      background-color: #fff;
+
+      /* Shadow/xs */
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+      padding: .9rem 3rem;
+    }
 
     /* Colors */
 
