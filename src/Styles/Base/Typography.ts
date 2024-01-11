@@ -176,6 +176,14 @@ export const Typography = css`
       font-weight: 500;
       line-height: normal;
     }
+    &-23 {
+      color: var(--color-24);
+      font-family: Poppins;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: normal;
+    }
+  
   }
 
   /* Body || Paragraphs */
@@ -308,6 +316,12 @@ export const Typography = css`
       font-weight: 400;
       line-height: normal;
     }
+    &-19 {
+      color: var(--color-22);
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 
   /* Link */
@@ -345,6 +359,13 @@ export const Typography = css`
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 142.857%;
+    }
+    &-4 {
+      color: var(--color-1);
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: underline;
     }
   }
 

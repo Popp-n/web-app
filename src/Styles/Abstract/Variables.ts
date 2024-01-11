@@ -33,6 +33,9 @@ export const Variables = css`
     --color-19: #4d4d4d;
     --color-20: #f2f4f7;
     --color-21: #ebe8e8;
+    --color-22: #929eae;
+    --color-23: #fafafa;
+    --color-24: #1b212d;
 
     /* Shadows */
     --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
@@ -59,6 +62,7 @@ export const Variables = css`
     --max-row-width-testi: 102.717rem;
     --max-row-width-playground: 85.717rem;
     --max-row-width-challenge: 116.696rem;
+    --max-row-width-dashboard: 112.9rem;
     --max-row-width-onboard: 105.6rem;
     --center-extended-side-padding: 11remm;
   }

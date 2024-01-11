@@ -1,6 +1,7 @@
 import { AboutYou } from "Components/Pages/AboutYou";
 import { Brands } from "Components/Pages/Brands";
 import { Creators } from "Components/Pages/Creators";
+import { Dashboard } from "Components/Pages/Dashboard";
 import { ForgetPassword } from "Components/Pages/ForgetPassword";
 import { Home } from "Components/Pages/Home";
 import { Login } from "Components/Pages/Login";
@@ -32,7 +33,7 @@ const Router = createBrowserRouter(
       <Route path="register-socials" element={<RegisterSocials />} />
       <Route path="login" element={<Login />} />
       <Route path="forget-password" element={<ForgetPassword />} />
-      <Route path="dashboard" element={<DashboardTemplate />} />
+      <Route path="dashboard" element={<Dashboard />} />
     </>
   )
 );

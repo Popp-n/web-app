@@ -34,3 +34,6 @@ export const CenterOnboard = styled(Center)`
 export const CenterHero = styled(Center)`
   max-width: var(--max-row-width-hero);
 `;
+export const Centerdashboard = styled(Center)`
+  max-width: var(--max-row-width-dashboard);
+`;

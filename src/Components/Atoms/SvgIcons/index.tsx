@@ -17,3 +17,10 @@ export { ReactComponent as ArrowLeftIcon } from "./svgs/arrow-left-icon.svg";
 export { ReactComponent as CaretIcon } from "./svgs/caret-icon.svg";
 export { ReactComponent as ModalCloseIcon } from "./svgs/modal-close-icon.svg";
 export { ReactComponent as LensIcon } from "./svgs/lens-icon.svg";
+
+export { ReactComponent as TiktokTabIcon } from "./svgs/tiktok-tab-icon.svg";
+export { ReactComponent as InstagramTabIcon } from "./svgs/instagram-tab-icon.svg";
+export { ReactComponent as YoutubeTabIcon } from "./svgs/youtube-tab-icon.svg";
+export { ReactComponent as TwitterTabIcon } from "./svgs/twitter-tab-icon.svg";
+
+export { ReactComponent as WalletIcon } from "./svgs/wallet-icon.svg";

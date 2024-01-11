@@ -1,31 +1,20 @@
-import React from "react";
-import { TopNav, TopNavContainer, UserAvatar } from "./style";
-import { LogoLink } from "Components/Atoms/LogoLink";
-import { Button } from "Components/Atoms/Button";
-import { LensIcon } from "Components/Atoms/SvgIcons";
+import React, { AllHTMLAttributes } from "react";
+import { DashboardTopNav } from "Components/Molecules/TopNav";
+import { Body, Container } from "./style";
 
 // Type defination
-interface Props {}
+interface Props extends AllHTMLAttributes<HTMLDivElement> {}
 
 // Component
-const DashboardTemplate: React.FC<Props> = () => {
+const DashboardTemplate: React.FC<Props> = ({ children }) => {
   // Data to display
   return (
-    <TopNav>
-      <TopNavContainer>
-        <LogoLink />
-
-        <div className="left">
-          <Button>
-            <LensIcon />
-          </Button>
-          <Button className="btn-6">Create a challenge</Button>
-          <UserAvatar className="ml-30">
-            <img src="/assets/images/hero-1.png" alt="" />
-          </UserAvatar>
-        </div>
-      </TopNavContainer>
-    </TopNav>
+    <>
+      <DashboardTopNav />
+      <Body>
+        <Container>{children}</Container>
+      </Body>
+    </>
   );
 };
 
