@@ -183,7 +183,34 @@ export const Typography = css`
       font-weight: 700;
       line-height: normal;
     }
-  
+    &-24 {
+      color: var(--color-24);
+      font-family: Poppins;
+      font-size: 2.7rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &-25 {
+      color: var(--color-24);
+      font-family: Poppins;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-26 {
+      color: var(--color-22);
+      font-family: Poppins;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-27 {
+      color: var(--color-24);
+      font-family: Poppins;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 
   /* Body || Paragraphs */
@@ -320,6 +347,20 @@ export const Typography = css`
       color: var(--color-22);
       font-size: 1.4rem;
       font-weight: 400;
+      line-height: normal;
+    }
+    &-20 {
+      color: var(--color-22);
+      font-family: Poppins;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-21 {
+      color: var(--color-22);
+      font-family: Poppins;
+      font-size: 1.2rem;
+      font-weight: 500;
       line-height: normal;
     }
   }

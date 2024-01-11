@@ -24,3 +24,8 @@ export { ReactComponent as YoutubeTabIcon } from "./svgs/youtube-tab-icon.svg";
 export { ReactComponent as TwitterTabIcon } from "./svgs/twitter-tab-icon.svg";
 
 export { ReactComponent as WalletIcon } from "./svgs/wallet-icon.svg";
+
+export { ReactComponent as InstaChallengeIcon } from "./svgs/insta-challenge-icon.svg";
+export { ReactComponent as TiktokChallengeIcon } from "./svgs/tiktok-challenge-icon.svg";
+export { ReactComponent as YoutubeChallengeIcon } from "./svgs/youtube-challenge-icon.svg";
+export { ReactComponent as TwitterChallengeIcon } from "./svgs/twitter-challenge-icon.svg";

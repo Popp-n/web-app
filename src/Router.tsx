@@ -8,7 +8,6 @@ import { Login } from "Components/Pages/Login";
 import { Register } from "Components/Pages/Register";
 import { RegisterSocials } from "Components/Pages/RegisterSocials";
 import { SignUp } from "Components/Pages/SignUp";
-import { DashboardTemplate } from "Components/Templates/DashboardTemplate";
 import {
   createBrowserRouter,
   createRoutesFromElements,
