@@ -2,6 +2,9 @@ import { FlexColumn } from "Styles/Abstract/Mixins";
 import styled from "styled-components";
 
 export const Left = styled.div`
+  align-self: flex-start;
+  padding-top: 10rem;
+
   .image-text {
     width: 12.1rem;
     height: 4rem;
