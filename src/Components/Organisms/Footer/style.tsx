@@ -35,6 +35,7 @@ export const FooterTop = styled.div`
   }
 `;
 export const FooterBottom = styled.div`
+  background-color: var(--color-9);
   ${FlexRowJcBetweenAiCenter}
   gap: 1rem;
 

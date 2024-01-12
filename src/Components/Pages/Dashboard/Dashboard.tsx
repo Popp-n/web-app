@@ -24,9 +24,13 @@ import {
 } from "Components/Atoms/SvgIcons";
 import Typography from "Components/Atoms/Typography";
 import { Link } from "react-router-dom";
-import { ChallengeCard } from "Components/Molecules/ChallengeCard";
+import {
+  ChallengeCard,
+  ChallengeCardLandscape,
+} from "Components/Molecules/ChallengeCard";
 import { Button } from "Components/Atoms/Button";
 import { CheckBox } from "Components/Molecules/Input";
+import { FooterDown } from "Components/Organisms/Footer";
 
 // Type defination
 interface Props {}
@@ -167,9 +171,13 @@ const Dashboard: React.FC<Props> = () => {
               </div>
             </AllChallengesOption>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <ChallengeCardLandscape />
+          </div>
         </div>
       </AllChallenges>
+
+      <FooterDown />
     </DashboardTemplate>
   );
 };

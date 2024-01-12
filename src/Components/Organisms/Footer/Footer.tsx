@@ -1,16 +1,9 @@
 import React from "react";
-import { FooterBottom, Container, FooterTop, Wrapper } from "./style";
+import { Container, FooterTop, Wrapper } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { Button } from "Components/Atoms/Button";
-import {
-  ArrowRightIcon,
-  InstagramFooterIcon,
-  Logo,
-  TiktokFooterIcon,
-  TwitterFooterIcon,
-  YoutubeFooterIcon,
-} from "Components/Atoms/SvgIcons";
-import { Link } from "react-router-dom";
+import { ArrowRightIcon } from "Components/Atoms/SvgIcons";
+import FooterDown from "./FooterDown";
 
 // Type defination
 interface Props {}
@@ -57,30 +50,7 @@ const Footer: React.FC<Props> = () => {
             Learn More <ArrowRightIcon />
           </Button>
         </FooterTop>
-        <FooterBottom className="mt-65">
-          <div>
-            <Logo />
-            <div className="footer-links mt-5">
-              <Link to="/" className="l-2">
-                PRIVACY POLICY
-              </Link>
-              <Link to="/" className="l-2">
-                TERMS OF USE
-              </Link>
-            </div>
-          </div>
-          <div className="right">
-            <div className="footer-icons">
-              <TiktokFooterIcon />
-              <InstagramFooterIcon />
-              <YoutubeFooterIcon />
-              <TwitterFooterIcon />
-            </div>
-            <Typography as="p" className="p-7 mt-10">
-              Copyright © 2023 popp’n All rights reserved.
-            </Typography>
-          </div>
-        </FooterBottom>
+        <FooterDown />
       </Container>
     </Wrapper>
   );
