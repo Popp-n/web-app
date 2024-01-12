@@ -1,5 +1,6 @@
 import { AboutYou } from "Components/Pages/AboutYou";
 import { Brands } from "Components/Pages/Brands";
+import { CreateChallenge } from "Components/Pages/CreateChallenge";
 import { Creators } from "Components/Pages/Creators";
 import { Dashboard } from "Components/Pages/Dashboard";
 import { ForgetPassword } from "Components/Pages/ForgetPassword";
@@ -33,6 +34,8 @@ const Router = createBrowserRouter(
       <Route path="login" element={<Login />} />
       <Route path="forget-password" element={<ForgetPassword />} />
       <Route path="dashboard" element={<Dashboard />} />
+      <Route path="create-a-challenge" element={<CreateChallenge />} />
+      <Route path="dashboard-2" element={"Dashboard Ikeji"} />
     </>
   )
 );

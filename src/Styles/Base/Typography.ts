@@ -226,6 +226,13 @@ export const Typography = css`
       font-weight: 500;
       line-height: normal;
     }
+    &-30 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: normal;
+    }
   }
 
   /* Body || Paragraphs */
