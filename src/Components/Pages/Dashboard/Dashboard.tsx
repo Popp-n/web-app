@@ -4,6 +4,7 @@ import { DashboardTemplate } from "Components/Templates/DashboardTemplate";
 import {
   Ad,
   AllChallenges,
+  AllChallengesOption,
   Challenges,
   CreatorPopup,
   EarningsTab,
@@ -25,6 +26,7 @@ import Typography from "Components/Atoms/Typography";
 import { Link } from "react-router-dom";
 import { ChallengeCard } from "Components/Molecules/ChallengeCard";
 import { Button } from "Components/Atoms/Button";
+import { CheckBox } from "Components/Molecules/Input";
 
 // Type defination
 interface Props {}
@@ -132,7 +134,39 @@ const Dashboard: React.FC<Props> = () => {
       <AllChallenges>
         <Typography as="h4" className="h-24 mb-25" text="All Challenges" />
         <div className="container">
-          <div className="left"></div>
+          <div className="left">
+            <AllChallengesOption>
+              <Typography as="h4" className="h-28 mb-20" text="Platform Type" />
+              <div className="options">
+                <CheckBox label="TikTok" />
+                <CheckBox label="Instagram" />
+                <CheckBox label="Twitter" />
+                <CheckBox label="YouTube" />
+              </div>
+            </AllChallengesOption>
+            <AllChallengesOption>
+              <Typography
+                as="h4"
+                className="h-28 mb-20"
+                text="max rewards amount"
+              />
+              <div className="options">
+                <CheckBox label="High to low" />
+                <CheckBox label="Low to High" />
+              </div>
+            </AllChallengesOption>
+            <AllChallengesOption>
+              <Typography
+                as="h4"
+                className="h-28 mb-20"
+                text="challenge status"
+              />
+              <div className="options">
+                <CheckBox label="Open" />
+                <CheckBox label="Past" />
+              </div>
+            </AllChallengesOption>
+          </div>
           <div className="right"></div>
         </div>
       </AllChallenges>

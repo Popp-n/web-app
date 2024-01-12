@@ -103,3 +103,15 @@ export const AllChallenges = styled.section`
     }
   }
 `;
+
+export const AllChallengesOption = styled.div`
+  border-top: 1px solid var(--color-22);
+  padding-block: 2rem;
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    grid-row-gap: 3rem;
+  }
+`;
