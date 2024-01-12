@@ -87,3 +87,19 @@ export const PopUp = styled.div`
     gap: .6rem;
   }
 `;
+
+export const AllChallenges = styled.section`
+  margin-block: 9.3rem;
+
+  .container {
+    ${FlexRow};
+    gap: 6rem;
+
+    .left {
+      flex-basis: 30.9rem;
+    }
+    .right {
+      flex-grow: 1;
+    }
+  }
+`;

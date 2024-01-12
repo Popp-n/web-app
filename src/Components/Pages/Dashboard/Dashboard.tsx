@@ -3,6 +3,7 @@ import { TabLikeNav } from "Components/Molecules/TabLikeNav";
 import { DashboardTemplate } from "Components/Templates/DashboardTemplate";
 import {
   Ad,
+  AllChallenges,
   Challenges,
   CreatorPopup,
   EarningsTab,
@@ -127,6 +128,14 @@ const Dashboard: React.FC<Props> = () => {
         />
         <ChallengeCard />
       </Challenges>
+
+      <AllChallenges>
+        <Typography as="h4" className="h-24 mb-25" text="All Challenges" />
+        <div className="container">
+          <div className="left"></div>
+          <div className="right"></div>
+        </div>
+      </AllChallenges>
     </DashboardTemplate>
   );
 };
