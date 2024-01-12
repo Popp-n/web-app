@@ -177,7 +177,7 @@ const Dashboard: React.FC<Props> = () => {
         </div>
       </AllChallenges>
 
-      <FooterDown />
+      {/* <FooterDown /> */}
     </DashboardTemplate>
   );
 };

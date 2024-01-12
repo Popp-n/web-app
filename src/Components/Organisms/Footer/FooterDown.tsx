@@ -17,7 +17,7 @@ interface Props {}
 const FooterDown: React.FC<Props> = () => {
   // Data to display
   return (
-    <FooterBottom className="mt-65">
+    <FooterBottom className="">
       <div>
         <Logo />
         <div className="footer-links mt-5">

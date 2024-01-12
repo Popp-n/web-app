@@ -7,3 +7,8 @@ export const Body = styled.main`
 export const Container = styled(Centerdashboard)`
   padding-block: 4rem;
 `;
+
+export const Footer = styled.footer`
+  padding-block: 4rem;
+  background-color: var(--color-9);
+`;

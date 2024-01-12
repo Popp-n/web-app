@@ -1,6 +1,7 @@
 import React, { AllHTMLAttributes } from "react";
 import { DashboardTopNav } from "Components/Molecules/TopNav";
-import { Body, Container } from "./style";
+import { Body, Container, Footer } from "./style";
+import { FooterDown } from "Components/Organisms/Footer";
 
 // Type defination
 interface Props extends AllHTMLAttributes<HTMLDivElement> {}
@@ -14,6 +15,12 @@ const DashboardTemplate: React.FC<Props> = ({ children }) => {
       <Body>
         <Container>{children}</Container>
       </Body>
+
+      <Footer>
+        <Container>
+          <FooterDown />
+        </Container>
+      </Footer>
     </>
   );
 };
