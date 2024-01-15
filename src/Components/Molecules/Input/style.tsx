@@ -83,18 +83,6 @@ export const CheckBoxWrapper = styled.div`
 
       border: 0.2rem solid var(--color-1);
     }
-
-    &.one-line {
-      margin-top: 0;
-
-      label.label {
-        line-height: 100%;
-
-        &::before {
-          margin-top: 0;
-        }
-      }
-    }
   }
 
   .element:checked + label::before {
@@ -132,14 +120,23 @@ export const RadioWrapper = styled.div`
       border-radius: 50%;
       left: 0;
       transition: 0.4s;
-
       font-size: 1rem;
       line-height: 0;
-
       color: var(--color-white);
-
       border: 0.2rem solid var(--color-1);
     }
+  }
+
+  &.boxed {
+    label {
+      &::before {
+        border-radius: 0.4rem;
+      }
+    }
+  }
+
+  &.no-margin {
+    margin-top: 0;
   }
 
   .element:checked + label::before {

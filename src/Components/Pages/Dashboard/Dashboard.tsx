@@ -29,8 +29,7 @@ import {
   ChallengeCardLandscape,
 } from "Components/Molecules/ChallengeCard";
 import { Button } from "Components/Atoms/Button";
-import { CheckBox } from "Components/Molecules/Input";
-import { FooterDown } from "Components/Organisms/Footer";
+import { Radio } from "Components/Molecules/Input";
 
 // Type defination
 interface Props {}
@@ -140,34 +139,34 @@ const Dashboard: React.FC<Props> = () => {
         <div className="container">
           <div className="left">
             <AllChallengesOption>
-              <Typography as="h4" className="h-28 mb-20" text="Platform Type" />
+              <Typography as="h4" className="h-28 mb-30" text="Platform Type" />
               <div className="options">
-                <CheckBox label="TikTok" />
-                <CheckBox label="Instagram" />
-                <CheckBox label="Twitter" />
-                <CheckBox label="YouTube" />
+                <Radio label="TikTok" name="platformType" className="boxed no-margin" />
+                <Radio label="Instagram" name="platformType" className="boxed no-margin" />
+                <Radio label="Twitter" name="platformType" className="boxed no-margin" />
+                <Radio label="YouTube" name="platformType" className="boxed no-margin" />
               </div>
             </AllChallengesOption>
             <AllChallengesOption>
               <Typography
                 as="h4"
-                className="h-28 mb-20"
+                className="h-28 mb-30"
                 text="max rewards amount"
               />
               <div className="options">
-                <CheckBox label="High to low" />
-                <CheckBox label="Low to High" />
+                <Radio label="High to low" name="rewardAmount" className="boxed no-margin" />
+                <Radio label="Low to High" name="rewardAmount" className="boxed no-margin" />
               </div>
             </AllChallengesOption>
             <AllChallengesOption>
               <Typography
                 as="h4"
-                className="h-28 mb-20"
+                className="h-28 mb-30"
                 text="challenge status"
               />
               <div className="options">
-                <CheckBox label="Open" isOneLine />
-                <CheckBox label="Past" />
+                <Radio label="Open" name="challengeStatus" className="boxed no-margin" />
+                <Radio label="Past" name="challengeStatus" className="boxed no-margin" />
               </div>
             </AllChallengesOption>
           </div>
