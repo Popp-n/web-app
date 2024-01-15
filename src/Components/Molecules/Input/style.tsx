@@ -53,7 +53,7 @@ export const CheckBoxWrapper = styled.div`
     display: none;
   }
 
-  label {
+  .label {
     ${FlexRowAiStart}
     gap: 1rem;
     font-size: 1.5rem;
@@ -82,6 +82,18 @@ export const CheckBoxWrapper = styled.div`
       color: var(--color-white);
 
       border: 0.2rem solid var(--color-1);
+    }
+
+    &.one-line {
+      margin-top: 0;
+
+      label.label {
+        line-height: 100%;
+
+        &::before {
+          margin-top: 0;
+        }
+      }
     }
   }
 

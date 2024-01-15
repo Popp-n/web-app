@@ -166,7 +166,7 @@ const Dashboard: React.FC<Props> = () => {
                 text="challenge status"
               />
               <div className="options">
-                <CheckBox label="Open" />
+                <CheckBox label="Open" isOneLine />
                 <CheckBox label="Past" />
               </div>
             </AllChallengesOption>
