@@ -8,6 +8,7 @@ import { Home } from "Components/Pages/Home";
 import { Login } from "Components/Pages/Login";
 import { Register } from "Components/Pages/Register";
 import { RegisterSocials } from "Components/Pages/RegisterSocials";
+import { SetUpChallenge } from "Components/Pages/SetUpChallenge";
 import { SignUp } from "Components/Pages/SignUp";
 import {
   createBrowserRouter,
@@ -35,7 +36,7 @@ const Router = createBrowserRouter(
       <Route path="forget-password" element={<ForgetPassword />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="create-a-challenge" element={<CreateChallenge />} />
-      <Route path="dashboard-2" element={"Dashboard Ikeji"} />
+      <Route path="setup-challenge" element={<SetUpChallenge />} />
     </>
   )
 );

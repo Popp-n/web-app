@@ -29,3 +29,4 @@ export { ReactComponent as InstaChallengeIcon } from "./svgs/insta-challenge-ico
 export { ReactComponent as TiktokChallengeIcon } from "./svgs/tiktok-challenge-icon.svg";
 export { ReactComponent as YoutubeChallengeIcon } from "./svgs/youtube-challenge-icon.svg";
 export { ReactComponent as TwitterChallengeIcon } from "./svgs/twitter-challenge-icon.svg";
+export { ReactComponent as BackArrowIcon } from "./svgs/back-arrow-icon.svg";

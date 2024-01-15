@@ -1,3 +1,4 @@
+import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 import { css } from "styled-components";
 
 export const Typography = css`
@@ -233,6 +234,13 @@ export const Typography = css`
       font-weight: 500;
       line-height: normal;
     }
+    &-31 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: normal;
+    }
   }
 
   /* Body || Paragraphs */
@@ -429,6 +437,14 @@ export const Typography = css`
       font-weight: 400;
       line-height: normal;
       text-decoration: underline;
+    }
+    &-5 {
+      color: var(--color-22);
+      font-family: Poppins;
+      font-size: 1.6rem;
+      font-weight: 500;
+      ${FlexRowAiCenter}
+      gap: 1rem;
     }
   }
 
