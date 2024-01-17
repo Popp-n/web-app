@@ -10,7 +10,7 @@ import useOnClickOutside from "Utils/Hooks/useOnClickOutside";
 // Component
 const Select: React.FC<SelectProps> = (props) => {
   // States
-  const [value, setValue] = useState("");
+  const [value] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
 
   // Refs
