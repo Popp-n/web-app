@@ -35,3 +35,8 @@ export { ReactComponent as TimerStartIcon } from "./svgs/timer-start-icon.svg";
 export { ReactComponent as DocumentTextIcon } from "./svgs/document-text-icon.svg";
 export { ReactComponent as CardIcon } from "./svgs/card-icon.svg";
 export { ReactComponent as AddCircleIcon } from "./svgs/add-circle-icon.svg";
+
+export { ReactComponent as TiktokRadioIcon } from "./svgs/tiktok-radio-icon.svg";
+export { ReactComponent as InstagramRadioIcon } from "./svgs/instagram-radio-icon.svg";
+export { ReactComponent as YoutubeRadioIcon } from "./svgs/youtube-radio-icon.svg";
+export { ReactComponent as TwitterRadioIcon } from "./svgs/twitter-radio-icon.svg";
