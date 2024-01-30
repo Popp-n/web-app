@@ -45,6 +45,22 @@ export const Wrapper = styled.div`
       border: none;
     }
   }
+
+  /* Style two */
+  &.style-2 {
+    border-radius: 1.2rem;
+    border: 1px solid var(--color-28);
+    background-color: #fff;
+
+    .input-ele {
+      &::placeholder {
+        color: var(--color-22);
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+  }
 `;
 
 export const CheckBoxWrapper = styled.div`

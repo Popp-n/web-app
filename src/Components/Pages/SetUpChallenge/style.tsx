@@ -64,3 +64,7 @@ export const Banner = styled.div`
     ${ImageDefault}
   }
 `;
+
+export const InputWrapper = styled.div`
+  max-width: 37rem;
+`;
