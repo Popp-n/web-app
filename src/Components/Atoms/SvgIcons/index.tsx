@@ -30,3 +30,8 @@ export { ReactComponent as TiktokChallengeIcon } from "./svgs/tiktok-challenge-i
 export { ReactComponent as YoutubeChallengeIcon } from "./svgs/youtube-challenge-icon.svg";
 export { ReactComponent as TwitterChallengeIcon } from "./svgs/twitter-challenge-icon.svg";
 export { ReactComponent as BackArrowIcon } from "./svgs/back-arrow-icon.svg";
+
+export { ReactComponent as TimerStartIcon } from "./svgs/timer-start-icon.svg";
+export { ReactComponent as DocumentTextIcon } from "./svgs/document-text-icon.svg";
+export { ReactComponent as CardIcon } from "./svgs/card-icon.svg";
+export { ReactComponent as AddCircleIcon } from "./svgs/add-circle-icon.svg";

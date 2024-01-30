@@ -36,6 +36,8 @@ export const Variables = css`
     --color-22: #929eae;
     --color-23: #fafafa;
     --color-24: #1b212d;
+    --color-25: #ffe5f4;
+    --color-26: #292d32;
 
     /* Shadows */
     --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);

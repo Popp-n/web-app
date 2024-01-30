@@ -1,22 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Body,
   BodyContainer,
   Left,
   Right,
+  Toggler,
+  TogglerList,
   TopNav,
   TopNavContainer,
   Wrapper,
 } from "./style";
 import { Link } from "react-router-dom";
-import { BackArrowIcon } from "Components/Atoms/SvgIcons";
+import {
+  AddCircleIcon,
+  BackArrowIcon,
+  CardIcon,
+  DocumentTextIcon,
+  TimerStartIcon,
+} from "Components/Atoms/SvgIcons";
 import Typography from "Components/Atoms/Typography";
+import SetUpChallengePage from "./SetUpChallengePage";
+
+// Variable
+const tabTogglers = [
+  { icon: <AddCircleIcon />, label: "Setup Challenge" },
+  { icon: <DocumentTextIcon />, label: "Provide Details" },
+  { icon: <CardIcon />, label: "Set Payment" },
+  { icon: <TimerStartIcon />, label: "Start Over" },
+];
 
 // Type defination
 interface Props {}
 
 // Component
 const SetUpChallenge: React.FC<Props> = () => {
+  // State
+  const [active, setActive] = useState(0);
+
   // Data to display
   return (
     <Wrapper>
@@ -37,8 +57,22 @@ const SetUpChallenge: React.FC<Props> = () => {
               className="h-31 mb-20"
               text="Create a challenge"
             />
+
+            <TogglerList>
+              {tabTogglers.map((tab, index) => (
+                <Toggler
+                  className={active === index ? "active" : ""}
+                  onClick={() => setActive(index)}
+                >
+                  {tab.icon}
+                  <Typography as="p" className="p-22" text={tab.label} />
+                </Toggler>
+              ))}
+            </TogglerList>
           </Left>
-          <Right></Right>
+          <Right>
+            <SetUpChallengePage />
+          </Right>
         </BodyContainer>
       </Body>
     </Wrapper>
