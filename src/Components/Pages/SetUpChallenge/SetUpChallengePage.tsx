@@ -3,7 +3,7 @@ import {
   Banner,
   BudgetRangeWrapper,
   InputWrapper,
-  SetUpChallengePageStyle,
+  PageStyle,
   TargetLevelBox,
 } from "./style";
 import Typography from "Components/Atoms/Typography";
@@ -31,7 +31,7 @@ interface Props {}
 const SetUpChallengePage: React.FC<Props> = () => {
   // Data to display
   return (
-    <SetUpChallengePageStyle>
+    <PageStyle>
       <Banner>
         <img src="/assets/images/ad-img.png" alt="" />
       </Banner>
@@ -194,7 +194,7 @@ const SetUpChallengePage: React.FC<Props> = () => {
       <Button className="btn btn-4 btn-md b-7 mt-70">
         Provide Details <LongArrowIcon />
       </Button>
-    </SetUpChallengePageStyle>
+    </PageStyle>
   );
 };
 

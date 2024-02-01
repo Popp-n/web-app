@@ -20,6 +20,7 @@ import {
 } from "Components/Atoms/SvgIcons";
 import Typography from "Components/Atoms/Typography";
 import SetUpChallengePage from "./SetUpChallengePage";
+import ProvideDetailsPage from "./ProvideDetailsPage";
 
 // Variable
 const tabTogglers = [
@@ -31,6 +32,9 @@ const tabTogglers = [
 
 // Type defination
 interface Props {}
+
+// Variables
+const pages = [<SetUpChallengePage />, <ProvideDetailsPage />];
 
 // Component
 const SetUpChallenge: React.FC<Props> = () => {
@@ -70,9 +74,7 @@ const SetUpChallenge: React.FC<Props> = () => {
               ))}
             </TogglerList>
           </Left>
-          <Right>
-            <SetUpChallengePage />
-          </Right>
+          <Right>{pages[active]}</Right>
         </BodyContainer>
       </Body>
     </Wrapper>

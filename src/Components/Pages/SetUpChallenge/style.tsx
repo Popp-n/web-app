@@ -6,6 +6,7 @@ import {
   ImageDefault,
 } from "Styles/Abstract/Mixins";
 import { Center, Centerdashboard } from "Styles/layouts/Center";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Wrapper = styled.main``;
@@ -56,9 +57,12 @@ export const Toggler = styled.button`
 `;
 
 // Set up challenge page
-export const SetUpChallengePageStyle = styled.section`
+
+export const PageStyle = styled(motion.section)`
   padding-bottom: 10rem;
 `;
+
+export const SetUpChallengePageStyle = styled.section``;
 export const Banner = styled.div`
   max-height: 25rem;
   border-radius: 9.2rem;
@@ -84,3 +88,6 @@ export const BudgetRangeWrapper = styled.div`
   max-width: 35rem;
   ${FlexRowJcBetween}
 `;
+
+// Provide details page
+export const ProvideDetailsPageStyle = styled.section``;
