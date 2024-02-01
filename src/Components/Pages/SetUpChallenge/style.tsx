@@ -2,6 +2,7 @@ import {
   FlexColumn,
   FlexRow,
   FlexRowAiCenter,
+  FlexRowJcBetween,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
 import { Center, Centerdashboard } from "Styles/layouts/Center";
@@ -55,7 +56,9 @@ export const Toggler = styled.button`
 `;
 
 // Set up challenge page
-export const SetUpChallengePageStyle = styled.section``;
+export const SetUpChallengePageStyle = styled.section`
+  padding-bottom: 10rem;
+`;
 export const Banner = styled.div`
   max-height: 25rem;
   border-radius: 9.2rem;
@@ -67,4 +70,17 @@ export const Banner = styled.div`
 
 export const InputWrapper = styled.div`
   max-width: 37rem;
+`;
+
+export const TargetLevelBox = styled.div`
+  max-width: 25rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--color-28);
+  padding: 1.5rem;
+  ${FlexRowJcBetween}
+`;
+
+export const BudgetRangeWrapper = styled.div`
+  max-width: 35rem;
+  ${FlexRowJcBetween}
 `;

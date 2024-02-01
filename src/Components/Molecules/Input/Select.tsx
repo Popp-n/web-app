@@ -1,53 +1,28 @@
-import React, { useRef, useState } from "react";
-import { Dropdown, SelectInputWrapper, SelecteWrapper } from "./style";
-import Typography from "Components/Atoms/Typography";
-import { CaretIcon } from "Components/Atoms/SvgIcons";
+import React from "react";
+import { SelectInputWrapper, SelecteWrapper } from "./style";
 import { SelectProps } from "./types";
-import { AnimatePresence } from "framer-motion";
-import { animate_slideUp } from "Styles/Base/Animation";
-import useOnClickOutside from "Utils/Hooks/useOnClickOutside";
 
 // Component
 const Select: React.FC<SelectProps> = (props) => {
-  // States
-  const [value] = useState("");
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  // Refs
-  const dropdownRef = useRef<any>();
-
-  // Hooks
-  useOnClickOutside(dropdownRef, () => setShowDropdown(false));
-
   // Props
-  const { placeholder } = props;
+  const { placeholder, className, label, name, options, ...otherProps } = props;
 
   // Data to display
   return (
     <SelectInputWrapper>
-      <SelecteWrapper
-        ref={dropdownRef}
-        onClick={() => setShowDropdown(!showDropdown)}
-      >
-        {value ? (
-          <Typography as="h5" className="input-ele" text={value || " "} />
-        ) : (
-          <Typography as="h5" className="placeholder" text={placeholder} />
-        )}
-        <CaretIcon />
-      </SelecteWrapper>
+      {label && <label htmlFor={name}>{label}</label>}
 
-      <AnimatePresence>
-        {showDropdown && (
-          <Dropdown
-            variants={animate_slideUp.variants}
-            exit={animate_slideUp.variants.hidden}
-            transition={animate_slideUp.transition}
-            initial="hidden"
-            animate={showDropdown ? "visible" : "hidden"}
-          ></Dropdown>
-        )}
-      </AnimatePresence>
+      <SelecteWrapper className={className ? className : ""}>
+        <select name={name} id={name} className={`input-ele`} {...otherProps}>
+          <option value="">{placeholder ? placeholder : "Select"}</option>
+
+          {options?.map((option: any) => (
+            <option key={option.id} value={option.id || option.value}>
+              {option.name || option.value}
+            </option>
+          ))}
+        </select>
+      </SelecteWrapper>
     </SelectInputWrapper>
   );
 };

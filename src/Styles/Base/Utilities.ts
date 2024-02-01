@@ -231,6 +231,9 @@ export const Utilities = css`
   .text-decoration-none {
     text-decoration: none;
   }
+  .text-underline {
+    text-decoration: underline;
+  }
   .text-line-through {
     text-decoration: line-through;
   }

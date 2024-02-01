@@ -1,11 +1,13 @@
-import { AllHTMLAttributes } from "react";
+import { AllHTMLAttributes, InputHTMLAttributes } from "react";
 
 export interface InputProps extends AllHTMLAttributes<HTMLInputElement> {
   noMargin?: boolean;
 }
 
-export interface SelectProps extends AllHTMLAttributes<HTMLInputElement> {
+export interface SelectProps extends InputHTMLAttributes<HTMLSelectElement> {
+  label?: string;
   noMargin?: boolean;
+  options?: object[];
 }
 export interface RadioProps extends AllHTMLAttributes<HTMLInputElement> {
   label?: string;

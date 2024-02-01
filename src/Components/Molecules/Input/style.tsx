@@ -390,17 +390,50 @@ export const SelecteWrapper = styled.div`
     font-family: Poppins;
     font-size: 1.5rem;
     font-weight: 400;
+
+    &::placeholder {
+      color: var(--color-18);
+      font-family: Poppins;
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding-inline: 2rem;
+      padding-block: 1.8rem;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 
-  .placeholder {
-    color: var(--color-18);
-    font-family: Poppins;
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding-inline: 2rem;
-    padding-block: 1.8rem;
+  /* Style two */
+  &.style-2 {
+    border-radius: 1.2rem;
+    border: 1px solid var(--color-28);
+    background-color: #fff;
+
+    .input-ele {
+      &::placeholder {
+        color: var(--color-22);
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
   }
 `;
+
+const FormInputGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+
+  &:not(:last-child) {
+    /* margin-bottom: 1.6rem; */
+  }
+`;
+
+export default FormInputGrid;
 
 export const Dropdown = styled(motion.div)`
   position: absolute;

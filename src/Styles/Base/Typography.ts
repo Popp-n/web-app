@@ -255,6 +255,26 @@ export const Typography = css`
       font-weight: 400;
       line-height: normal;
     }
+    &-34 {
+      color: var(--color-22);
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-35 {
+      color: var(--color-22);
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: normal;
+    }
+    &-36 {
+      color: var(--color-10);
+      font-family: Poppins;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: normal;
+    }
   }
 
   /* Body || Paragraphs */
@@ -425,6 +445,14 @@ export const Typography = css`
         text-decoration-line: underline;
       }
     }
+
+    &-24 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 
   /* Link */
@@ -520,6 +548,37 @@ export const Typography = css`
       font-family: Poppins;
       font-size: 1.4rem;
       font-weight: 500;
+    }
+    &-7 {
+      color: var(--color-white);
+      font-family: Poppins;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: normal;
+
+      ${FlexRowAiCenter}
+      gap: 1rem;
+
+      // position: relative;
+      // overflow: hidden;
+
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   inset: 0;
+      //   // background-color: rgba(0, 0, 0, 0.1);
+      //   width: 100%;
+      //   height: 100%;
+      //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      //   transition: 0.4s;
+      // }
+
+      // &:hover {
+      //   &::after {
+      //     background-color: rgba(0, 0, 0, 0.2);
+      //     clip-path: polygon(0 82%, 100% 33%, 100% 100%, 0% 100%);
+      //   }
+      // }
     }
   }
 `;
