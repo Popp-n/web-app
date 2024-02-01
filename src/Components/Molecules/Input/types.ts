@@ -17,3 +17,9 @@ export interface SocialRadioProps extends AllHTMLAttributes<HTMLInputElement> {
   name?: string;
   social: "Tiktok" | "Instagram" | "Youtube" | "Twitter";
 }
+export interface TypeRadioProps extends AllHTMLAttributes<HTMLInputElement> {
+  label?: string;
+  name?: string;
+  icon?: JSX.Element;
+  labelClassName?: string;
+}

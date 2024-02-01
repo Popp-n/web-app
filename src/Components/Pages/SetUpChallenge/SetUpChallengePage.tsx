@@ -1,8 +1,14 @@
 import React from "react";
 import { Banner, InputWrapper, SetUpChallengePageStyle } from "./style";
 import Typography from "Components/Atoms/Typography";
-import { Input, SocialRadio } from "Components/Molecules/Input";
+import { Input, SocialRadio, TypeRadio } from "Components/Molecules/Input";
 import { Flex } from "Styles/layouts/Flex";
+import {
+  CreativeChallengeIcon,
+  DuetChallengeIcon,
+  SoundChallengeIcon,
+  StitchChallengeIcon,
+} from "Components/Atoms/SvgIcons";
 
 // Type defination
 interface Props {}
@@ -32,18 +38,40 @@ const SetUpChallengePage: React.FC<Props> = () => {
       />
 
       <Flex $gap="1rem" $flexRow>
-        <SocialRadio social="Tiktok" label="Tiktok" name="socil-type" />
-        <SocialRadio social="Instagram" label="Instagram" name="socil-type" />
-        <SocialRadio social="Youtube" label="Youtube" name="socil-type" />
-        <SocialRadio social="Twitter" label="Twitter" name="socil-type" />
+        <SocialRadio social="Tiktok" label="Tiktok" name="socil-platform" />
+        <SocialRadio
+          social="Instagram"
+          label="Instagram"
+          name="socil-platform"
+        />
+        <SocialRadio social="Youtube" label="Youtube" name="socil-platform" />
+        <SocialRadio social="Twitter" label="Twitter" name="socil-platform" />
       </Flex>
 
       <Typography as="h6" className="h-33 mt-40 mb-20" text="Select Type" />
       <Flex $gap="1rem" $flexRow>
-        <SocialRadio social="Tiktok" label="Tiktok" name="socil-type" />
-        <SocialRadio social="Instagram" label="Instagram" name="socil-type" />
-        <SocialRadio social="Youtube" label="Youtube" name="socil-type" />
-        <SocialRadio social="Twitter" label="Twitter" name="socil-type" />
+        <TypeRadio
+          icon={<SoundChallengeIcon />}
+          label="Sound"
+          name="socil-ff"
+        />
+        <TypeRadio
+          icon={<CreativeChallengeIcon />}
+          label="Creative"
+          name="socil-ff"
+        />
+        <TypeRadio
+          icon={<DuetChallengeIcon />}
+          label="Duet"
+          labelClassName="label-icon"
+          name="socil-ff"
+        />
+        <TypeRadio
+          icon={<StitchChallengeIcon />}
+          label="Stitch"
+          labelClassName="label-icon"
+          name="socil-ff"
+        />
       </Flex>
 
       <Typography as="h6" className="h-33 mt-40 mb-20" text="Link to content" />
@@ -60,7 +88,7 @@ const SetUpChallengePage: React.FC<Props> = () => {
         <>
           Choosee what you want to spend on your challenge! The larger the
           budget, the more appealing your challenge will be to our creators!{" "}
-          <span className="p-23--heavy">{" "} How show I decide on a budget?</span>
+          <span className="p-23--heavy"> How show I decide on a budget?</span>
         </>
       </Typography>
 

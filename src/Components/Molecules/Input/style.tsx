@@ -1,5 +1,6 @@
 import {
   FlexColumnJcCenterAiCenter,
+  FlexRowAiCenter,
   FlexRowAiStart,
   FlexRowJcBetweenAiCenter,
   GridCenter,
@@ -201,6 +202,56 @@ export const SocialRadioWrapper = styled.div`
 
     path {
       fill: var(--color-white);
+    }
+  }
+`;
+
+export const TypeRadioWrapper = styled.div`
+  .element {
+    display: none;
+  }
+
+  label {
+    border-radius: 0.4rem;
+    background-color: var(--color-27);
+
+    ${FlexRowAiCenter}
+    gap: 1rem;
+
+    color: var(--color-22);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    cursor: pointer;
+
+    position: relative;
+    padding: 0.8rem 2rem;
+
+    border-radius: 2.5rem;
+    background: var(--color-27);
+
+    transition: 0.4s;
+
+    path {
+      transition: 0.2s;
+    }
+  }
+
+  .element:checked + label {
+    background-color: var(--color-1);
+    color: var(--color-white);
+
+    path {
+      fill: var(--color-white);
+    }
+
+    &.label-icon {
+      path {
+        fill: none;
+        stroke: var(--color-white);
+      }
     }
   }
 `;

@@ -40,3 +40,8 @@ export { ReactComponent as TiktokRadioIcon } from "./svgs/tiktok-radio-icon.svg"
 export { ReactComponent as InstagramRadioIcon } from "./svgs/instagram-radio-icon.svg";
 export { ReactComponent as YoutubeRadioIcon } from "./svgs/youtube-radio-icon.svg";
 export { ReactComponent as TwitterRadioIcon } from "./svgs/twitter-radio-icon.svg";
+
+export { ReactComponent as SoundChallengeIcon } from "./svgs/sound-challenge-icon.svg";
+export { ReactComponent as DuetChallengeIcon } from "./svgs/duet-challenge-icon.svg";
+export { ReactComponent as StitchChallengeIcon } from "./svgs/stitch-challenge-icon.svg";
+export { ReactComponent as CreativeChallengeIcon } from "./svgs/creative-challenge-icon.svg";
