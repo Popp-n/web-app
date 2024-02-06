@@ -3,7 +3,8 @@ import {
   Banner,
   BudgetRangeWrapper,
   InputWrapper,
-  PageStyle,
+  PageStyle 
+  ,
   TargetLevelBox,
 } from "./style";
 import Typography from "Components/Atoms/Typography";
@@ -31,7 +32,12 @@ interface Props {}
 const SetUpChallengePage: React.FC<Props> = () => {
   // Data to display
   return (
-    <PageStyle>
+    <PageStyle
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.4, ease: "easeInOut" }}
+    >
       <Banner>
         <img src="/assets/images/ad-img.png" alt="" />
       </Banner>

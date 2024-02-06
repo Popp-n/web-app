@@ -21,6 +21,7 @@ import {
 import Typography from "Components/Atoms/Typography";
 import SetUpChallengePage from "./SetUpChallengePage";
 import ProvideDetailsPage from "./ProvideDetailsPage";
+import { AnimatePresence } from "framer-motion";
 
 // Variable
 const tabTogglers = [
@@ -74,7 +75,9 @@ const SetUpChallenge: React.FC<Props> = () => {
               ))}
             </TogglerList>
           </Left>
-          <Right>{pages[active]}</Right>
+          <Right>
+            <AnimatePresence>{pages[active]}</AnimatePresence>
+          </Right>
         </BodyContainer>
       </Body>
     </Wrapper>
