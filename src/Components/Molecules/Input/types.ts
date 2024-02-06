@@ -2,6 +2,7 @@ import { AllHTMLAttributes, InputHTMLAttributes } from "react";
 
 export interface InputProps extends AllHTMLAttributes<HTMLInputElement> {
   noMargin?: boolean;
+  errorMessage?: string;
 }
 
 export interface SelectProps extends InputHTMLAttributes<HTMLSelectElement> {

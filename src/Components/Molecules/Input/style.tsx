@@ -8,12 +8,15 @@ import {
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
+export const InputFieldWrapper = styled.div`
+  margin-bottom: 2rem;
+`;
+
 export const Wrapper = styled.div`
   border-radius: 1.2rem;
   overflow: hidden;
   background-color: var(--color-white);
   ${FlexRowJcBetweenAiCenter}
-  margin-bottom: 2rem;
   width: 100%;
 
   &.no-margin {
@@ -22,6 +25,10 @@ export const Wrapper = styled.div`
 
   &.is-password {
     padding-right: 2rem;
+  }
+
+  &.has-error {
+    border-radius: 1.2rem 1.2rem 0 0;
   }
 
   .input-ele {

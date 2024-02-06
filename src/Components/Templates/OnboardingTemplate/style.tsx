@@ -31,4 +31,6 @@ export const Body = styled.nav`
   background-size: 76rem;
   padding-top: 5rem;
   padding-bottom: 10rem;
+
+  ${responsive("sm", "background-size: 100%;")}
 `;

@@ -1,17 +1,13 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import { ButtonStyle } from "./style";
 
-interface Props {
-  children?: any;
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   value?: any;
-  className?: string;
-  disabled?: any;
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 const Button: React.FC<Props> = (props) => {
-  const { children, className, value } = props;
+  const { children, className, value, type = "button" } = props;
   return (
-    <ButtonStyle className={className} {...props}>
+    <ButtonStyle type={type} className={className} {...props}>
       {value || children}
     </ButtonStyle>
   );

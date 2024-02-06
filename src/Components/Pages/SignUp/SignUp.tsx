@@ -2,8 +2,7 @@ import React from "react";
 import { Left, Right } from "./style";
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 import Typography from "Components/Atoms/Typography";
-import { Button } from "Components/Atoms/Button";
-import { CheckBox, Input } from "Components/Molecules/Input";
+import { SignUpForm } from "Components/Organisms/Forms";
 
 // Type defination
 interface Props {}
@@ -48,14 +47,8 @@ const SignUp: React.FC<Props> = () => {
             className="h-20 mb-30 remove-on-sm-vp"
             text="Sign Up"
           />
-          <Input placeholder="First Name" />
-          <Input placeholder="Last Name" />
-          <Input placeholder="Email Address" type="email" />
-          <Input placeholder="Password" type="password" />
-          <CheckBox />
-          <Button className="btn-full btn-4 b-5 btn-md mt-40 ff">
-            Register
-          </Button>
+
+          <SignUpForm />
 
           <Typography
             as="p"
