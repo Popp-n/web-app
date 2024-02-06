@@ -146,6 +146,7 @@ export const Typography = css`
       color: var(--color-black);
       font-family: Poppins;
       font-size: 5.3697rem;
+      font-size: clamp(3rem, 10vw, 5.3697rem);
       font-weight: 600;
       line-height: normal;
     }

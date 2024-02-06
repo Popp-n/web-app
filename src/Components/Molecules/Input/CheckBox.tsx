@@ -16,7 +16,13 @@ const CheckBox: React.FC<Props> = ({ label, isOneLine }) => {
     >
       <input type="checkbox" name="" id="name" className="element" />
       <label htmlFor="name" className="label">
-        {label || <>I agree to the Terms of Service and Privacy Policy</>}
+        {label || (
+          <span>
+            I agree to the{" "}
+            <span className="text-underline"> Terms of Service </span> and
+            <span className="text-underline"> Privacy Policy</span>
+          </span>
+        )}
       </label>
     </CheckBoxWrapper>
   );

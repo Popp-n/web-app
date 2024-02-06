@@ -1,3 +1,4 @@
+import { responsive } from "Styles/Abstract/Breakpoints";
 import { FlexRowJcBetweenAiCenter } from "Styles/Abstract/Mixins";
 import { Center, CenterOnboard } from "Styles/layouts/Center";
 import styled from "styled-components";
@@ -15,6 +16,8 @@ export const Container = styled(Center)`
 
 export const BodyContainer = styled(CenterOnboard)`
   ${FlexRowJcBetweenAiCenter}
+
+  ${responsive("sm", "flex-wrap: wrap; flex-direction: column; gap: 6rem")}
 `;
 
 export const Nav = styled.nav`

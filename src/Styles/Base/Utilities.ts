@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { responsive } from "Styles/Abstract/Breakpoints";
 import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 
 export const Utilities = css`
@@ -217,6 +218,9 @@ export const Utilities = css`
   .text-uppercase {
     text-transform: uppercase;
   }
+  .text-underline {
+    text-decoration: underline;
+  }
   .text-truncate {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -430,5 +434,17 @@ export const Utilities = css`
         white-space: nowrap;
       }
     }
+  }
+
+  /** Responsiveness */
+  .display-on-sm-vp {
+    display: none;
+    ${responsive("sm", "display: block")}
+  }
+  .remove-on-sm-vp {
+    ${responsive("sm", "display: none")}
+  }
+  .center-on-sm-vp {
+    ${responsive("sm", "text-align: center")}
   }
 `;

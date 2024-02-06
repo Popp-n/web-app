@@ -15,8 +15,12 @@ const SignUp: React.FC<Props> = () => {
     <OnboardingTemplate>
       <>
         <Left>
-          <Typography as="h3" className="h-18" text="Join the" />
-          <Typography as="h5" className="mt-10 h-19">
+          <Typography
+            as="h3"
+            className="h-18 center-on-sm-vp"
+            text="Join the"
+          />
+          <Typography as="h5" className="mt-10 h-19 center-on-sm-vp">
             <>
               <img
                 src="/assets/images/poppn-logo-animation.gif"
@@ -26,19 +30,24 @@ const SignUp: React.FC<Props> = () => {
               Revolution
             </>
           </Typography>
+
           <Typography
             as="p"
-            className="p-16 mt-60"
+            className="p-16 mt-60 remove-on-sm-vp"
             text="If you already have an account"
           />
-          <Typography as="p" className="p-16 mt-5">
+          <Typography as="p" className="p-16 mt-5 remove-on-sm-vp">
             <>
               You can <span className="p-17">Login here! </span>
             </>
           </Typography>
         </Left>
         <Right>
-          <Typography as="h5" className="h-20 mb-30" text="Sign Up" />
+          <Typography
+            as="h5"
+            className="h-20 mb-30 remove-on-sm-vp"
+            text="Sign Up"
+          />
           <Input placeholder="First Name" />
           <Input placeholder="Last Name" />
           <Input placeholder="Email Address" type="email" />
@@ -47,6 +56,17 @@ const SignUp: React.FC<Props> = () => {
           <Button className="btn-full btn-4 b-5 btn-md mt-40 ff">
             Register
           </Button>
+
+          <Typography
+            as="p"
+            className="p-16 mt-60 text-center display-on-sm-vp"
+            text="If you already have an account"
+          />
+          <Typography as="p" className="p-16 mt-5 text-center display-on-sm-vp">
+            <>
+              You can <span className="p-17">Login here! </span>
+            </>
+          </Typography>
         </Right>
       </>
     </OnboardingTemplate>
