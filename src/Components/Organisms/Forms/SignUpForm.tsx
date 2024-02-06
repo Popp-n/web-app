@@ -72,7 +72,10 @@ const SignUpForm: React.FC<Props> = () => {
         <InputField placeholder="Password" name="password" type="password" />
 
         <CheckBox />
-        <Button type="submit" className="btn-full btn-4 b-5 btn-md mt-40 ff">
+        <Button
+          type="submit"
+          className="btn-full btn-hover--1 btn-4 b-5 btn-md mt-40 ff"
+        >
           {loading ? (
             <Spinner style={{ width: "1.3rem", height: "1.3rem" }} />
           ) : (

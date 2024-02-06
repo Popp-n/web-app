@@ -90,7 +90,7 @@ export const ButtonStyle = styled(Button)`
       /* Shadow/xs */
       box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 
-      padding: .9rem 3rem;
+      padding: 0.9rem 3rem;
     }
 
     /* Colors */
@@ -110,6 +110,24 @@ export const ButtonStyle = styled(Button)`
 
     &-sm {
       padding: 1rem 3rem;
+    }
+
+    /* Hover types */
+    &-hover {
+      &--1 {
+        transition: 0.4s;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background-color: var(--color-32);
+          box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.3);
+        }
+        &:active {
+          transform: scale(0.98);
+          box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+        }
+      }
     }
   }
 `;

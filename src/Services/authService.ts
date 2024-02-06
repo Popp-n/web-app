@@ -10,13 +10,12 @@ http.setToken(getToken());
 // }
 
 export function getToken() {
-  console.log({ userDataKey });
   const localStore = localStorage.getItem(userDataKey);
   const stor = JSON.parse(JSON.parse(JSON.stringify(localStore)));
   if (stor) {
-    const { token } = stor?.state?.userData;
-    if (token) {
-      return token;
+    const { accessToken } = stor?.state?.userData;
+    if (accessToken) {
+      return accessToken;
     }
     return null;
   }

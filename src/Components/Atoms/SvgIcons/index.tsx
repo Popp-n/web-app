@@ -47,3 +47,4 @@ export { ReactComponent as StitchChallengeIcon } from "./svgs/stitch-challenge-i
 export { ReactComponent as CreativeChallengeIcon } from "./svgs/creative-challenge-icon.svg";
 export { ReactComponent as LongArrowIcon } from "./svgs/long-arrow-icon.svg";
 export { ReactComponent as InputErrorIcon } from "./svgs/input-error-icon.svg";
+export { ReactComponent as MobileMenuIcon } from "./svgs/mobile-menu-icon.svg";

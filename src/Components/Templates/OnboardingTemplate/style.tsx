@@ -17,11 +17,20 @@ export const Container = styled(Center)`
 export const BodyContainer = styled(CenterOnboard)`
   ${FlexRowJcBetweenAiCenter}
 
-  ${responsive("sm", "flex-wrap: wrap; flex-direction: column; gap: 6rem")}
+  ${responsive("sm", "flex-direction: column; gap: 6rem")}
 `;
 
 export const Nav = styled.nav`
   padding-block: 4rem;
+
+  ${responsive(
+    "sm",
+    "background-color: var(--color-white); padding-block: 1.5rem;"
+  )}
+
+  .logo {
+    ${responsive("sm", "width: 8.2rem; height:")}
+  }
 `;
 
 export const Body = styled.nav`
