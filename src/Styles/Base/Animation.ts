@@ -57,6 +57,19 @@ export const animateFade = {
   transition: { ease: "easeIn", duration: 0.5 },
 };
 
+export const animateFadeSmall = {
+  variants: {
+    hidden: {
+      opacity: 0,
+
+      transition: { duration: 0.4 },
+    },
+    visible: { opacity: 1 },
+    // exit: { opacity: 0, y: -5 },
+  },
+  transition: { ease: "easeIn", duration: 0.45 },
+};
+
 export const animate_slideUp = {
   variants: {
     hidden: {

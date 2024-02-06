@@ -10,12 +10,13 @@ import endpoints from "Services/endpoints";
 import { Spinner } from "Components/Atoms/Spinner";
 import httpService from "Services/httpService";
 import { CheckBox } from "Components/Molecules/Input";
+import { useAuthStore } from "Store";
 
 // Type defination
 interface Props {}
 
 const validationSchema = yup.object().shape({
-  email: yup.string().required().min(1).label("Email"),
+  email: yup.string().email().required().min(1).label("Email"),
   firstName: yup.string().required().min(1).label("First Name"),
   lastName: yup.string().required().min(1).label("Last Name"),
   password: yup.string().required().min(1).label("Password"),
@@ -33,18 +34,28 @@ const SignUpForm: React.FC<Props> = () => {
 
   // Hooks
   const navigate = useNavigate();
-  const { data, loading, sendRequest } = useApi<any>();
+  const { loading, sendRequest } = useApi<any>();
+
+  // Store
+  const { userLogIn } = useAuthStore();
 
   // Methods
   const handleSubmit = async (values: any) => {
     const requestData = {
-      ...values,
+      email: values.email,
+      name: `${values.lastName} ${values.firstName}`,
+      password: values.password,
     };
 
     // Send to backend
-    await sendRequest("POST", endpoints.signUpUrl, requestData);
-    httpService.setToken(data.access_token);
-    navigate("");
+    const res = await sendRequest("POST", endpoints.signUpUrl, requestData);
+    if (res.data) {
+      userLogIn(res.data);
+      const userData = res.data;
+      const { accessToken } = userData;
+      httpService.setToken(accessToken);
+      navigate("/about-you");
+    }
   };
 
   // Data to display

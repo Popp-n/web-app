@@ -1,3 +1,4 @@
+import { ProtectedRoute } from "Components/Atoms/ProtectedRoute";
 import { AboutYou } from "Components/Pages/AboutYou";
 import { Brands } from "Components/Pages/Brands";
 import { CreateChallenge } from "Components/Pages/CreateChallenge";
@@ -29,8 +30,22 @@ const Router = createBrowserRouter(
       <Route path="creators" element={<Creators />} />
       <Route path="brands" element={<Brands />} />
       <Route path="sign-up" element={<SignUp />} />
-      <Route path="about-you" element={<AboutYou />} />
-      <Route path="register" element={<Register />} />
+      <Route
+        path="about-you"
+        element={
+          <ProtectedRoute>
+            <AboutYou />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="register"
+        element={
+          <ProtectedRoute>
+            <Register />
+          </ProtectedRoute>
+        }
+      />
       <Route path="register-socials" element={<RegisterSocials />} />
       <Route path="login" element={<Login />} />
       <Route path="forget-password" element={<ForgetPassword />} />

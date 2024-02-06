@@ -1,8 +1,8 @@
 import React from "react";
 import { Left, Right } from "./style";
-import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 import Typography from "Components/Atoms/Typography";
 import { SignUpForm } from "Components/Organisms/Forms";
+import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
 
 // Type defination
 interface Props {}

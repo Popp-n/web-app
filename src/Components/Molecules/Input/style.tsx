@@ -113,6 +113,7 @@ export const CheckBoxWrapper = styled.div`
   .element:checked + label::before {
     background-color: var(--color-1);
     content: "✔";
+    color: var(--color-white);
   }
 `;
 

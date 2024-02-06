@@ -1,6 +1,6 @@
 import http from "./httpService";
 
-const userDataKey = process.env.REACT_APP_USER_AUTH_KEY || "";
+const userDataKey = process.env.REACT_APP_USER_STORE_KEY || "";
 // const authApi = "/User/Onboarding/auth";
 
 http.setToken(getToken());
