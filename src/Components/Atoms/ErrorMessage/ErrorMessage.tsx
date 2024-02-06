@@ -8,7 +8,7 @@ interface Props extends AllHTMLAttributes<HTMLSpanElement> {
 }
 
 // Component
-const ErrorMessage: React.FC<Props> = ({ label }) => {
+const ErrorMessage: React.FC<Props> = ({ label, className }) => {
   // Data to display
   return (
     <Wrapper
@@ -16,6 +16,7 @@ const ErrorMessage: React.FC<Props> = ({ label }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeInOut" }}
+      className={className}
     >
       <InputErrorIcon width={20} height={20} />
       {label}

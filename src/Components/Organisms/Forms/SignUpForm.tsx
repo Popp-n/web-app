@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as yup from "yup";
 import { Form } from "formik";
 import { useNavigate } from "react-router-dom";
@@ -11,6 +11,7 @@ import { Spinner } from "Components/Atoms/Spinner";
 import httpService from "Services/httpService";
 import { CheckBox } from "Components/Molecules/Input";
 import { useAuthStore } from "Store";
+import { ErrorMessage } from "Components/Atoms/ErrorMessage";
 
 // Type defination
 interface Props {}
@@ -24,6 +25,9 @@ const validationSchema = yup.object().shape({
 
 // Component
 const SignUpForm: React.FC<Props> = () => {
+  // States
+  const [errorMessage, setErrorMessage] = useState<string>("");
+
   //   Variables
   const initialValues = {
     email: "",
@@ -49,12 +53,15 @@ const SignUpForm: React.FC<Props> = () => {
 
     // Send to backend
     const res = await sendRequest("POST", endpoints.signUpUrl, requestData);
+
     if (res.data) {
       userLogIn(res.data);
       const userData = res.data;
       const { accessToken } = userData;
       httpService.setToken(accessToken);
       navigate("/about-you");
+    } else {
+      setErrorMessage(res?.response?.data?.message);
     }
   };
 
@@ -66,6 +73,9 @@ const SignUpForm: React.FC<Props> = () => {
       onSubmit={handleSubmit}
     >
       <Form>
+        {errorMessage && (
+          <ErrorMessage className="outer" label={errorMessage} />
+        )}
         <InputField placeholder="First Name" name="firstName" />
         <InputField placeholder="Last Name" name="lastName" />
         <InputField placeholder="Email" name="email" type="email" />

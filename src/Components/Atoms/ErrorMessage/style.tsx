@@ -16,4 +16,9 @@ export const Wrapper = styled(motion.span)`
   border: 0 solid var(--color-31);
   background-color: var(--color-18);
   padding: 0.8rem 1.6rem;
+
+  &.outer {
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+  }
 `;
