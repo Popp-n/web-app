@@ -9,6 +9,7 @@ export interface SelectProps extends InputHTMLAttributes<HTMLSelectElement> {
   label?: string;
   noMargin?: boolean;
   options?: object[];
+  errorMessage?: string;
 }
 export interface RadioProps extends AllHTMLAttributes<HTMLInputElement> {
   label?: string;

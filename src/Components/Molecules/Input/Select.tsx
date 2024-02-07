@@ -1,19 +1,31 @@
 import React from "react";
-import { SelectInputWrapper, SelecteWrapper } from "./style";
+import { SelectWrapper, SelectInputWrapper } from "./style";
 import { SelectProps } from "./types";
+import { AnimatePresence } from "framer-motion";
+import { ErrorMessage } from "Components/Atoms/ErrorMessage";
 
 // Component
 const Select: React.FC<SelectProps> = (props) => {
   // Props
-  const { placeholder, className, label, name, options, ...otherProps } = props;
+  const {
+    placeholder,
+    className,
+    label,
+    name,
+    options,
+    errorMessage,
+    ...otherProps
+  } = props;
 
   // Data to display
   return (
     <SelectInputWrapper>
-      {label && <label htmlFor={name}>{label}</label>}
-
-      <SelecteWrapper className={className ? className : ""}>
-        <select name={name} id={name} className={`input-ele`} {...otherProps}>
+      <SelectWrapper
+        className={`${className ? className : ""} ${
+          errorMessage ? "has-error" : ""
+        }`}
+      >
+        <select name={name} id={name} className={`select-ele`} {...otherProps}>
           <option value="">{placeholder ? placeholder : "Select"}</option>
 
           {options?.map((option: any) => (
@@ -22,7 +34,10 @@ const Select: React.FC<SelectProps> = (props) => {
             </option>
           ))}
         </select>
-      </SelecteWrapper>
+      </SelectWrapper>
+      <AnimatePresence>
+        {errorMessage && <ErrorMessage label={errorMessage} />}
+      </AnimatePresence>
     </SelectInputWrapper>
   );
 };

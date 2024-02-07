@@ -3,6 +3,7 @@ import { Left, Right } from "./style";
 import Typography from "Components/Atoms/Typography";
 import { SignUpForm } from "Components/Organisms/Forms";
 import { OnboardingTemplate } from "Components/Templates/OnboardingTemplate";
+import { Link } from "react-router-dom";
 
 // Type defination
 interface Props {}
@@ -37,7 +38,10 @@ const SignUp: React.FC<Props> = () => {
           />
           <Typography as="p" className="p-16 mt-5 remove-on-sm-vp">
             <>
-              You can <span className="p-17">Login here! </span>
+              You can{" "}
+              <Link to="/login" className="l p-17">
+                Login here!{" "}
+              </Link>
             </>
           </Typography>
         </Left>
@@ -57,7 +61,10 @@ const SignUp: React.FC<Props> = () => {
           />
           <Typography as="p" className="p-16 mt-5 text-center display-on-sm-vp">
             <>
-              You can <span className="p-17">Login here! </span>
+              You can{" "}
+              <Link to="/login" className="l p-17">
+                Login here!{" "}
+              </Link>
             </>
           </Typography>
         </Right>

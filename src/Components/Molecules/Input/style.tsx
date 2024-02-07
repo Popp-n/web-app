@@ -372,16 +372,16 @@ export const RangeStyle = styled.div`
 `;
 
 // Select
-export const SelectInputWrapper = styled.div`
-  position: relative;
-`;
 
-export const SelecteWrapper = styled.div`
+export const SelectInputWrapper = styled.div`
+  margin-bottom: 2rem;
+`;
+export const SelectWrapper = styled.div`
   border-radius: 1.2rem;
   overflow: hidden;
   background-color: var(--color-white);
   ${FlexRowJcBetweenAiCenter}
-  margin-bottom: 2rem;
+
   width: 100%;
   padding-right: 2rem;
   cursor: pointer;
@@ -390,14 +390,18 @@ export const SelecteWrapper = styled.div`
     margin-bottom: 0;
   }
 
-  .input-ele {
+  .select-ele {
     flex-grow: 1;
     padding-inline: 2rem;
     padding-block: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     border: none;
     font-family: Poppins;
     font-size: 1.5rem;
     font-weight: 400;
+    color: var(--color-18);
+    background-color: var(--color-white);
 
     &::placeholder {
       color: var(--color-18);
@@ -405,13 +409,17 @@ export const SelecteWrapper = styled.div`
       font-size: 1.5rem;
       font-weight: 400;
       padding-inline: 2rem;
-      padding-block: 1.8rem;
+      /* padding-block: 1.8rem; */
     }
 
     &:active,
     &:focus {
       outline: none;
     }
+  }
+
+  &.has-error {
+    border-radius: 1.2rem 1.2rem 0 0;
   }
 
   /* Style two */

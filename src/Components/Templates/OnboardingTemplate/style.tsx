@@ -23,13 +23,13 @@ export const BodyContainer = styled(CenterOnboard)`
 export const Nav = styled.nav`
   padding-block: 4rem;
 
-  ${responsive(
+  /* ${responsive(
     "sm",
     "background-color: var(--color-white); padding-block: 1.5rem;"
-  )}
+  )} */
 
   .logo {
-    ${responsive("sm", "width: 8.2rem; height:")}
+    ${responsive("sm", "width: 8.2rem;")}
   }
 `;
 
