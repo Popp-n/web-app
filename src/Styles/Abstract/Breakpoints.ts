@@ -31,11 +31,12 @@ const sizesEM = {
   md: "66.6em", // 1065px --> Tablet landscape medium size
   xmd: "65.31em", // 1045px --> Tablet landscape small size
   sm: "56.25em", // 900px --> Tablet portrait
+  ssm: "46.87em", // 750px --> Tablet portrait small
   xsm: "37.5em", // 600px --> Phone
   xxsm: "28.75em", // 460px --> Small Phone
 };
 
-type breakpoint = "xlg" | "lg" | "md" | "xmd" | "sm" | "xsm" | "xxsm";
+type breakpoint = "xlg" | "lg" | "md" | "xmd" | "sm" | "ssm" | "xsm" | "xxsm";
 export const responsive = (breakpoint: breakpoint, content: any) => {
   // Small Phone
   if (breakpoint === "xxsm") {
@@ -49,6 +50,14 @@ export const responsive = (breakpoint: breakpoint, content: any) => {
   if (breakpoint === "xsm") {
     return css`
       @media only screen and (max-width: ${sizesEM.xsm}) {
+        ${content}
+      }
+    `;
+  }
+  //   Phone medium
+  if (breakpoint === "ssm") {
+    return css`
+      @media only screen and (max-width: ${sizesEM.ssm}) {
         ${content}
       }
     `;

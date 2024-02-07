@@ -21,14 +21,14 @@ const Hero: React.FC<Props> = () => {
     <Wrapper>
       <Container>
         <Left>
-          <Typography as="h3" className="h-1 max-width-582">
+          <Typography as="h3" className="h-1 max-width-582 center-on-xmd-vp">
             Empowering Brands & Creators:
           </Typography>
-          <Typography as="h3" className="h-2">
+          <Typography as="h3" className="h-2 center-on-xmd-vp">
             Redefining Marketing
           </Typography>
 
-          <LeftCtas className="mt-100">
+          <LeftCtas className="mt-100 remove-on-xmd-vp">
             <Button className="btn-1 b-3" value="Get a demo" />
             <Button className="btn-2 btn-play">
               <PlayIcon className="play-icon" />

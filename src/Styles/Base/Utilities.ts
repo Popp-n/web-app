@@ -444,7 +444,21 @@ export const Utilities = css`
   .remove-on-sm-vp {
     ${responsive("sm", "display: none")}
   }
+  .display-on-ssm-vp {
+    display: none;
+    ${responsive("ssm", "display: block")}
+  }
+  .remove-on-ssm-vp {
+    ${responsive("ssm", "display: none")}
+  }
+  .remove-on-xmd-vp {
+    ${responsive("xmd", "display: none")}
+  }
+
   .center-on-sm-vp {
     ${responsive("sm", "text-align: center")}
+  }
+  .center-on-xmd-vp {
+    ${responsive("xmd", "text-align: center")}
   }
 `;

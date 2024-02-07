@@ -13,6 +13,7 @@ export const Typography = css`
   .h {
     &-1 {
       font-size: 5.9487rem;
+      font-size: clamp(3rem, 8vw, 5.9487rem);
       font-weight: 600;
       line-height: 100%;
       color: var(--color-primary);

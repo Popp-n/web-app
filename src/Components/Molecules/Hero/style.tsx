@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { responsive } from "Styles/Abstract/Breakpoints";
 import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 import { CenterHero } from "Styles/layouts/Center";
 
@@ -13,6 +14,8 @@ export const Wrapper = styled.header`
 export const Container = styled(CenterHero)`
   ${FlexRowAiCenter}
   gap: 1rem;
+
+  ${responsive("xmd", "flex-direction: column;")}
 `;
 
 export const Left = styled.div`
@@ -53,7 +56,6 @@ export const HeroImageContainer = styled.div`
   width: 51.517rem;
   height: 54.7rem;
   /* background-color: grey; */
-
   position: relative;
 
   .image {
