@@ -38,22 +38,27 @@ const Register: React.FC<Props> = () => {
       <>
         <Left>
           <Link to="/sign-up">
-            <ArrowLeftIcon />
+            <ArrowLeftIcon className="back-icon" />
           </Link>
-          <Typography
-            as="h3"
-            className="h-18 max-width-450"
-            text="Select your area of interest"
-          />
+          <div className="heading-box">
+            <Typography
+              as="h3"
+              className="h-18 max-width-450"
+              text="Select your area of interest"
+            />
+          </div>
 
           <Typography
             as="p"
-            className="p-16 mt-20"
+            className="p-16 mt-20 remove-on-sm-vp"
             text="If you already have an account"
           />
-          <Typography as="p" className="p-16 mt-5">
+          <Typography as="p" className="p-16 mt-5 remove-on-sm-vp">
             <>
-              You can <span className="p-17">Login here ! </span>
+              You can{" "}
+              <Link to="/login" className="l p-17">
+                Login here !{" "}
+              </Link>
             </>
           </Typography>
         </Left>
@@ -72,6 +77,20 @@ const Register: React.FC<Props> = () => {
               Next
             </Button>
           </TagsCta>
+
+          <Typography
+            as="p"
+            className="p-16 mt-80 text-center display-on-sm-vp"
+            text="If you already have an account"
+          />
+          <Typography as="p" className="p-16 mt-5 text-center display-on-sm-vp">
+            <>
+              You can{" "}
+              <Link to="/login" className="l p-17">
+                Login here !{" "}
+              </Link>
+            </>
+          </Typography>
         </Right>
 
         <AnimatePresence>{show && <Modal />}</AnimatePresence>

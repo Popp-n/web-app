@@ -1,36 +1,32 @@
 import React, { useState } from "react";
 import * as yup from "yup";
 import { Form } from "formik";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Button } from "Components/Atoms/Button";
 import { FormField, InputField } from "Components/Molecules/FormFields";
 import { useApi } from "Utils/Hooks";
 import { Spinner } from "Components/Atoms/Spinner";
-import { CheckBox } from "Components/Molecules/Input";
 import { useAuthStore } from "Store";
 import { ErrorMessage } from "Components/Atoms/ErrorMessage";
-import { Flex } from "Styles/layouts/Flex";
-import endpoints from "Services/endpoints";
-import httpService from "Services/httpService";
+// import endpoints from "Services/endpoints";
+// import httpService from "Services/httpService";
 
 // Type defination
 interface Props {}
 
 const validationSchema = yup.object().shape({
   email: yup.string().email().required().min(1).label("Email"),
-  password: yup.string().required().min(1).label("Password"),
 });
 
 // Component
-const LoginForm: React.FC<Props> = () => {
+const ForgetPasswordForm: React.FC<Props> = () => {
   // States
   const [errorMessage, setErrorMessage] = useState<string>("");
 
   //   Variables
   const initialValues = {
     email: "",
-    password: "",
   };
 
   // Hooks
@@ -44,21 +40,28 @@ const LoginForm: React.FC<Props> = () => {
   const handleSubmit = async (values: any) => {
     const requestData = {
       email: values.email,
-      password: values.password,
     };
 
-    // Send to backend
-    const res = await sendRequest("POST", endpoints.loginUrl, requestData);
+    console.log({
+      setErrorMessage,
+      navigate,
+      sendRequest,
+      userLogIn,
+      requestData,
+    });
 
-    if (res.data) {
-      userLogIn(res.data);
-      const userData = res.data;
-      const { accessToken } = userData;
-      httpService.setToken(accessToken);
-      navigate("/dashboard");
-    } else {
-      setErrorMessage(res?.response?.data?.message);
-    }
+    // Send to backend
+    // const res = await sendRequest("POST", endpoints.loginUrl, requestData);
+
+    // if (res.data) {
+    //   userLogIn(res.data);
+    //   const userData = res.data;
+    //   const { accessToken } = userData;
+    //   httpService.setToken(accessToken);
+    //   navigate("/dashboard");
+    // } else {
+    //   setErrorMessage(res?.response?.data?.message);
+    // }
   };
 
   // Data to display
@@ -73,15 +76,7 @@ const LoginForm: React.FC<Props> = () => {
           <ErrorMessage className="outer" label={errorMessage} />
         )}
         <InputField placeholder="Email" name="email" type="email" />
-        <InputField placeholder="Password" name="password" type="password" />
 
-        <Flex $gap="1rem" $flexRowJcBetweenAiCenter>
-          <CheckBox label="Keep me logged in" isOneLine />
-
-          <Link to="/forget-password" className="l l-3">
-            Forgot Password?
-          </Link>
-        </Flex>
         <Button
           type="submit"
           className="btn-full btn-hover--1 btn-4 b-5 btn-md mt-40 ff"
@@ -89,7 +84,7 @@ const LoginForm: React.FC<Props> = () => {
           {loading ? (
             <Spinner style={{ width: "1.3rem", height: "1.3rem" }} />
           ) : (
-            "Login"
+            "Submit"
           )}
         </Button>
       </Form>
@@ -97,4 +92,4 @@ const LoginForm: React.FC<Props> = () => {
   );
 };
 
-export default LoginForm;
+export default ForgetPasswordForm;
