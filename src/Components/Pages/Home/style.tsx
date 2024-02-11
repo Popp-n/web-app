@@ -1,5 +1,8 @@
+import { responsive } from "Styles/Abstract/Breakpoints";
 import {
+  FlexColumn,
   FlexColumnAiCenter,
+  FlexColumnAiStart,
   FlexColumnJcCenterAiCenter,
   FlexRow,
   FlexRowJcBetweenAiCenter,
@@ -8,7 +11,7 @@ import {
   FlexRowJcEndAiCenter,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
-import { Center, CenterSm} from "Styles/layouts/Center";
+import { Center, CenterSm } from "Styles/layouts/Center";
 import styled from "styled-components";
 
 export const Section = styled.section`
@@ -20,7 +23,9 @@ export const Section = styled.section`
   &.section-about-poppn {
     background: var(--gradient-2);
     padding-top: 9rem;
-    padding-bottom: 6rem;
+    padding-bottom: 0;
+
+    ${responsive("sm", "padding-bottom: 10rem;")}
   }
 
   &.section-at-poppn {
@@ -30,7 +35,6 @@ export const Section = styled.section`
   &.section-brand-audience {
     padding-block: 7rem;
   }
-
 `;
 
 export const Container = styled(Center)``;
@@ -41,10 +45,15 @@ export const Letters = styled.div`
 
   .letters-imgs-container {
     position: relative;
-    width: 989px;
-    height: 304.844px;
+    max-width: 989px;
+    max-height: 304.844px;
     flex-shrink: 0;
     /* background-color: green; */
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .letters-img-container {
@@ -56,42 +65,42 @@ export const Letters = styled.div`
     }
   }
   .l-i-c-1 {
-    width: 225.703px;
-    height: 271.608px;
-    top: 33.24px;
+    max-width: 22.5703rem;
+    max-height: 27.1608rem;
+    top: 3.324rem;
     left: 0;
   }
   .l-i-c-2 {
-    width: 225.703px;
-    height: 187.448px;
-    top: 33.24px;
-    left: 171.27px;
+    max-width: 22.5703rem;
+    max-height: 18.7448rem;
+    top: 3.324rem;
+    left: 17.127rem;
     z-index: 1;
   }
   .l-i-c-3 {
-    width: 225.703px;
-    height: 271.608px;
-    top: 33.24px;
-    left: 342.37px;
+    max-width: 22.5703rem;
+    max-height: 27.1608rem;
+    top: 3.324rem;
+    left: 34.237rem;
   }
   .l-i-c-4 {
-    width: 259.703px;
-    height: 305.608px;
-    top: 33.24px;
-    left: 523.6px;
+    max-width: 25.9703rem;
+    max-height: 30.5608rem;
+    top: 3.324rem;
+    left: 52.36rem;
     z-index: 1;
   }
   .l-i-c-5 {
-    width: 70.511px;
-    height: 111.642px;
+    max-width: 7.0511rem;
+    max-height: 11.1642rem;
     top: 0;
-    left: 736.47px;
+    left: 73.647rem;
   }
   .l-i-c-6 {
-    width: 204.096px;
-    height: 256.306px;
-    top: 48.54px;
-    left: 784.56px;
+    max-width: 20.4096rem;
+    max-height: 25.6306rem;
+    top: 4.854rem;
+    left: 78.456rem;
     z-index: 1;
   }
 `;
@@ -103,16 +112,33 @@ export const AboutContainer = styled(Container)`
   .left {
     flex-basis: 54.5rem;
     height: 55.8rem;
-    /* background-color: blue; */
     position: relative;
+
+    .img-container {
+      max-width: 54.5rem;
+      max-height: 50.8rem;
+
+      img {
+        ${ImageDefault}
+      }
+    }
   }
   .right {
+    .about-text {
+      margin-top: -13rem;
+    }
+
     img {
       width: 9.8846rem;
       height: 3.82rem;
       vertical-align: middle;
     }
   }
+
+  ${responsive(
+    "sm",
+    "flex-direction: column; align-items: center; justify-contents: center;"
+  )}
 `;
 
 export const LeftImageContainer = styled.div`
@@ -166,10 +192,19 @@ export const AtPoppnContainer = styled(Container)`
   background-position: top right;
   padding: 8rem;
 
+  ${responsive(
+    "md",
+    `padding: 4rem; background-image: url("/assets/images/at-poppn-gb-mobile.png");`
+  )}
+
   .logo {
     width: 8.8846rem;
     height: 3.82rem;
     vertical-align: middle;
+  }
+
+  .about-heading-text {
+    ${responsive("md", `text-align: center`)}
   }
 
   .down-section {
@@ -241,12 +276,16 @@ export const AtPoppnContainer = styled(Container)`
         margin-bottom: none;
       }
     }
+
+    ${responsive("md", `${FlexColumnAiCenter}`)}
   }
 
   .socials {
     ${FlexRowJcEndAiCenter}
     padding-right: 2rem;
     gap: -3rem;
+
+    ${responsive("md", `${FlexRowJcCenterAiCenter}`)}
   }
 `;
 
@@ -263,18 +302,36 @@ export const PromotingSectionContainer = styled(CenterSm)`
     img {
       ${ImageDefault}
     }
+
+    ${responsive(
+      "sm",
+      `max-with: 50rem; max-height: 39rem; position: relative; left: auto; top: auto;`
+    )}
   }
 
   .left-container {
     position: absolute;
     bottom: 8.4rem;
+
+    ${responsive("sm", `position: relative; bottom: auto;`)}
   }
 
   .right-container {
     position: absolute;
     right: 0;
     top: 11rem;
+
+    ${responsive("sm", `position: relative; left: auto; top: auto;`)}
   }
+
+  .promotion-section-texts {
+    ${responsive("sm", `text-align: center;`)}
+  }
+
+  ${responsive(
+    "sm",
+    `${FlexColumnJcCenterAiCenter}; flex-direction: column-reverse; gap: 5rem; height: auto;`
+  )}
 `;
 
 export const BrandAudContainer = styled(Container)`
@@ -301,8 +358,3 @@ export const BrandAudContainer = styled(Container)`
     }
   }
 `;
-
-
-
-
-

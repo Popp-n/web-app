@@ -38,24 +38,7 @@ const Home: React.FC<Props> = () => {
         <Container>
           <Letters>
             <div className="letters-imgs-container">
-              <div className="letters-img-container l-i-c-1">
-                <img src="assets/images/poppn-p.png" alt="" />
-              </div>
-              <div className="letters-img-container l-i-c-2">
-                <img src="assets/images/poppn-o.png" alt="" />
-              </div>
-              <div className="letters-img-container l-i-c-3">
-                <img src="assets/images/poppn-p-2.png" alt="" />
-              </div>
-              <div className="letters-img-container l-i-c-4">
-                <img src="assets/images/poppn-p-3.png" alt="" />
-              </div>
-              <div className="letters-img-container l-i-c-5">
-                <img src="assets/images/poppn-quote.png" alt="" />
-              </div>
-              <div className="letters-img-container l-i-c-6">
-                <img src="assets/images/poppn-n.png" alt="" />
-              </div>
+              <img src="/assets/images/poppn-big-logo.png" alt="" />
             </div>
           </Letters>
           <Typography as="h5" className="h-3 text-center mt-20">
@@ -74,27 +57,12 @@ const Home: React.FC<Props> = () => {
       <Section className="section-about-poppn">
         <AboutContainer>
           <div className="left">
-            <LeftImageContainer className="blue-1">
-              <img src="/assets/images/poppn-blue-1.png" alt="" />
-            </LeftImageContainer>
-            <LeftImageContainer className="blue-2">
-              <img src="/assets/images/poppn-blue-2.png" alt="" />
-            </LeftImageContainer>
-            <LeftImageContainer className="red-1">
-              <img src="/assets/images/poppn-red-1.png" alt="" />
-            </LeftImageContainer>
-            <LeftImageContainer className="red-2">
-              <img src="/assets/images/poppn-red-2.png" alt="" />
-            </LeftImageContainer>
-            <LeftImageContainer className="shadow-1">
-              <img src="/assets/images/poppn-shadow-1.png" alt="" />
-            </LeftImageContainer>
-            <LeftImageContainer className="shadow-2">
-              <img src="/assets/images/poppn-shadow-2.png" alt="" />
-            </LeftImageContainer>
+            <div className="img-container">
+              <img src="/assets/images/about-poppn-img.png" alt="" />
+            </div>
           </div>
           <div className="right">
-            <Typography as="p" className="p-1 max-width-550">
+            <Typography as="p" className="p-1 about-text max-width-550">
               <>
                 <img src="/assets/images/poppn-small-logo.png" alt="" /> is a
                 social media collaboration platform that connects brands with
@@ -111,7 +79,7 @@ const Home: React.FC<Props> = () => {
 
       <Section className="section-at-poppn">
         <AtPoppnContainer>
-          <Typography as="h3" className="h-4">
+          <Typography as="h3" className="h-4 about-heading-text">
             <>
               At{" "}
               <img
@@ -129,9 +97,15 @@ const Home: React.FC<Props> = () => {
           </Typography>
 
           <div className="down-section mt-45">
+            <div className="down-section__right-image-container display-on-md-vp">
+              <img src="assets/images/at-poppn-img-1.png" alt="" />
+            </div>
             <div className="down-section__left">
               <div className="down-section__content">
-                <Typography as="p" className="h-5 flex-shrink-0">
+                <Typography
+                  as="p"
+                  className="h-5 flex-shrink-0 remove-on-md-vp"
+                >
                   ✨
                 </Typography>
                 <div>
@@ -147,7 +121,10 @@ const Home: React.FC<Props> = () => {
                 </div>
               </div>
               <div className="down-section__content mt-70">
-                <Typography as="p" className="h-5 flex-shrink-0">
+                <Typography
+                  as="p"
+                  className="h-5 flex-shrink-0 remove-on-md-vp"
+                >
                   💡
                 </Typography>
                 <div>
@@ -164,7 +141,7 @@ const Home: React.FC<Props> = () => {
               </div>
             </div>
             <div className="down-section__right">
-              <div className="down-section__right-image-container">
+              <div className="down-section__right-image-container remove-on-md-vp">
                 <img src="assets/images/at-poppn-img-1.png" alt="" />
               </div>
               <div className="down-section__right-image-2-container">
@@ -190,10 +167,10 @@ const Home: React.FC<Props> = () => {
       <Section className="">
         <PromotingSectionContainer>
           <div className="left-container">
-            <Typography as="h4" className="h-6 max-width-280">
+            <Typography as="h4" className="h-6 promotion-section-texts max-width-280">
               Promoting your Brand
             </Typography>
-            <Typography as="p" className="p-4">
+            <Typography as="p" className="p-4 promotion-section-texts">
               Redefining Marketing
             </Typography>
           </div>
@@ -201,10 +178,10 @@ const Home: React.FC<Props> = () => {
             <img src="/assets/images/promote-your-brand.png" alt="" />
           </div>
           <div className="right-container">
-            <Typography as="h4" className="h-6 max-width-260">
+            <Typography as="h4" className="h-6 promotion-section-texts max-width-260">
               Elevating Creators Collaboration
             </Typography>
-            <Typography as="p" className="p-4">
+            <Typography as="p" className="p-4 promotion-section-texts">
               The New Standard
             </Typography>
           </div>

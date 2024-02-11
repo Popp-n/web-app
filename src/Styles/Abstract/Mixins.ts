@@ -139,6 +139,12 @@ export const FlexColumnAiCenter = css`
   flex-direction: column;
   align-items: center;
 `;
+
+export const FlexColumnAiStart = css`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
 // ===>End of Flex columns
 
 // End of Flex Displays

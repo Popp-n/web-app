@@ -437,9 +437,17 @@ export const Utilities = css`
   }
 
   /** Responsiveness */
+  .display-on-md-vp {
+    display: none;
+    ${responsive("md", "display: block")}
+  }
   .display-on-sm-vp {
     display: none;
     ${responsive("sm", "display: block")}
+  }
+
+  .remove-on-md-vp {
+    ${responsive("md", "display: none")}
   }
   .remove-on-sm-vp {
     ${responsive("sm", "display: none")}

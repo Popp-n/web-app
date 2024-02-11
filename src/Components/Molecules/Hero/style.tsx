@@ -53,22 +53,18 @@ export const Right = styled.div`
 `;
 
 export const HeroImageContainer = styled.div`
-  width: 51.517rem;
-  height: 54.7rem;
+  max-width: 51.517rem;
+  max-height: 54.7rem;
   /* background-color: grey; */
   position: relative;
 
-  .image {
-    position: absolute;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .image-1 {
+  /* .image-1 {
     left: 5.9rem;
     width: 23.9rem;
     height: 25.5745rem;
@@ -123,5 +119,5 @@ export const HeroImageContainer = styled.div`
 
     box-shadow: 0px 4px 46px 0px rgba(29, 161, 242, 0.1);
     border-radius: 37.548px 0px 38.783px 38.783px;
-  }
+  } */
 `;

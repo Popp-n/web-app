@@ -38,27 +38,7 @@ const Hero: React.FC<Props> = () => {
         </Left>
         <Right>
           <HeroImageContainer>
-            <div className="image image-1">
-              <img src="assets/images/hero-1.png" alt="" />
-            </div>
-            <div className="image image-2">
-              <img src="assets/images/hero-2.png" alt="" />
-            </div>
-            <div className="image image-3">
-              <img src="assets/images/hero-3.png" alt="" />
-            </div>
-            <div className="image image-4">
-              <img src="assets/images/hero-4.png" alt="" />
-            </div>
-            <div className="image image-5">
-              <img src="assets/images/hero-5.png" alt="" />
-            </div>
-            <div className="image image-6">
-              <img src="assets/images/hero-6.png" alt="" />
-            </div>
-            <div className="image image-7">
-              <img src="assets/images/hero-7.png" alt="" />
-            </div>
+            <img src="/assets/images/hero-right-pic.png" alt="" />
           </HeroImageContainer>
         </Right>
       </Container>
