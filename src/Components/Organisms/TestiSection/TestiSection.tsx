@@ -41,7 +41,7 @@ const TestiSection: React.FC<Props> = () => {
           <img
             src="/assets/images/testi-right-bg.png"
             alt=""
-            className="shadow-bg "
+            className="shadow-bg"
           />
 
           <TestiCards>
@@ -79,15 +79,24 @@ const TestiSection: React.FC<Props> = () => {
                 </Typography>
               </div>
             </TestiCard>
-            <TestimonialToggle>
+            {/* <TestimonialToggle className="remove-on-sm-vp">
               <Button>
                 <TestiCaretUpIcon height={9} width={11} />
               </Button>
               <Button>
                 <TestiCaretDownIcon height={9} width={11} />
               </Button>
-            </TestimonialToggle>
+            </TestimonialToggle> */}
           </TestiCards>
+
+          <TestimonialToggle>
+            <Button>
+              <TestiCaretUpIcon height={9} width={11} className="icon-mobile-left" />
+            </Button>
+            <Button>
+              <TestiCaretDownIcon height={9} width={11} className="icon-mobile-right" />
+            </Button>
+          </TestimonialToggle>
         </div>
       </Conatiner>
     </Wrapper>

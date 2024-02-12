@@ -1,4 +1,10 @@
-import { FlexRowJcBetweenAiCenter, ImageDefault } from "Styles/Abstract/Mixins";
+import { responsive } from "Styles/Abstract/Breakpoints";
+import {
+  FlexColumn,
+  FlexColumnJcCenterAiCenter,
+  FlexRowJcBetweenAiCenter,
+  ImageDefault,
+} from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
 import styled from "styled-components";
 
@@ -8,15 +14,21 @@ export const Wrapper = styled.section`
 
 export const Container = styled(Center)`
   border-radius: 2.56rem;
-  background: var(--color-6);
+  background-color: var(--color-6);
   padding-inline: 8rem;
   padding-right: 0;
   ${FlexRowJcBetweenAiCenter}
   gap: 5rem;
 
+  .brand-section__left {
+    ${responsive("sm", `${FlexColumnJcCenterAiCenter}; text-align: center; padding-right: 4rem;`)}
+    ${responsive("xsm", `padding-right: 2rem;`)}
+  }
+
   .right-image-container {
     position: relative;
-    height: 58.9rem;
+    max-height: 45.9rem;
+    max-width: 48.5rem;
 
     .img {
       ${ImageDefault}
@@ -29,4 +41,7 @@ export const Container = styled(Center)`
       right: 0;
     }
   }
+
+  ${responsive("sm", `${FlexColumn}; padding-top: 7rem; padding-left: 4rem;`)}
+  ${responsive("xsm", `${FlexColumn}; padding-top: 5rem; padding-left: 2rem;`)}
 `;

@@ -16,7 +16,7 @@ const CollaboSection: React.FC<Props> = () => {
         <div className="image-container">
           <img src="/assets/images/rewarding-collaboration.png" alt="" />
         </div>
-        <div>
+        <div className="section-texts__collabo">
           <Typography as="h5" className="h-7" text="Rewarding Collaboration" />
           <Typography as="h5" className="p-5 max-width-480 mt-20 mb-50">
             Creators can earn money through branded content, contests, and

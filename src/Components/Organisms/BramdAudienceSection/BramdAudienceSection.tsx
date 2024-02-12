@@ -13,7 +13,7 @@ const BramdAudienceSection: React.FC<Props> = () => {
   return (
     <Wrapper>
       <Container>
-        <div>
+        <div className="brand-section__left">
           <Typography as="h5" className="h-7" text="Brand Audience" />
           <Typography as="h5" className="p-5 max-width-480 mt-20 mb-50">
             From viral challenges to interactive contests, Popp'n's curated

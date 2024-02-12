@@ -1,4 +1,10 @@
-import { FlexRowJcBetweenAiCenter, ImageDefault } from "Styles/Abstract/Mixins";
+import { responsive } from "Styles/Abstract/Breakpoints";
+import {
+  FlexColumn,
+  FlexColumnJcCenterAiCenter,
+  FlexRowJcBetweenAiCenter,
+  ImageDefault,
+} from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
 import styled from "styled-components";
 
@@ -11,11 +17,17 @@ export const Container = styled(Center)`
   gap: 7rem;
 
   .image-container {
-    width: 55.9rem;
-    height: 53.42rem;
+    max-width: 55.9rem;
+    max-height: 53.42rem;
 
     img {
       ${ImageDefault}
     }
   }
+
+  .section-texts__collabo {
+    ${responsive("sm", `${FlexColumnJcCenterAiCenter}; text-align: center;`)}
+  }
+
+  ${responsive("sm", `${FlexColumn}; flex-direction: column-reverse`)}
 `;
