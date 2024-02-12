@@ -9,6 +9,11 @@ export const Wrapper = styled.header`
   background-position: top left;
   background-size: 81.3rem 61.3rem;
   padding-bottom: 5rem;
+
+  ${responsive(
+    "xmd",
+    "background-size: contain; background-position: top center;"
+  )}
 `;
 
 export const Container = styled(CenterHero)`
@@ -20,6 +25,8 @@ export const Container = styled(CenterHero)`
 
 export const Left = styled.div`
   padding-top: 10rem;
+
+  ${responsive("xmd", "padding-top: 7rem;")}
 `;
 
 export const LeftCtas = styled.div`

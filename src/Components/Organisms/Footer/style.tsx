@@ -1,3 +1,4 @@
+import { responsive } from "Styles/Abstract/Breakpoints";
 import {
   FlexColumnJcCenterAiCenter,
   FlexRowAiCenter,
@@ -11,6 +12,8 @@ import styled from "styled-components";
 export const Wrapper = styled.footer`
   background-color: var(--color-9);
   padding-block: 3.5rem;
+
+  ${responsive("sm", `padding-block: 8rem;`)}
 `;
 
 export const Container = styled(Center)``;
@@ -19,8 +22,8 @@ export const FooterTop = styled.div`
   ${FlexColumnJcCenterAiCenter}
 
   .image-container {
-    width: 402.457px;
-    height: 270px;
+    max-width: 402.457px;
+    max-height: 270px;
 
     img {
       ${ImageDefault}
@@ -39,8 +42,10 @@ export const FooterBottom = styled.div`
   gap: 1rem;
 
   .left {
+    ${responsive("sm", `${FlexColumnJcCenterAiCenter}; `)}
   }
   .right {
+    ${responsive("sm", `${FlexColumnJcCenterAiCenter};`)}
   }
   .footer-links {
     ${FlexRowAiCenter}
@@ -50,4 +55,9 @@ export const FooterBottom = styled.div`
     ${FlexRowJcEndAiCenter}
     gap: 2.4rem;
   }
+
+  ${responsive(
+    "sm",
+    `${FlexColumnJcCenterAiCenter}; gap: 7rem; margin-top: 8rem;`
+  )}
 `;

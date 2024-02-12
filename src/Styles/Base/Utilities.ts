@@ -445,6 +445,10 @@ export const Utilities = css`
     display: none;
     ${responsive("sm", "display: block")}
   }
+  .display-on-xsm-vp {
+    display: none;
+    ${responsive("xsm", "display: inline-block")}
+  }
 
   .remove-on-md-vp {
     ${responsive("md", "display: none")}
@@ -462,11 +466,17 @@ export const Utilities = css`
   .remove-on-xmd-vp {
     ${responsive("xmd", "display: none")}
   }
+  .remove-on-xsm-vp {
+    ${responsive("xsm", "display: none")}
+  }
 
+  .center-on-xmd-vp {
+    ${responsive("xmd", "text-align: center")}
+  }
   .center-on-sm-vp {
     ${responsive("sm", "text-align: center")}
   }
-  .center-on-xmd-vp {
+  .center-on-xsm-vp {
     ${responsive("xmd", "text-align: center")}
   }
 `;

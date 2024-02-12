@@ -19,7 +19,7 @@ const Footer: React.FC<Props> = () => {
             <img src="/assets/images/footer-image.png" alt="" />
           </div>
 
-          <Typography as="h5" className="mt-60 h-8">
+          <Typography as="h5" className="mt-60 h-8 center-on-xsm-vp">
             <>
               Join the{" "}
               {/* <img
@@ -30,9 +30,9 @@ const Footer: React.FC<Props> = () => {
               <img
                 src="/assets/images/poppn-logo-animation.gif"
                 alt=""
-                className="image-text"
+                className="image-text remove-on-xsm-vp"
               />{" "}
-              Movement
+              <span className="display-on-xsm-vp">Popp'n </span> Movement
             </>
           </Typography>
 

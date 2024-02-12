@@ -62,7 +62,10 @@ const Home: React.FC<Props> = () => {
             </div>
           </div>
           <div className="right">
-            <Typography as="p" className="p-1 about-text max-width-550">
+            <Typography
+              as="p"
+              className="p-1 about-text max-width-550 center-on-sm-vp"
+            >
               <>
                 <img src="/assets/images/poppn-small-logo.png" alt="" /> is a
                 social media collaboration platform that connects brands with
@@ -167,7 +170,10 @@ const Home: React.FC<Props> = () => {
       <Section className="">
         <PromotingSectionContainer>
           <div className="left-container">
-            <Typography as="h4" className="h-6 promotion-section-texts max-width-280">
+            <Typography
+              as="h4"
+              className="h-6 promotion-section-texts max-width-280"
+            >
               Promoting your Brand
             </Typography>
             <Typography as="p" className="p-4 promotion-section-texts">
@@ -178,7 +184,10 @@ const Home: React.FC<Props> = () => {
             <img src="/assets/images/promote-your-brand.png" alt="" />
           </div>
           <div className="right-container">
-            <Typography as="h4" className="h-6 promotion-section-texts max-width-260">
+            <Typography
+              as="h4"
+              className="h-6 promotion-section-texts max-width-260"
+            >
               Elevating Creators Collaboration
             </Typography>
             <Typography as="p" className="p-4 promotion-section-texts">

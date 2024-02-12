@@ -18,7 +18,7 @@ const FooterDown: React.FC<Props> = () => {
   // Data to display
   return (
     <FooterBottom className="">
-      <div>
+      <div className="left">
         <Logo />
         <div className="footer-links mt-5">
           <Link to="/" className="l-2">

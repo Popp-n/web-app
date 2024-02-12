@@ -1,3 +1,4 @@
+import { responsive } from "Styles/Abstract/Breakpoints";
 import { FlexRowAiCenter } from "Styles/Abstract/Mixins";
 import { css } from "styled-components";
 
@@ -12,11 +13,12 @@ export const Typography = css`
   /* Headings */
   .h {
     &-1 {
-      font-size: 5.9487rem;
-      font-size: clamp(3rem, 8vw, 5.9487rem);
+      font-size: clamp(3rem, 5vw, 5.9487rem);
       font-weight: 600;
       line-height: 100%;
       color: var(--color-primary);
+
+      ${responsive("sm", `line-height: 140%;`)}
     }
     &-2 {
       font-size: 3.9658rem;
@@ -283,6 +285,7 @@ export const Typography = css`
   .p {
     &-1 {
       font-size: 2.2rem;
+      font-size: clamp(1.8rem, 5vw, 2.2rem);
       font-style: normal;
       font-weight: 400;
       line-height: 150%;

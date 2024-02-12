@@ -1,8 +1,6 @@
 import { responsive } from "Styles/Abstract/Breakpoints";
 import {
-  FlexColumn,
   FlexColumnAiCenter,
-  FlexColumnAiStart,
   FlexColumnJcCenterAiCenter,
   FlexRow,
   FlexRowJcBetweenAiCenter,
@@ -25,7 +23,7 @@ export const Section = styled.section`
     padding-top: 9rem;
     padding-bottom: 0;
 
-    ${responsive("sm", "padding-bottom: 10rem;")}
+    ${responsive("sm", "padding-bottom: 3rem;")}
   }
 
   &.section-at-poppn {
@@ -111,7 +109,7 @@ export const AboutContainer = styled(Container)`
 
   .left {
     flex-basis: 54.5rem;
-    height: 55.8rem;
+    max-height: 55.8rem;
     position: relative;
 
     .img-container {
@@ -122,10 +120,13 @@ export const AboutContainer = styled(Container)`
         ${ImageDefault}
       }
     }
+    ${responsive("sm", "flex-basis: auto;")}
   }
   .right {
     .about-text {
       margin-top: -13rem;
+
+      ${responsive("sm", "margin-top: 0;")}
     }
 
     img {
@@ -137,7 +138,7 @@ export const AboutContainer = styled(Container)`
 
   ${responsive(
     "sm",
-    "flex-direction: column; align-items: center; justify-contents: center;"
+    "flex-direction: column-reverse; align-items: center; gap: 6rem; justify-contents: center;"
   )}
 `;
 
