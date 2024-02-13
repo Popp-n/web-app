@@ -195,7 +195,7 @@ export const AtPoppnContainer = styled(Container)`
 
   ${responsive(
     "md",
-    `padding: 4rem; background-image: url("/assets/images/at-poppn-gb-mobile.png");`
+    `padding: 4rem;  padding-inline: 2.5rem; background-image: url("/assets/images/at-poppn-gb-mobile.png");`
   )}
 
   .logo {
@@ -225,8 +225,8 @@ export const AtPoppnContainer = styled(Container)`
       }
     }
     &__right-image-container {
-      width: 28.9392rem;
-      height: 21.197rem;
+      max-width: 28.9392rem;
+      max-height: 21.197rem;
       border-radius: 0.5rem;
       overflow: hidden;
 
@@ -306,7 +306,7 @@ export const PromotingSectionContainer = styled(CenterSm)`
 
     ${responsive(
       "sm",
-      `max-with: 50rem; max-height: 39rem; position: relative; left: auto; top: auto;`
+      `max-width: 50rem; max-height: 39rem; position: relative; left: auto; top: auto;`
     )}
   }
 

@@ -21,7 +21,7 @@ export const Typography = css`
       ${responsive("sm", `line-height: 140%;`)}
     }
     &-2 {
-      font-size: 3.9658rem;
+      font-size: clamp(2rem, 5vw, 3.9658rem);
       font-weight: 400;
       line-height: 110%;
       color: var(--color-primary);
@@ -293,8 +293,9 @@ export const Typography = css`
     }
     &-2 {
       font-size: 2rem;
+      font-size: clamp(1.6rem, 5vw, 2rem);
       font-weight: 400;
-      line-height: 3.7585rem;
+      line-height: 180%;
       color: var(--color-5);
     }
     &-3 {

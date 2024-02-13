@@ -470,6 +470,9 @@ export const Utilities = css`
     ${responsive("xsm", "display: none")}
   }
 
+  .center-on-md-vp {
+    ${responsive("md", "text-align: center")}
+  }
   .center-on-xmd-vp {
     ${responsive("xmd", "text-align: center")}
   }
@@ -477,6 +480,6 @@ export const Utilities = css`
     ${responsive("sm", "text-align: center")}
   }
   .center-on-xsm-vp {
-    ${responsive("xmd", "text-align: center")}
+    ${responsive("xsm", "text-align: center")}
   }
 `;
