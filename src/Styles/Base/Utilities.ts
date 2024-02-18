@@ -447,7 +447,7 @@ export const Utilities = css`
   }
   .display-on-xsm-vp {
     display: none;
-    ${responsive("xsm", "display: inline-block")}
+    ${responsive("xsm", "display: inline-block")};
   }
 
   .remove-on-md-vp {

@@ -43,6 +43,10 @@ const Creators: React.FC<Props> = () => {
             <Button className="btn btn-3">
               Join Now <ArrowRightIcon />
             </Button>
+
+            <div className="hero__image-container display-on-sm-vp">
+              <img src="/assets/images/creators-mobile-hero-img.png" alt="" />
+            </div>
           </HeroContainer>
         </Header>
 
