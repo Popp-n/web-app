@@ -42,6 +42,10 @@ const Brands: React.FC<Props> = () => {
             <Button className="btn btn-3">
               Join Now <ArrowRightIcon />
             </Button>
+
+            <div className="hero__image-container display-on-sm-vp">
+              <img src="/assets/images/brands-bg-mobile.png" alt="" />
+            </div>
           </HeroContainer>
         </Header>
 

@@ -52,7 +52,10 @@ const Creators: React.FC<Props> = () => {
 
         <Section className="section__challenge">
           <ChallengeContainer>
-            <Typography as="h5" className="h-15 text-right pr-30">
+            <Typography
+              as="h5"
+              className="h-15 text-right pr-30 section__label"
+            >
               CREATE A CHALLENGE
             </Typography>
             <div className="image-container-1">
@@ -62,7 +65,7 @@ const Creators: React.FC<Props> = () => {
               <img src="/assets/images/challenge-2.png" alt="" />
             </div>
             <div className="trending-container">
-              <div>
+              <div className="remove-on-md-vp">
                 <Typography as="h3" className="h-16">
                   TRENDING
                 </Typography>
@@ -81,7 +84,8 @@ const Creators: React.FC<Props> = () => {
         <Section className="section__discover">
           <DiscoverContainer>
             <div className="left">
-              <DiscoverImageContainer className="discover-1">
+              <img src="/assets/images/discover-popnn.png" alt="" />
+              {/* <DiscoverImageContainer className="discover-1"> 
                 <img src="/assets/images/poppn-discover-2.png" alt="" />
               </DiscoverImageContainer>
               <DiscoverImageContainer className="discover-2">
@@ -92,7 +96,7 @@ const Creators: React.FC<Props> = () => {
               </DiscoverImageContainer>
               <DiscoverImageContainer className="shadow-2">
                 <img src="/assets/images/poppn-shadow-2.png" alt="" />
-              </DiscoverImageContainer>
+              </DiscoverImageContainer> */}
             </div>
             <div className="right">
               <Typography as="h3" className="h-14">
@@ -110,7 +114,7 @@ const Creators: React.FC<Props> = () => {
 
         <Section className="section__craft">
           <SuccessStoryContainer>
-            <Typography as="h4" className="h-13">
+            <Typography as="h4" className="h-13 text-center">
               Craft Your Success Story
             </Typography>
             <Typography

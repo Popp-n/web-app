@@ -1,3 +1,4 @@
+import { responsive } from "Styles/Abstract/Breakpoints";
 import {
   FlexColumnAiCenter,
   FlexRow,
@@ -13,6 +14,11 @@ export const Header = styled.section`
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+
+  ${responsive(
+    "sm",
+    `background-image: none; padding-top: 6rem; padding-bottom: 3rem;`
+  )}
 `;
 
 export const Section = styled.section`
@@ -29,7 +35,21 @@ export const Section = styled.section`
 
 export const Container = styled(Center)``;
 
-export const HeroContainer = styled(CenterHero)``;
+export const HeroContainer = styled(CenterHero)`
+  ${responsive(
+    "sm",
+    `${FlexColumnAiCenter};text-align: center;
+ `
+  )}
+
+  .hero__image-container {
+    max-width: 42.8rem;
+
+    img {
+      ${ImageDefault}
+    }
+  }
+`;
 
 export const SuccessStoryContainer = styled(Container)`
   border-radius: 2.9366rem;

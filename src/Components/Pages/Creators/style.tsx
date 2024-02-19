@@ -1,6 +1,7 @@
 import { responsive } from "Styles/Abstract/Breakpoints";
 import {
   FlexColumnAiCenter,
+  FlexColumnJcCenterAiCenter,
   FlexRowAiCenter,
   FlexRowJcCenterAiCenter,
   ImageDefault,
@@ -46,6 +47,8 @@ export const HeroContainer = styled(CenterHero)`
   text-align: center;
 
   .hero__image-container {
+    max-width: 42.8rem;
+
     img {
       ${ImageDefault}
     }
@@ -62,9 +65,14 @@ export const SuccessStoryContainer = styled(Container)`
 
   ${FlexColumnAiCenter}
 
+  ${responsive(
+    "xsm",
+    `padding: 4rem;  padding-inline: 2.5rem; background-image: url("/assets/images/at-poppn-gb-mobile.png");`
+  )}
+
   .img-container {
-    width: 63.1rem;
-    height: 37.2159rem;
+    max-width: 63.1rem;
+    max-height: 37.2159rem;
 
     img {
       ${ImageDefault}
@@ -75,18 +83,26 @@ export const SuccessStoryContainer = styled(Container)`
 export const DiscoverContainer = styled(Container)`
   ${FlexRowJcCenterAiCenter}
   gap: 8rem;
+  ${responsive(
+    "xmd",
+    `${FlexColumnJcCenterAiCenter}; flex-direction: column-reverse; text-align: center;`
+  )}
 
   .left {
     flex-basis: 54.5rem;
     height: 55.8rem;
     position: relative;
+
+    img {
+      ${ImageDefault}
+    }
   }
   .right {
-    img {
+    /* img {
       width: 9.8846rem;
       height: 3.82rem;
       vertical-align: middle;
-    }
+    } */
   }
 `;
 
@@ -124,12 +140,18 @@ export const DiscoverImageContainer = styled.div`
 export const ChallengeContainer = styled(CenterChallenge)`
   position: relative;
   height: 88.7rem;
+  ${responsive("md", `height: auto; ${FlexColumnJcCenterAiCenter}; gap: 2rem`)}
+
+  .section__label {
+    ${responsive("md", `text-align: center`)}
+  }
 
   .image-container-1 {
     position: absolute;
     max-width: 42.1961rem;
     max-height: 34.106rem;
     top: -1rem;
+    ${responsive("md", `position: relative; top: auto;`)}
 
     img {
       ${ImageDefault}
@@ -141,6 +163,7 @@ export const ChallengeContainer = styled(CenterChallenge)`
     max-height: 34.106rem;
     top: 8rem;
     right: 0;
+    ${responsive("md", `position: relative; top: auto; right: auto;`)}
 
     img {
       ${ImageDefault}
@@ -151,16 +174,22 @@ export const ChallengeContainer = styled(CenterChallenge)`
     /* bottom: 0; */
     top: 40.6rem;
     left: 7rem;
+    ${responsive("md", `position: relative; top: auto; left: auto`)}
 
     ${FlexRowAiCenter}
     gap: 1rem;
   }
   .trending-image-container {
-    max-width: 371px;
-    max-height: 406px;
+    max-width: 37.1rem;
+    max-height: 40.6rem;
 
     img {
       ${ImageDefault}
+      ${responsive("md", `max-width: 42.1961rem; max-height: 34.106rem;`)}
     }
+    ${responsive(
+      "md",
+      `max-width: 42.1961rem; max-height: 34.106rem; margin-bottom: 3rem;`
+    )}
   }
 `;

@@ -97,6 +97,7 @@ export const Typography = css`
       color: var(--color-5);
       font-family: Poppins;
       font-size: 2rem;
+      font-size: clamp(1.5rem, 3vw, 2rem);
       font-weight: 600;
       line-height: 103.087%;
     }
@@ -104,6 +105,7 @@ export const Typography = css`
       color: var(--color-5);
       font-family: Poppins;
       font-size: 3.8rem;
+      font-size: clamp(2.5rem, 4vw, 3.8rem);
       font-weight: 600;
       line-height: 103.087%;
     }
@@ -111,6 +113,8 @@ export const Typography = css`
       color: var(--color-white);
       font-family: Itim;
       font-size: 5.9487rem;
+      font-size: clamp(3rem, 7vw, 5.9487rem);
+
       font-weight: 400;
       line-height: 99.181%;
     }
@@ -118,6 +122,7 @@ export const Typography = css`
       color: var(--color-primary);
       font-family: Itim;
       font-size: 4.5rem;
+      font-size: clamp(3rem, 4vw, 4.5rem);
       font-weight: 400;
       line-height: 99.181%;
     }

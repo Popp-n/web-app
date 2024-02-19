@@ -36,7 +36,7 @@ const FooterDown: React.FC<Props> = () => {
           <YoutubeFooterIcon />
           <TwitterFooterIcon />
         </div>
-        <Typography as="p" className="p-7 mt-10">
+        <Typography as="p" className="p-7 text-center mt-10">
           Copyright © 2023 popp’n All rights reserved.
         </Typography>
       </div>

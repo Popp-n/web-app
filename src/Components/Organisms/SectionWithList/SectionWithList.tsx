@@ -74,9 +74,9 @@ const SectionWithList: React.FC<Props> = ({ listIndex }) => {
         <Right>
           <div className="gif-container">
             {listIndex === 0 ? (
-              <img src="/assets/images/poppn-list-section.gif" alt="" />
+              <img src="/assets/images/poppn-Image-carousel.png" alt="" />
             ) : (
-              <img src="/assets/images/poppn-list-section-2.gif" alt="" />
+              <img src="/assets/images/poppn-Image-carousel.png" alt="" />
             )}
           </div>
           <div className="socials">
