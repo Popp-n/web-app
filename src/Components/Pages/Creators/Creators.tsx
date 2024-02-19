@@ -3,7 +3,6 @@ import React from "react";
 import {
   ChallengeContainer,
   DiscoverContainer,
-  DiscoverImageContainer,
   Header,
   HeroContainer,
   Section,

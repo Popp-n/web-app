@@ -1,4 +1,9 @@
-import { FlexRowJcCenterAiCenter } from "Styles/Abstract/Mixins";
+import { responsive } from "Styles/Abstract/Breakpoints";
+import {
+  FlexColumnJcCenterAiCenter,
+  FlexRowJcCenterAiCenter,
+  ImageDefault,
+} from "Styles/Abstract/Mixins";
 import { Center } from "Styles/layouts/Center";
 import styled from "styled-components";
 
@@ -6,23 +11,30 @@ export const Wrapper = styled.section`
   background: var(--gradient-4);
   padding-top: 9rem;
   padding-bottom: 6rem;
+
+  ${responsive("xmd", `padding-bottom: 0rem;`)}
 `;
 
 export const Container = styled(Center)`
   ${FlexRowJcCenterAiCenter}
   gap: 8rem;
 
+  ${responsive(
+    "xmd",
+    `${FlexColumnJcCenterAiCenter}; flex-direction: column-reverse; text-align: center;`
+  )}
+
   .left {
     flex-basis: 54.5rem;
-    height: 55.8rem;
+    max-height: 55.8rem;
     position: relative;
+    ${responsive("xmd", `flex-basis: auto;`)}
+
+    img {
+      ${ImageDefault}
+    }
   }
   .right {
-    img {
-      width: 9.8846rem;
-      height: 3.82rem;
-      vertical-align: middle;
-    }
   }
 `;
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, DiscoverImageContainer, Wrapper } from "./style";
+import { Container, Wrapper } from "./style";
 import Typography from "Components/Atoms/Typography";
 
 // Type defination
@@ -12,7 +12,9 @@ const SimpleSection: React.FC<Props> = () => {
     <Wrapper className="section__discover">
       <Container>
         <div className="left">
-          <DiscoverImageContainer className="discover-1">
+          <img src="/assets/images/amp-brand.png" alt="" />
+
+          {/* <DiscoverImageContainer className="discover-1">
             <img src="/assets/images/brands-1.png" alt="" />
           </DiscoverImageContainer>
           <DiscoverImageContainer className="discover-2">
@@ -23,7 +25,7 @@ const SimpleSection: React.FC<Props> = () => {
           </DiscoverImageContainer>
           <DiscoverImageContainer className="shadow-2">
             <img src="/assets/images/poppn-shadow-2.png" alt="" />
-          </DiscoverImageContainer>
+          </DiscoverImageContainer> */}
         </div>
         <div className="right">
           <Typography as="h3" className="h-14">

@@ -105,16 +105,15 @@ export const Typography = css`
       color: var(--color-5);
       font-family: Poppins;
       font-size: 3.8rem;
-      font-size: clamp(2.5rem, 4vw, 3.8rem);
+      font-size: clamp(2.3rem, 4vw, 3.8rem);
       font-weight: 600;
-      line-height: 103.087%;
+      line-height: 130.087%;
     }
     &-14 {
       color: var(--color-white);
       font-family: Itim;
       font-size: 5.9487rem;
       font-size: clamp(3rem, 7vw, 5.9487rem);
-
       font-weight: 400;
       line-height: 99.181%;
     }
@@ -146,7 +145,7 @@ export const Typography = css`
     &-17 {
       color: var(--color-primary);
       font-family: Poppins;
-      font-size: 4.8rem;
+      font-size: clamp(2.5rem, 4vw, 4.8rem);
       font-weight: 600;
       line-height: 122.917%;
     }
@@ -364,13 +363,15 @@ export const Typography = css`
       color: var(--color-5);
       font-family: Poppins;
       font-size: 2rem;
-      font-weight: 200;
-      line-height: 3.7585rem;
+      font-size: clamp(1.7rem, 4vw, 2rem);
+      font-weight: 300;
+      line-height: 150%;
     }
     &-13 {
       color: var(--color-white);
       font-family: Poppins;
       font-size: 2rem;
+      font-size: clamp(1.6rem, 4vw, 2rem);
       font-weight: 500;
       line-height: normal;
     }
@@ -383,7 +384,7 @@ export const Typography = css`
     &-15 {
       color: var(--color-7);
       font-family: Poppins;
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 2vw, 2rem);
       font-weight: 400;
       line-height: 150%;
     }

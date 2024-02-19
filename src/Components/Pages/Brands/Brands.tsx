@@ -51,48 +51,68 @@ const Brands: React.FC<Props> = () => {
 
         <Section className="section__collaboration">
           <CollaborationContainer>
-            <div>
+            <div className="collabo_left-side">
               <div className="img-1-2-holder">
                 <div className="img-1">
-                  <img src="/assets/images/collabo-img-1.png" alt="" />
+                  <picture>
+                    <source
+                      media="(max-width: 750px)"
+                      srcSet="/assets/images/collabo-power-2-mobile.png"
+                    />
+                    <img src="/assets/images/collabo-img-1.png" alt="" />
+                  </picture>
                 </div>
                 <div className="img-2">
-                  <img src="/assets/images/collabo-img-2.png" alt="" />
+                  <picture>
+                    <source
+                      media="(max-width: 750px)"
+                      srcSet="/assets/images/collabo-power-1-mobile.png"
+                    />
+                    <img src="/assets/images/collabo-img-2.png" alt="" />
+                  </picture>
                 </div>
               </div>
-              <Typography as="h4" className="h-17 max-width-627">
-                Unlock the Power of Collaboration
-              </Typography>
-              <Typography as="p" className="p-15 max-width-520">
-                At Popp'n, we understand the significance of authentic
-                connections
-              </Typography>
+              <div>
+                <Typography as="h4" className="h-17 max-width-627">
+                  Unlock the Power of Collaboration
+                </Typography>
+                <Typography
+                  as="p"
+                  className="p-15 max-width-520 collabo-sub-text"
+                >
+                  At Popp'n, we understand the significance of authentic
+                  connections
+                </Typography>
+              </div>
             </div>
             <div className="img-3-container">
               <div className="img-3">
-                <img src="/assets/images/collabo-img-3.png" alt="" />
+                <picture>
+                  <source
+                    media="(max-width: 750px)"
+                    srcSet="/assets/images/collabo-power-3-mobile.png"
+                  />
+                  <img src="/assets/images/collabo-img-3.png" alt="" />
+                </picture>
               </div>
             </div>
           </CollaborationContainer>
         </Section>
 
         <SimpleSection />
+
         <Section className="section__craft">
           <SuccessStoryContainer>
-            <Typography as="h4" className="mt-60 h-13">
+            <Typography as="h4" className="mt-60 h-13 text-center">
               <>
                 Why Go{" "}
-                {/* <img
-                  src="/assets/images/poppn-gif.gif"
-                  alt=""
-                  className="image-text"
-                /> */}
                 <img
                   src="/assets/images/poppn-logo-animation.gif"
                   alt=""
-                  className="image-text"
+                  className="image-text remove-on-xsm-vp"
                 />{" "}
-                for Your Campaigns
+                <span className="display-on-xsm-vp">Popp'n </span> for Your
+                Campaigns
               </>
             </Typography>
             <Typography
