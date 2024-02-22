@@ -1,6 +1,8 @@
 import { ProtectedRoute } from "Components/Atoms/ProtectedRoute";
 import { AboutYou } from "Components/Pages/AboutYou";
+import { AdminDashboard } from "Components/Pages/AdminDashboard";
 import { Brands } from "Components/Pages/Brands";
+import { ChallengePreview } from "Components/Pages/ChallengePreview";
 import { CreateChallenge } from "Components/Pages/CreateChallenge";
 import { Creators } from "Components/Pages/Creators";
 import { Dashboard } from "Components/Pages/Dashboard";
@@ -10,7 +12,9 @@ import { Login } from "Components/Pages/Login";
 import { Register } from "Components/Pages/Register";
 import { RegisterSocials } from "Components/Pages/RegisterSocials";
 import { SetUpChallenge } from "Components/Pages/SetUpChallenge";
+import { EditBrandProfile, ManageSocials, PersonalInfo } from "Components/Pages/Settings";
 import { SignUp } from "Components/Pages/SignUp";
+import { SettingsTemplate } from "Components/Templates/SettingsTemplate";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -52,6 +56,14 @@ const Router = createBrowserRouter(
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="create-a-challenge" element={<CreateChallenge />} />
       <Route path="setup-challenge" element={<SetUpChallenge />} />
+      <Route path="challenge-preview" element={<ChallengePreview />} />
+      <Route path="admin-dashboard" element={<AdminDashboard />} />
+      <Route path="settings" element={<SettingsTemplate />}>
+        <Route path="" element={<PersonalInfo />} />
+        <Route path="personal-info" element={<PersonalInfo />} />
+        <Route path="manage-socials" element={<ManageSocials />} />
+        <Route path="edit-brand-profile" element={<EditBrandProfile />} />
+      </Route>
     </>
   )
 );

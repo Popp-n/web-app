@@ -112,6 +112,10 @@ export const ButtonStyle = styled(Button)`
       padding: 1rem 3rem;
     }
 
+    &-xsm {
+      padding: 0.7rem 2.5rem;
+    }
+
     /* Hover types */
     &-hover {
       &--1 {

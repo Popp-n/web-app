@@ -48,3 +48,23 @@ export { ReactComponent as CreativeChallengeIcon } from "./svgs/creative-challen
 export { ReactComponent as LongArrowIcon } from "./svgs/long-arrow-icon.svg";
 export { ReactComponent as InputErrorIcon } from "./svgs/input-error-icon.svg";
 export { ReactComponent as MobileMenuIcon } from "./svgs/mobile-menu-icon.svg";
+
+export { ReactComponent as VideoIcon } from "./svgs/video-icon.svg";
+export { ReactComponent as ThumbnailIcon } from "./svgs/thumbnail-icon.svg";
+export { ReactComponent as VideoFileIcon } from "./svgs/video-file-icon.svg";
+export { ReactComponent as BtnIcon } from "./svgs/btn-icon.svg";
+
+export { ReactComponent as TiktokNewIcon } from "./svgs/tiktok-new-icon.svg";
+export { ReactComponent as USerNewIcon } from "./svgs/user-new-icon.svg";
+
+export { ReactComponent as ProfileUserIcon } from "./svgs/profile-user-icon.svg";
+
+export { ReactComponent as ContactIcon } from "./svgs/contact-icon.svg";
+export { ReactComponent as WorldIcon } from "./svgs/world-icon.svg";
+export { ReactComponent as TermsIcon } from "./svgs/terms-icon.svg";
+
+export { ReactComponent as FaqIcon } from "./svgs/faq-icon.svg";
+export { ReactComponent as UserProfileIcon } from "./svgs/user-profile-icon.svg";
+export { ReactComponent as UserWalletIcon } from "./svgs/user-wallet-icon.svg";
+export { ReactComponent as TwoProfileUserIcon } from "./svgs/two-profile-user.svg";
+export { ReactComponent as LogiutIcon } from "./svgs/logout-icon.svg";

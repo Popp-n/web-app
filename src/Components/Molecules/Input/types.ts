@@ -27,3 +27,13 @@ export interface TypeRadioProps extends AllHTMLAttributes<HTMLInputElement> {
   icon?: JSX.Element;
   labelClassName?: string;
 }
+
+export interface CustomeFileTwoProps extends AllHTMLAttributes<HTMLDivElement> {
+  label?: string;
+  required?: boolean;
+  pattern?: string;
+  accept?: string;
+  name?: string;
+  wrapperClassName?: string;
+  mediaType?: "image" | "video";
+}

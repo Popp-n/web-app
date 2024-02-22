@@ -3,7 +3,7 @@ import { CheckBoxWrapper } from "./style";
 
 // Type defination
 interface Props {
-  label?: string;
+  label?: string | JSX.Element;
   isOneLine?: boolean;
 }
 

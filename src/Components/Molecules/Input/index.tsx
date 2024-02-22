@@ -6,3 +6,4 @@ export { default as Radio } from "./Radio";
 export { default as SocialRadio } from "./SocialRadio";
 export { default as TypeRadio } from "./TypeRadio";
 export { default as FormInputGrid } from "./style";
+export { default as CustomeFile } from "./CustomeFile";

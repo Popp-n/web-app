@@ -1,5 +1,6 @@
 import {
   FlexColumnJcCenterAiCenter,
+  FlexRow,
   FlexRowAiCenter,
   FlexRowAiStart,
   FlexRowJcBetweenAiCenter,
@@ -461,4 +462,57 @@ export const Dropdown = styled(motion.div)`
   padding: 2rem;
   z-index: 3;
   box-shadow: var(--shadow-4);
+`;
+
+// Custome file two
+export const CustomeFileField = styled.div`
+  position: relative;
+  border: 1px solid var(--color-28);
+  padding-bottom: 1.5rem;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  .custom-input-container {
+    ${FlexColumnJcCenterAiCenter};
+  }
+
+  .icon-instruction {
+    ${FlexRow}
+    gap: 1rem;
+  }
+
+  .file-name {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+    color: var(--color-22);
+
+    &--2 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .file-input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .file-cta {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    border: 1px solid var(--color-28);
+
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-22);
+  }
 `;

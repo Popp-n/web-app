@@ -3,6 +3,7 @@ import {
   FlexRow,
   FlexRowAiCenter,
   FlexRowJcBetween,
+  FlexRowJcBetweenAiCenter,
   ImageDefault,
 } from "Styles/Abstract/Mixins";
 import { Center, Centerdashboard } from "Styles/layouts/Center";
@@ -60,6 +61,29 @@ export const Toggler = styled.button`
 
 export const PageStyle = styled(motion.section)`
   padding-bottom: 10rem;
+
+  .next-cta {
+    ${FlexRowAiCenter}
+    gap: 1rem;
+    border-radius: 2.5rem;
+
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-22);
+    padding: 0.8rem 2.5rem;
+
+    &.prev {
+      border: 1px solid var(--color-34);
+    }
+    &.next {
+      background-color: var(--color-27);
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
 `;
 
 export const SetUpChallengePageStyle = styled.section``;
@@ -91,3 +115,67 @@ export const BudgetRangeWrapper = styled.div`
 
 // Provide details page
 export const ProvideDetailsPageStyle = styled.section``;
+
+export const ProvideDetailsFormWrapper = styled.section`
+  max-width: 60rem;
+
+  .options {
+    ${FlexRowAiCenter};
+
+    & > * {
+      flex-basis: 30%;
+    }
+  }
+`;
+
+export const PreviewChallengeBox = styled.div`
+  border: 1px solid var(--color-28);
+  padding-bottom: 1.5rem;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  .placeholder-wrapper {
+    ${FlexRow}
+    gap: 1rem;
+  }
+  .placeholder {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* line-height: 140%; */
+    color: var(--color-22);
+  }
+
+  .preview-cta {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    border: 1px solid var(--color-33);
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-22);
+  }
+`;
+
+export const SetPaymentWrapper = styled.section`
+  max-width: 40rem;
+
+  .checkbox-label {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-22);
+
+    &--dark {
+      color: #1e1e1e;
+    }
+  }
+`;
+
+export const TotalPay = styled.div`
+  ${FlexRowJcBetweenAiCenter}
+  gap: 1rem;
+  background-color: var(--color-27);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+`;

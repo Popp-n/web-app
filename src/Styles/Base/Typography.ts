@@ -283,6 +283,80 @@ export const Typography = css`
       font-weight: 600;
       line-height: normal;
     }
+    &-37 {
+      color: var(--color-10);
+      font-family: Poppins;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &-38 {
+      color: var(--color-black);
+      font-family: Poppins;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &-39 {
+      font-family: Poppins;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 145%;
+    }
+    &-40 {
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    &-41 {
+      font-family: Poppins;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    &-42 {
+      font-family: Poppins;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 135%;
+    }
+    &-43 {
+      font-family: Poppins;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    &-44 {
+      color: var(--color-24);
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    &-45 {
+      color: var(--color-24);
+      font-family: Poppins;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    &-46 {
+      font-family: Poppins;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    &-47 {
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &-48 {
+      font-family: Poppins;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    &-49 {
+      color: var(--color-22);
+      font-family: Poppins;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
   }
 
   /* Body || Paragraphs */
@@ -457,13 +531,49 @@ export const Typography = css`
         text-decoration-line: underline;
       }
     }
-
     &-24 {
       color: var(--color-black);
       font-family: Poppins;
       font-size: 1.4rem;
       font-weight: 400;
       line-height: normal;
+    }
+    &-25 {
+      font-family: Poppins;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 145%;
+      color: var(--color-22);
+    }
+    &-26 {
+      font-family: Poppins;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--color-22);
+    }
+    &-27 {
+      font-family: Poppins;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--color-38);
+    }
+    &-28 {
+      font-family: Poppins;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--color-38);
+    }
+    &-29 {
+      font-family: Poppins;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--color-38);
+    }
+    &-30 {
+      font-family: Poppins;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--color-22);
     }
   }
 

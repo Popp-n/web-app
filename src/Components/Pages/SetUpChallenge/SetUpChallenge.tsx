@@ -22,6 +22,7 @@ import Typography from "Components/Atoms/Typography";
 import SetUpChallengePage from "./SetUpChallengePage";
 import ProvideDetailsPage from "./ProvideDetailsPage";
 import { AnimatePresence } from "framer-motion";
+import SetPayment from "./SetPayment";
 
 // Variable
 const tabTogglers = [
@@ -35,7 +36,7 @@ const tabTogglers = [
 interface Props {}
 
 // Variables
-const pages = [<SetUpChallengePage />, <ProvideDetailsPage />];
+const pages = [<SetUpChallengePage />, <ProvideDetailsPage />, <SetPayment />];
 
 // Component
 const SetUpChallenge: React.FC<Props> = () => {

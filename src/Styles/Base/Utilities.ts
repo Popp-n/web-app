@@ -171,6 +171,9 @@ export const Utilities = css`
   .mb-10 {
     margin-bottom: 1rem;
   }
+  .mb-5 {
+    margin-bottom: .5rem;
+  }
   /* End of margin Bottoms */
 
   /* margin left */
@@ -398,6 +401,9 @@ export const Utilities = css`
   .max-width-344 {
     max-width: 34.4rem;
   }
+  .max-width-330 {
+    max-width: 33rem;
+  }
   .max-width-280 {
     max-width: 28rem;
   }
@@ -408,8 +414,12 @@ export const Utilities = css`
   .max-width-220 {
     max-width: 22rem;
   }
+
   .max-width-195 {
     max-width: 19.5rem;
+  }
+  .max-width-170 {
+    max-width: 17rem;
   }
   .max-width-120 {
     max-width: 12rem;
